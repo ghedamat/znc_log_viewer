@@ -1,0 +1,1822 @@
+[02:53:52] *** Joins: jsteiner (~Adium@209-6-49-69.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com)
+[02:53:53] *** Quits: jonasi (~jonasi@cpe-24-55-60-206.austin.res.rr.com) (Quit: jonasi)
+[02:55:11] *** Quits: jlsuttles (~jlsuttles@cpe-75-83-194-178.socal.res.rr.com) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[02:58:14] *** Quits: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net) (Remote host closed the connection)
+[03:02:57] *** Quits: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com) (Quit: Leaving.)
+[03:05:50] *** Joins: GitHub127 (~GitHub127@192.30.252.52)
+[03:05:50] <GitHub127> [website] machty opened pull request #850: Fixed a grid (master...three-by-three)  http://git.io/k9m6sQ
+[03:05:50] *** Parts: GitHub127 (~GitHub127@192.30.252.52) ()
+[03:08:27] *** Joins: sthlrd (~bob@c-174-52-44-53.hsd1.ut.comcast.net)
+[03:08:38] *** Joins: GitHub175 (~GitHub175@192.30.252.55)
+[03:08:38] <GitHub175> [website] stefanpenner pushed 2 new commits to master: http://git.io/Np-plg
+[03:08:38] <GitHub175> website/master 4000958 machty: Fixed a grid...
+[03:08:38] <GitHub175> website/master e45d2b8 Stefan Penner: Merge pull request #850 from machty/three-by-three...
+[03:08:38] *** Parts: GitHub175 (~GitHub175@192.30.252.55) ()
+[03:08:38] *** Joins: GitHub67 (~GitHub67@192.30.252.51)
+[03:08:38] <GitHub67> [website] stefanpenner closed pull request #850: Fixed a grid (master...three-by-three)  http://git.io/k9m6sQ
+[03:08:38] *** Parts: GitHub67 (~GitHub67@192.30.252.51) ()
+[03:15:37] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Quit: Leaving.)
+[03:17:12] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[03:19:07] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Client Quit)
+[03:26:18] *** Joins: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com)
+[03:26:34] *** Joins: heycarsten_ (~heycarste@192.241.134.217)
+[03:26:53] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[03:27:15] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[03:29:03] *** Quits: heycarsten_ (~heycarste@192.241.134.217) (Client Quit)
+[03:29:22] *** Joins: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net)
+[03:31:09] *** Quits: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) (Quit: Computer has gone to sleep.)
+[03:32:56] *** Joins: elucid_ (~justin@24-52-243-236.cable.teksavvy.com)
+[03:33:15] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[03:33:28] *** Joins: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com)
+[03:35:08] *** Quits: duggiefr_ (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net) (Remote host closed the connection)
+[03:36:02] *** Joins: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com)
+[03:38:16] *** Quits: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net) (Ping timeout: 264 seconds)
+[03:39:06] *** Quits: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) (Client Quit)
+[03:39:45] *** Joins: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com)
+[03:44:17] *** Quits: kurko__ (~textual@177.4.12.143) (Quit: Computer has gone to sleep.)
+[03:45:32] *** Joins: GitHub38 (~GitHub38@192.30.252.52)
+[03:45:32] <GitHub38> [data] bradleypriest opened pull request #1262: RESTAdapter actually expects camelcased keys by default (master...docs)  http://git.io/pLXxwQ
+[03:45:32] *** Parts: GitHub38 (~GitHub38@192.30.252.52) ()
+[03:45:59] *** Quits: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) (Quit: Computer has gone to sleep.)
+[03:47:17] *** Joins: GitHub23 (~GitHub23@192.30.252.54)
+[03:47:17] <GitHub23> [data] wycats pushed 2 new commits to master: http://git.io/uGprMQ
+[03:47:17] <GitHub23> data/master 6aeb304 Bradley Priest: Fix docs
+[03:47:17] <GitHub23> data/master 46f7f6e Yehuda Katz: Merge pull request #1262 from bradleypriest/docs...
+[03:47:17] *** Parts: GitHub23 (~GitHub23@192.30.252.54) ()
+[03:47:17] *** Joins: GitHub95 (~GitHub95@192.30.252.50)
+[03:47:17] <GitHub95> [data] wycats closed pull request #1262: RESTAdapter actually expects camelcased keys by default (master...docs)  http://git.io/pLXxwQ
+[03:47:17] *** Parts: GitHub95 (~GitHub95@192.30.252.50) ()
+[03:47:28] <wycats> bradleypriest: thanks for all your ED work
+[03:47:35] <wycats> let me know if there's any way I can make you more productive
+[03:47:47] <bradleypriest> No problem, it's been great to get my head right into it
+[03:48:36] <bradleypriest> Actually been upgrading a rather large AMS app to ED beta and it's made the code so much cleaner, I think I've fallen in love with promises
+[03:49:50] <bradleypriest> wycats: AMSAdapter is almost done, are you still thinking ember-rails or ember-data?
+[03:49:54] *** Joins: GitHub44 (~GitHub44@192.30.252.51)
+[03:49:54] <GitHub44> [ember.js] wycats pushed 2 new commits to master: http://git.io/l2NDbQ
+[03:49:54] <GitHub44> ember.js/master 31be677 A. Speller: Query params implementation
+[03:49:54] <GitHub44> ember.js/master 00bf455 Yehuda Katz: Merge pull request #3182 from alexspeller/query-params-squashed...
+[03:49:54] *** Parts: GitHub44 (~GitHub44@192.30.252.51) ()
+[03:49:57] *** Joins: GitHub156 (~GitHub156@192.30.252.52)
+[03:49:58] <GitHub156> [ember.js] wycats closed pull request #3182: Initial QueryParams implementation (master...query-params-squashed)  http://git.io/-p6HzQ
+[03:49:58] *** Parts: GitHub156 (~GitHub156@192.30.252.52) ()
+[03:49:58] <wycats> ember-rails seems best
+[03:50:09] <wycats> possibly also on the ember builds website
+[03:50:38] <bradleypriest> Need to advertise it, it seems a lot of non-AMS APIs follow the same conventions
+[03:52:37] <machty> whoooooa
+[03:52:43] <machty> alexspeller: brother router
+[03:56:16] *** Joins: petejkim (~petejkim@61.80.11.30)
+[03:56:20] <machty> bradleypriest:  weren't you a error-swallowing-promises hater?
+[03:56:44] <bradleypriest> machty: that was 2 whole days ago
+[03:57:10] <machty> my bad, shouldn't pigeonhole you into the past
+[03:58:23] <bradleypriest> machty: hahaha, as soon as it helped me remove 50 lines of spaghetti code managing the order saving of an order and it's line items I was a convert
+[03:58:44] <machty> troof
+[03:59:04] <machty> have you tried integrating them with async router stuff?
+[03:59:44] *** Quits: huafu (~huafu@cpe-70-95-105-36.hawaii.res.rr.com) (Remote host closed the connection)
+[04:00:31] <bradleypriest> Yeah, all that stuff is promisified but the benefits there didn't outweigh the cost of randomly losing exceptions
+[04:00:45] <bradleypriest> Managing complex model relationships definitely did
+[04:00:51] <machty> word
+[04:01:07] <bradleypriest> One of these days I might even work out how to use this whole default error handler thing
+[04:01:44] *** Joins: GitHub193 (~GitHub193@192.30.252.51)
+[04:01:45] <GitHub193> [data] wycats closed pull request #1260: Simpler example for JSON requests (master...doc)  http://git.io/AZKl1A
+[04:01:45] *** Parts: GitHub193 (~GitHub193@192.30.252.51) ()
+[04:01:46] *** Joins: GitHub60 (~GitHub60@192.30.252.54)
+[04:01:46] <GitHub60> [data] wycats pushed 2 new commits to master: http://git.io/nYGeog
+[04:01:46] <GitHub60> data/master c346931 Bradley Priest: Simpler example for JSON requests
+[04:01:46] <GitHub60> data/master 9708f2e Yehuda Katz: Merge pull request #1260 from bradleypriest/doc...
+[04:01:46] *** Parts: GitHub60 (~GitHub60@192.30.252.54) ()
+[04:06:07] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Quit: Leaving.)
+[04:06:40] *** Joins: GitHub187 (~GitHub187@192.30.252.52)
+[04:06:40] <GitHub187> [data] wycats closed pull request #1257: Added missing resovler definition on DS.ManyArray (master...missing-resolver-on-many-array)  http://git.io/k_txEg
+[04:06:40] *** Parts: GitHub187 (~GitHub187@192.30.252.52) ()
+[04:06:41] *** Joins: GitHub42 (~GitHub42@192.30.252.51)
+[04:06:41] <GitHub42> [data] wycats pushed 4 new commits to master: http://git.io/_tRLiA
+[04:06:41] <GitHub42> data/master 582d41d Dan deHavilland: Added missing resovler definition on DS.ManyArray
+[04:06:41] <GitHub42> data/master 60523b0 Dan deHavilland: Added test for missing resolver bug
+[04:06:41] <GitHub42> data/master a316773 Dan deHavilland: Fix: Missing semi-colon in test
+[04:06:41] *** Parts: GitHub42 (~GitHub42@192.30.252.51) ()
+[04:07:11] *** Quits: jsteiner (~Adium@209-6-49-69.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com) (Quit: Leaving.)
+[04:08:11] <wycats> bradleypriest: we should ship with it on
+[04:08:24] *** Quits: sthlrd (~bob@c-174-52-44-53.hsd1.ut.comcast.net) (Remote host closed the connection)
+[04:08:44] <bradleypriest> Does the ApplicationRoute error hook catch DS errors as well?
+[04:10:24] *** Joins: GitHub39 (~GitHub39@192.30.252.54)
+[04:10:24] <GitHub39> [data] wycats closed issue #1190: DS.hasMany() should intuit the type by singularizing the key  http://git.io/7vAZog
+[04:10:24] *** Parts: GitHub39 (~GitHub39@192.30.252.54) ()
+[04:12:03] *** Quits: kaspertidemann (~kaspertid@c-98-207-250-230.hsd1.ca.comcast.net) (Quit: Free soup for everybody!)
+[04:13:53] *** Joins: GitHub147 (~GitHub147@192.30.252.52)
+[04:13:54] <GitHub147> [data] wycats closed pull request #1256: Only get store if it's needed in `belongsToDidChange` (master...patch-5)  http://git.io/gmUb6w
+[04:13:54] *** Parts: GitHub147 (~GitHub147@192.30.252.52) ()
+[04:13:58] *** Joins: GitHub189 (~GitHub189@192.30.252.50)
+[04:13:59] <GitHub189> [data] wycats pushed 2 new commits to master: http://git.io/PRyFnQ
+[04:13:59] <GitHub189> data/master 85fa718 Nick Ragaz: Only get store if it's needed...
+[04:13:59] <GitHub189> data/master 95724b8 Yehuda Katz: Merge pull request #1256 from nragaz/patch-5...
+[04:13:59] *** Parts: GitHub189 (~GitHub189@192.30.252.50) ()
+[04:14:42] *** Joins: GitHub150 (~GitHub150@192.30.252.51)
+[04:14:43] <GitHub150> [data] wycats closed issue #1229: Add option for automatic camelCase -> snake_case conversion in the REST adapter queries  http://git.io/fYRmug
+[04:14:43] *** Parts: GitHub150 (~GitHub150@192.30.252.51) ()
+[04:15:32] <wycats> bradleypriest: it should catch all promise rejections
+[04:15:37] <wycats> so yes to new DS
+[04:21:46] *** Joins: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net)
+[04:26:16] *** Quits: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net) (Ping timeout: 264 seconds)
+[04:28:18] *** Quits: raila (~dad@p54AFD7FD.dip0.t-ipconnect.de) (Quit: Leaving.)
+[04:30:12] *** Parts: mmun (~mmun@mmun.io) ("Textual IRC Client: www.textualapp.com")
+[04:30:18] *** Joins: mmun (~mmun@mmun.io)
+[04:30:36] *** Joins: GitHub106 (~GitHub106@192.30.252.48)
+[04:30:36] <GitHub106> [data] bradleypriest opened pull request #1263: Add hook for serialising polymorphicType (master...polymorphic)  http://git.io/bFZyUw
+[04:30:36] *** Parts: GitHub106 (~GitHub106@192.30.252.48) ()
+[04:40:08] *** Joins: GitHub29 (~GitHub29@192.30.252.48)
+[04:40:09] <GitHub29> [data] stefanpenner opened pull request #1264: Inflector rule addition dsl (master...inflector-rule-addition-dsl)  http://git.io/OTju2Q
+[04:40:09] *** Parts: GitHub29 (~GitHub29@192.30.252.48) ()
+[04:40:53] *** Joins: jergason (~jergason@c-71-199-42-48.hsd1.ut.comcast.net)
+[04:45:03] *** Quits: dcherman (~dcherman@ool-4356093e.dyn.optonline.net) (Ping timeout: 240 seconds)
+[04:45:59] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Quit: mjijackson)
+[04:50:56] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[04:52:43] *** Quits: elucid_ (~justin@24-52-243-236.cable.teksavvy.com) (Quit: elucid_)
+[04:54:11] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Remote host closed the connection)
+[04:54:38] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[04:55:17] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 246 seconds)
+[04:59:15] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 260 seconds)
+[04:59:24] *** Quits: tehviking (~tehviking@cpe-70-112-61-154.austin.res.rr.com) (Remote host closed the connection)
+[05:01:31] *** Joins: kamalfariz (~viki@c-50-136-179-181.hsd1.ca.comcast.net)
+[05:22:18] *** Joins: kaspertidemann (~kaspertid@c-98-207-250-230.hsd1.ca.comcast.net)
+[05:24:38] *** Joins: mixonic (~anonymous@ool-ae2c37d6.dyn.optonline.net)
+[05:25:17] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[05:25:17] *** Joins: huafu (~huafu@cpe-70-95-105-36.hawaii.res.rr.com)
+[05:28:50] *** Quits: ericf (~ericf@c-76-119-141-119.hsd1.ma.comcast.net) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[05:29:49] *** Quits: tboyt (~textual@ool-457e9abe.dyn.optonline.net) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[05:33:12] *** Quits: rakl (~rakl@208-90-212-125.PUBLIC.monkeybrains.net) (Read error: Connection reset by peer)
+[05:33:48] *** Joins: rakl (~rakl@208-90-212-125.PUBLIC.monkeybrains.net)
+[05:34:09] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 268 seconds)
+[05:35:13] *** Quits: petejkim (~petejkim@61.80.11.30) (Quit: petejkim)
+[05:35:57] *** Parts: kamalfariz (~viki@c-50-136-179-181.hsd1.ca.comcast.net) ()
+[05:36:42] *** Quits: kaspertidemann (~kaspertid@c-98-207-250-230.hsd1.ca.comcast.net) (Quit: Free soup for everybody!)
+[05:48:01] *** Joins: Oddskar (~Oddskar@h42n8-m-rg-a13.ias.bredband.telia.com)
+[05:53:22] *** Joins: petejkim (~petejkim@61.80.11.30)
+[05:57:08] *** Joins: GitHub82 (~GitHub82@192.30.252.50)
+[05:57:08] <GitHub82> [data] iterion opened pull request #1265: Adding unloadAll method for store (master...unload-all)  http://git.io/m8D0dw
+[05:57:08] *** Parts: GitHub82 (~GitHub82@192.30.252.50) ()
+[05:58:50] *** Quits: rakl (~rakl@208-90-212-125.PUBLIC.monkeybrains.net) (Quit: sleeping)
+[06:05:39] *** Quits: raytiley (uid13397@gateway/web/irccloud.com/x-utgiorapidxnzkhn) (Ping timeout: 264 seconds)
+[06:06:51] *** Quits: ianstarz_ (uid13130@gateway/web/irccloud.com/x-dslwdaxxsfricmwj) (Ping timeout: 264 seconds)
+[06:06:51] *** Quits: jackfranklin (uid10255@gateway/web/irccloud.com/x-teqpskfxfarfnajh) (Ping timeout: 264 seconds)
+[06:07:55] *** Quits: tomdale (uid5518@gateway/web/irccloud.com/x-nrepzxodavjxmums) (Ping timeout: 245 seconds)
+[06:08:45] *** Quits: bradleypriest (~uid13830@gateway/web/irccloud.com/x-pdbukdlxuwgqfmtz) (Ping timeout: 245 seconds)
+[06:10:29] *** Quits: jergason (~jergason@c-71-199-42-48.hsd1.ut.comcast.net) (Quit: jergason)
+[06:14:32] *** Quits: Oddskar (~Oddskar@h42n8-m-rg-a13.ias.bredband.telia.com) (Ping timeout: 260 seconds)
+[06:20:48] <machty> hjdivad_:  yo
+[06:21:02] <machty> just noticed that `this` is undefined within CP filter
+[06:21:28] <machty> would have expected it to be the object on which the CP is defined; is there some reason this can't be done?
+[06:28:51] *** Joins: GitHub128 (~GitHub128@192.30.252.55)
+[06:28:51] <GitHub128> [ember.js] machty opened issue #3371: reduceComputed callbacks shouldn't have undefined `this`  http://git.io/gzJyIg
+[06:28:51] *** Parts: GitHub128 (~GitHub128@192.30.252.55) ()
+[06:30:29] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[06:35:04] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 260 seconds)
+[06:35:52] *** Joins: GitHub177 (~GitHub177@192.30.252.52)
+[06:35:52] <GitHub177> [ember.js] machty closed issue #3371: reduceComputed callbacks shouldn't have undefined `this`  http://git.io/gzJyIg
+[06:35:52] *** Parts: GitHub177 (~GitHub177@192.30.252.52) ()
+[06:36:01] <machty> hjdivad_:  haha disregard
+[06:41:03] *** Joins: joachimhs (~joahaage@80.91.33.151)
+[06:42:53] *** Joins: GitHub183 (~GitHub183@192.30.252.54)
+[06:42:53] <GitHub183> [ember.js] xenyou closed issue #3363: Inconsistency behavior about accessing outer scope in {{#each}}   https://github.com/emberjs/ember.js/issues/3363
+[06:42:53] *** Parts: GitHub183 (~GitHub183@192.30.252.54) ()
+[06:51:58] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[06:53:42] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[06:53:51] *** Quits: sjkane (~steven@c-98-213-85-132.hsd1.il.comcast.net) (Ping timeout: 240 seconds)
+[06:56:16] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 245 seconds)
+[07:07:35] *** Joins: GitHub193 (~GitHub193@192.30.252.52)
+[07:07:35] <GitHub193> [ember.js] heartsentwined opened issue #3372: Inconsistent behavior: dependency injection for views  http://git.io/CCAZoA
+[07:07:35] *** Parts: GitHub193 (~GitHub193@192.30.252.52) ()
+[07:08:06] *** Joins: ssured (~sjoerd@launchcafe.osso.nl)
+[07:08:20] <ssured> hjdivad_: are you there?
+[07:24:20] *** Joins: jrolfs (~jrolfs@c-71-202-84-78.hsd1.ca.comcast.net)
+[07:29:06] *** Quits: mixonic (~anonymous@ool-ae2c37d6.dyn.optonline.net) (Quit: mixonic)
+[07:29:46] *** Joins: Oddskar (~Oddskar@gw.conveneer.ideon.se)
+[07:49:28] *** Quits: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com) (Read error: Connection reset by peer)
+[07:49:40] *** Joins: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com)
+[07:51:51] *** Quits: petejkim (~petejkim@61.80.11.30) (Quit: petejkim)
+[07:52:34] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[07:55:13] *** Joins: petejkim (~petejkim@61.80.11.30)
+[07:56:54] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 240 seconds)
+[08:01:20] *** Joins: raytiley (uid13397@gateway/web/irccloud.com/x-woyanxfoekgnyrbt)
+[08:02:27] *** Joins: ianstarz_ (uid13130@gateway/web/irccloud.com/x-dnwmdxwlzlhfuelc)
+[08:02:46] *** Joins: jackfranklin (uid10255@gateway/web/irccloud.com/x-yhhylpmfpjwioneg)
+[08:04:00] *** Joins: tomdale (uid5518@gateway/web/irccloud.com/x-qabmyxwsgjlndqbw)
+[08:04:44] *** Joins: bradleypriest (uid13830@gateway/web/irccloud.com/x-pshswdzjarhqrruv)
+[08:04:53] *** Quits: bradleypriest (uid13830@gateway/web/irccloud.com/x-pshswdzjarhqrruv) (Client Quit)
+[08:05:35] *** Joins: bradleypriest (uid13830@gateway/web/irccloud.com/x-uzdqcjmertbitmzn)
+[08:10:59] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Remote host closed the connection)
+[08:11:25] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[08:15:58] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 256 seconds)
+[08:27:11] *** Joins: andrei1089 (~andrei@86.122.11.220)
+[08:27:33] *** Joins: Oddskar_ (~Oddskar@gw.conveneer.ideon.se)
+[08:28:26] *** Quits: jrolfs (~jrolfs@c-71-202-84-78.hsd1.ca.comcast.net) (Ping timeout: 256 seconds)
+[08:29:00] *** Quits: robmonie (robmonie@nat/jetstar/x-bletpfrcknefkiwc) (Remote host closed the connection)
+[08:29:34] *** Quits: Oddskar (~Oddskar@gw.conveneer.ideon.se) (Ping timeout: 276 seconds)
+[08:29:34] *** Oddskar_ is now known as Oddskar
+[08:31:45] *** Quits: Oddskar (~Oddskar@gw.conveneer.ideon.se) (Client Quit)
+[08:40:43] *** Quits: gunn (~gunn@121-74-58-100.telstraclear.net) (Ping timeout: 264 seconds)
+[08:40:44] *** Joins: Oddskar (~Oddskar@gw.conveneer.ideon.se)
+[08:42:14] *** Quits: Oddskar (~Oddskar@gw.conveneer.ideon.se) (Client Quit)
+[08:43:26] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Remote host closed the connection)
+[08:43:53] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[08:44:34] *** Joins: gunn (~gunn@121-74-58-100.telstraclear.net)
+[08:47:48] *** Joins: Oddskar (~Oddskar@gw.conveneer.ideon.se)
+[08:48:14] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 240 seconds)
+[08:52:57] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[08:52:58] *** Quits: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net) (Remote host closed the connection)
+[08:57:20] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 256 seconds)
+[09:03:53] *** Quits: infernow (~inferno@gw.conveneer.ideon.se) (Ping timeout: 245 seconds)
+[09:04:43] *** Quits: dgeb_ (~dgeb@c-24-91-111-240.hsd1.nh.comcast.net) (Ping timeout: 245 seconds)
+[09:04:57] *** Joins: dinualex08 (~alexdin@222.127.174.45)
+[09:05:09] *** Quits: lholmquist (~lholmquis@redhat/jboss/lholmquist) (Ping timeout: 245 seconds)
+[09:05:33] *** Quits: tarasm (~taras@bas1-toronto05-1176311105.dsl.bell.ca) (Ping timeout: 245 seconds)
+[09:11:49] *** Quits: fivetanley (~fivetanle@irc.fivetanley.com) (*.net *.split)
+[09:11:49] *** Quits: Cyril-sf_ (uid13694@gateway/web/irccloud.com/x-qqjvfsntxypsnfvq) (*.net *.split)
+[09:11:49] *** Quits: wukkuan (uid13187@gateway/web/irccloud.com/x-lcqevxpuwwnquyah) (*.net *.split)
+[09:11:49] *** Quits: brianarn (~brianarn@198.199.96.28) (*.net *.split)
+[09:18:29] *** Quits: toranb_ (uid13127@gateway/web/irccloud.com/x-hyydnzjwumxbzbcy) (*.net *.split)
+[09:18:29] *** Quits: zaius (~zaius@kelso.id.au) (*.net *.split)
+[09:18:29] *** Quits: heycarsten (~heycarste@rosa.heycarsten.com) (*.net *.split)
+[09:18:29] *** Quits: jackfranklin (uid10255@gateway/web/irccloud.com/x-yhhylpmfpjwioneg) (*.net *.split)
+[09:18:30] *** Quits: habber (~hakon@www11.it-practice.dk) (*.net *.split)
+[09:18:30] *** Quits: joefiorini (uid3127@gateway/web/irccloud.com/x-crwzgjtvvmjdhjjr) (*.net *.split)
+[09:18:30] *** Quits: TheMoonMaster (~TMM@reddit/operator/themoonmaster) (*.net *.split)
+[09:18:30] *** Quits: gunn (~gunn@121-74-58-100.telstraclear.net) (*.net *.split)
+[09:18:30] *** Quits: ianstarz_ (uid13130@gateway/web/irccloud.com/x-dnwmdxwlzlhfuelc) (*.net *.split)
+[09:18:30] *** Quits: inara (~inara@li125-242.members.linode.com) (*.net *.split)
+[09:18:31] *** Quits: tomdale (uid5518@gateway/web/irccloud.com/x-qabmyxwsgjlndqbw) (*.net *.split)
+[09:18:32] *** Quits: elucid (~elucid@192.241.134.217) (*.net *.split)
+[09:18:32] *** Quits: cmeiklejohn (cmeiklejoh@pdpc/supporter/active/cmeiklejohn) (*.net *.split)
+[09:18:32] *** Quits: ebryn (uid2895@gateway/web/irccloud.com/x-ywrovkoytcjzzwln) (*.net *.split)
+[09:18:32] *** Quits: huafu (~huafu@cpe-70-95-105-36.hawaii.res.rr.com) (*.net *.split)
+[09:18:32] *** Quits: jschi (~textual@76.77.154.9) (*.net *.split)
+[09:18:32] *** Quits: rhythm_and_code (~jgreen@99-90-16-79.lightspeed.okcbok.sbcglobal.net) (*.net *.split)
+[09:18:33] *** Quits: RyanHirsch (uid13396@gateway/web/irccloud.com/x-lopsfewlwonaflgs) (*.net *.split)
+[09:18:33] *** Quits: ralphholzmann (~ralphholz@198.199.73.222) (*.net *.split)
+[09:18:33] *** Quits: moondust (~moondust@swan.dds.nl) (*.net *.split)
+[09:18:33] *** Quits: Oddskar (~Oddskar@gw.conveneer.ideon.se) (*.net *.split)
+[09:18:34] *** Quits: ericberry (uid3452@gateway/web/irccloud.com/x-grhalfghsqpsnshy) (*.net *.split)
+[09:18:34] *** Quits: da5id (da5id@cartman.grepmasters.net) (*.net *.split)
+[09:18:34] *** Quits: wecc (~wecc@94-137-125-150.customers.ownit.se) (*.net *.split)
+[09:18:35] *** Quits: danmcclain (~danmcclai@192.34.59.74) (*.net *.split)
+[09:18:35] *** Quits: drjfreeze (~Jim@207.191.114.82) (*.net *.split)
+[09:18:35] *** Quits: iamstef (uid12605@gateway/web/irccloud.com/x-kplzkdoptcjzwred) (*.net *.split)
+[09:18:36] *** Quits: peterw-cloud (uid5645@gateway/web/irccloud.com/x-yrwvazrfzoouphfo) (*.net *.split)
+[09:18:36] *** Quits: EvilTrout_ (uid13129@gateway/web/irccloud.com/x-bodnghzcsinjpnvj) (*.net *.split)
+[09:18:36] *** Quits: paul_irish (~paul_iris@ve.hsh6wjwx.vesrv.com) (*.net *.split)
+[09:18:36] *** Quits: sindresorhus (sindresorh@gateway/shell/ircrelay.com/x-afptbeokczcnybxz) (*.net *.split)
+[09:18:36] *** Quits: machty (uid13535@gateway/web/irccloud.com/x-efsgskkhuigfuoia) (*.net *.split)
+[09:18:37] *** Quits: lukemelia (uid13134@gateway/web/irccloud.com/x-ncohbnzeitzjpgpz) (*.net *.split)
+[09:18:37] *** Quits: go1dfish_ (~alex@72.20.57.138) (*.net *.split)
+[09:18:37] *** Quits: drogus (uid2157@gateway/web/irccloud.com/x-dxqzcgsslhjzccqs) (*.net *.split)
+[09:18:37] *** Quits: krisselden (uid13191@gateway/web/irccloud.com/x-jbegleuwdrxjntji) (*.net *.split)
+[09:18:37] *** Quits: rickard2 (foobar@veronica.0x539.se) (*.net *.split)
+[09:18:37] *** Quits: wycats (uid79@gateway/web/irccloud.com/x-wkgbajvlckumlvfh) (*.net *.split)
+[09:18:37] *** Quits: hjdivad_ (uid13180@gateway/web/irccloud.com/x-yrimleymxaxxwwml) (*.net *.split)
+[09:18:37] *** Quits: locks (uid130@gateway/web/irccloud.com/x-iodwqoaisftrpqnw) (*.net *.split)
+[09:18:37] *** Quits: tce (uid1818@gateway/web/irccloud.com/x-iksjatggbohnreqs) (*.net *.split)
+[09:18:37] *** Quits: bcardarella (uid1539@gateway/web/irccloud.com/x-eizqvgggglzuoyhu) (*.net *.split)
+[09:18:38] *** Quits: ryanflorence (~rpflorenc@ec2-184-72-231-143.compute-1.amazonaws.com) (*.net *.split)
+[09:18:39] *** Quits: shwoodard (uid13177@gateway/web/irccloud.com/x-recphyupzuldrodo) (*.net *.split)
+[09:18:39] *** Quits: bradleypriest (uid13830@gateway/web/irccloud.com/x-uzdqcjmertbitmzn) (*.net *.split)
+[09:18:39] *** Quits: raytiley (uid13397@gateway/web/irccloud.com/x-woyanxfoekgnyrbt) (*.net *.split)
+[09:18:39] *** Quits: petejkim (~petejkim@61.80.11.30) (*.net *.split)
+[09:18:39] *** Quits: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com) (*.net *.split)
+[09:18:39] *** Quits: galfert (uid5744@gateway/web/irccloud.com/x-xqtxzmassxfjalvw) (*.net *.split)
+[09:18:40] *** Quits: johnkpaul (johnkpaul@2600:3c03::f03c:91ff:fe70:4f5e) (*.net *.split)
+[09:18:40] *** Quits: techthumb (~techthumb@2604:180:1::f30a:4bec) (*.net *.split)
+[09:18:40] *** Quits: alexspeller (~spells@li346-72.members.linode.com) (*.net *.split)
+[09:18:41] *** Quits: rwjblue (~rjackson@li578-211.members.linode.com) (*.net *.split)
+[09:18:41] *** Quits: sris (~sris@ec2-176-34-64-197.eu-west-1.compute.amazonaws.com) (*.net *.split)
+[09:22:23] *** Joins: brianarn (~brianarn@198.199.96.28)
+[09:22:23] *** Joins: wukkuan (uid13187@gateway/web/irccloud.com/x-lcqevxpuwwnquyah)
+[09:22:23] *** Joins: Cyril-sf_ (uid13694@gateway/web/irccloud.com/x-qqjvfsntxypsnfvq)
+[09:22:23] *** Joins: fivetanley (~fivetanle@irc.fivetanley.com)
+[09:22:23] *** Joins: Guest15390 (~inferno@85.235.1.137)
+[09:22:23] *** Joins: kaspertidemann (~kaspertid@c-98-207-250-230.hsd1.ca.comcast.net)
+[09:22:23] *** Joins: tarasm (~taras@bas1-toronto05-1176311105.dsl.bell.ca)
+[09:22:23] *** Joins: lholmquist_ (~lholmquis@redhat/jboss/lholmquist)
+[09:22:23] *** Joins: losco (~losco@209.130.141.79)
+[09:22:23] *** Joins: dgeb (~dgeb@c-24-91-111-240.hsd1.nh.comcast.net)
+[09:22:23] *** Joins: gunn (~gunn@121-74-58-100.telstraclear.net)
+[09:22:23] *** Joins: bradleypriest (uid13830@gateway/web/irccloud.com/x-uzdqcjmertbitmzn)
+[09:22:23] *** Joins: tomdale (uid5518@gateway/web/irccloud.com/x-qabmyxwsgjlndqbw)
+[09:22:23] *** Joins: jackfranklin (uid10255@gateway/web/irccloud.com/x-yhhylpmfpjwioneg)
+[09:22:23] *** Joins: ianstarz_ (uid13130@gateway/web/irccloud.com/x-dnwmdxwlzlhfuelc)
+[09:22:23] *** Joins: raytiley (uid13397@gateway/web/irccloud.com/x-woyanxfoekgnyrbt)
+[09:22:23] *** Joins: petejkim (~petejkim@61.80.11.30)
+[09:22:23] *** Joins: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com)
+[09:22:23] *** Joins: huafu (~huafu@cpe-70-95-105-36.hawaii.res.rr.com)
+[09:22:23] *** Joins: elucid (~elucid@192.241.134.217)
+[09:22:23] *** Joins: jschi (~textual@76.77.154.9)
+[09:22:23] *** Joins: rhythm_and_code (~jgreen@99-90-16-79.lightspeed.okcbok.sbcglobal.net)
+[09:22:23] *** Joins: toranb_ (uid13127@gateway/web/irccloud.com/x-hyydnzjwumxbzbcy)
+[09:22:23] *** Joins: machty (uid13535@gateway/web/irccloud.com/x-efsgskkhuigfuoia)
+[09:22:23] *** Joins: zaius (~zaius@kelso.id.au)
+[09:22:23] *** Joins: lukemelia (uid13134@gateway/web/irccloud.com/x-ncohbnzeitzjpgpz)
+[09:22:23] *** Joins: johnkpaul (johnkpaul@2600:3c03::f03c:91ff:fe70:4f5e)
+[09:22:23] *** Joins: RyanHirsch (uid13396@gateway/web/irccloud.com/x-lopsfewlwonaflgs)
+[09:22:23] *** Joins: techthumb (~techthumb@2604:180:1::f30a:4bec)
+[09:22:23] *** Joins: danmcclain (~danmcclai@192.34.59.74)
+[09:22:23] *** Joins: inara (~inara@li125-242.members.linode.com)
+[09:22:23] *** Joins: da5id (da5id@cartman.grepmasters.net)
+[09:22:23] *** Joins: ralphholzmann (~ralphholz@198.199.73.222)
+[09:22:23] *** Joins: iamstef (uid12605@gateway/web/irccloud.com/x-kplzkdoptcjzwred)
+[09:22:23] *** Joins: bcardarella (uid1539@gateway/web/irccloud.com/x-eizqvgggglzuoyhu)
+[09:22:23] *** Joins: ericberry (uid3452@gateway/web/irccloud.com/x-grhalfghsqpsnshy)
+[09:22:23] *** Joins: galfert (uid5744@gateway/web/irccloud.com/x-xqtxzmassxfjalvw)
+[09:22:23] *** Joins: tce (uid1818@gateway/web/irccloud.com/x-iksjatggbohnreqs)
+[09:22:23] *** Joins: drjfreeze (~Jim@207.191.114.82)
+[09:22:23] *** Joins: wecc (~wecc@94-137-125-150.customers.ownit.se)
+[09:22:23] *** Joins: peterw-cloud (uid5645@gateway/web/irccloud.com/x-yrwvazrfzoouphfo)
+[09:22:23] *** Joins: alexspeller (~spells@li346-72.members.linode.com)
+[09:22:23] *** Joins: sindresorhus (sindresorh@gateway/shell/ircrelay.com/x-afptbeokczcnybxz)
+[09:22:23] *** Joins: heycarsten (~heycarste@rosa.heycarsten.com)
+[09:22:23] *** Joins: EvilTrout_ (uid13129@gateway/web/irccloud.com/x-bodnghzcsinjpnvj)
+[09:22:23] *** Joins: go1dfish_ (~alex@72.20.57.138)
+[09:22:23] *** brooks.freenode.net sets mode: +oo machty iamstef  
+[09:22:23] *** Joins: joefiorini (uid3127@gateway/web/irccloud.com/x-crwzgjtvvmjdhjjr)
+[09:22:23] *** Joins: TheMoonMaster (~TMM@reddit/operator/themoonmaster)
+[09:22:23] *** Joins: drogus (uid2157@gateway/web/irccloud.com/x-dxqzcgsslhjzccqs)
+[09:22:23] *** Joins: krisselden (uid13191@gateway/web/irccloud.com/x-jbegleuwdrxjntji)
+[09:22:23] *** Joins: paul_irish (~paul_iris@ve.hsh6wjwx.vesrv.com)
+[09:22:23] *** Joins: cmeiklejohn (cmeiklejoh@pdpc/supporter/active/cmeiklejohn)
+[09:22:23] *** Joins: moondust (~moondust@swan.dds.nl)
+[09:22:23] *** Joins: ryanflorence (~rpflorenc@ec2-184-72-231-143.compute-1.amazonaws.com)
+[09:22:23] *** Joins: rwjblue (~rjackson@li578-211.members.linode.com)
+[09:22:23] *** Joins: shwoodard (uid13177@gateway/web/irccloud.com/x-recphyupzuldrodo)
+[09:22:23] *** Joins: rickard2 (foobar@veronica.0x539.se)
+[09:22:23] *** Joins: ebryn (uid2895@gateway/web/irccloud.com/x-ywrovkoytcjzzwln)
+[09:22:23] *** Joins: wycats (uid79@gateway/web/irccloud.com/x-wkgbajvlckumlvfh)
+[09:22:23] *** Joins: hjdivad_ (uid13180@gateway/web/irccloud.com/x-yrimleymxaxxwwml)
+[09:22:23] *** Joins: locks (uid130@gateway/web/irccloud.com/x-iodwqoaisftrpqnw)
+[09:22:23] *** Joins: sris (~sris@ec2-176-34-64-197.eu-west-1.compute.amazonaws.com)
+[09:22:23] *** brooks.freenode.net sets mode: +ooo krisselden ebryn wycats 
+[09:23:16] *** Joins: KidkArolis (~textual@212.74.97.241)
+[09:23:16] *** Joins: Oddskar (~Oddskar@gw.conveneer.ideon.se)
+[09:28:26] *** Joins: jessicard (~textual@host86-140-63-97.range86-140.btcentralplus.com)
+[09:31:22] *** Quits: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com) (Quit: Leaving.)
+[09:41:12] *** Quits: Oddskar (~Oddskar@gw.conveneer.ideon.se) (Quit: Oddskar)
+[09:41:54] *** Joins: Oddskar (~Oddskar@gw.conveneer.ideon.se)
+[09:44:19] *** Joins: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com)
+[09:46:39] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[09:48:41] *** Joins: robmonie (~robmonie@ppp118-209-19-125.lns20.mel4.internode.on.net)
+[09:50:51] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 245 seconds)
+[09:51:43] *** Joins: bengillies (~bengillie@195.138.194.116)
+[09:53:29] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[09:58:04] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 264 seconds)
+[10:03:34] *** Joins: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net)
+[10:05:35] *** Quits: huafu (~huafu@cpe-70-95-105-36.hawaii.res.rr.com) (Remote host closed the connection)
+[10:06:02] *** Joins: huafu (~huafu@zeus.mistergoodtrip.com)
+[10:08:19] *** Quits: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net) (Ping timeout: 264 seconds)
+[10:17:06] *** Joins: Christophe_be (~Adium@d51530F99.static.telenet.be)
+[10:19:04] *** Joins: sly7_7 (~sylvain.m@cha25-3-88-174-48-109.fbx.proxad.net)
+[10:20:31] *** Joins: GitHub95 (~GitHub95@192.30.252.52)
+[10:20:31] <GitHub95> [website] fcavelti opened issue #851: Model Lifecycle is broken  http://git.io/e890zg
+[10:20:31] *** Parts: GitHub95 (~GitHub95@192.30.252.52) ()
+[10:26:19] *** Joins: GitHub170 (~GitHub170@192.30.252.51)
+[10:26:19] <GitHub170> [ember.js] asaf opened pull request #3373: Documentation for Components auto registration functions. (master...master)  http://git.io/JJQZSg
+[10:26:19] *** Parts: GitHub170 (~GitHub170@192.30.252.51) ()
+[10:29:29] *** Quits: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com) (Quit: Computer has gone to sleep.)
+[10:31:50] *** Joins: huafu_ (~huafu@cpe-70-95-105-36.hawaii.res.rr.com)
+[10:34:20] *** Quits: kaspertidemann (~kaspertid@c-98-207-250-230.hsd1.ca.comcast.net) (Ping timeout: 240 seconds)
+[10:35:42] *** Quits: huafu (~huafu@zeus.mistergoodtrip.com) (Ping timeout: 276 seconds)
+[10:37:13] *** Joins: kaspertidemann (~kaspertid@c-98-207-250-230.hsd1.ca.comcast.net)
+[10:43:47] *** Joins: microfed (~microfed@188.123.231.15)
+[10:48:12] *** Joins: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com)
+[10:48:31] *** Quits: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com) (Client Quit)
+[10:54:23] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[10:58:46] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 245 seconds)
+[11:01:28] *** Quits: petejkim (~petejkim@61.80.11.30) (Quit: petejkim)
+[11:09:28] *** Quits: robmonie (~robmonie@ppp118-209-19-125.lns20.mel4.internode.on.net) (Remote host closed the connection)
+[11:11:03] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[11:16:19] *** Joins: GitHub114 (~GitHub114@192.30.252.50)
+[11:16:19] <GitHub114> [data] wycats closed pull request #1264: Inflector rule addition dsl (master...inflector-rule-addition-dsl)  http://git.io/OTju2Q
+[11:16:19] *** Parts: GitHub114 (~GitHub114@192.30.252.50) ()
+[11:16:21] *** Joins: GitHub97 (~GitHub97@192.30.252.55)
+[11:16:21] <GitHub97> [data] wycats pushed 3 new commits to master: http://git.io/6ZDCkg
+[11:16:21] <GitHub97> data/master 4df69d1 Stefan Penner: add inflector rule addition DSL...
+[11:16:21] <GitHub97> data/master 7878e26 Stefan Penner: inflector docs
+[11:16:21] <GitHub97> data/master bbaef35 Yehuda Katz: Merge pull request #1264 from stefanpenner/inflector-rule-addition-dsl...
+[11:16:21] *** Parts: GitHub97 (~GitHub97@192.30.252.55) ()
+[11:17:20] *** Joins: GitHub26 (~GitHub26@192.30.252.48)
+[11:17:21] <GitHub26> [website] steverob opened pull request #852: Added heads up about computed properties to  'marking a model as complet... (master...patch-1)  http://git.io/J679Qg
+[11:17:21] *** Parts: GitHub26 (~GitHub26@192.30.252.48) ()
+[11:19:07] *** Quits: sly7_7 (~sylvain.m@cha25-3-88-174-48-109.fbx.proxad.net) (Ping timeout: 260 seconds)
+[11:19:54] *** Quits: KidkArolis (~textual@212.74.97.241) (Quit: KidkArolis)
+[11:20:14] *** Joins: mixonic (~anonymous@ool-ae2c37d6.dyn.optonline.net)
+[11:27:17] *** Joins: pangratz (~Adium@93.83.214.54)
+[11:27:22] *** Quits: jschi (~textual@76.77.154.9) (Quit: Computer has gone to sleep.)
+[11:27:23] *** Quits: pangratz (~Adium@93.83.214.54) (Client Quit)
+[11:29:53] *** Quits: kaspertidemann (~kaspertid@c-98-207-250-230.hsd1.ca.comcast.net) (Quit: Free soup for everybody!)
+[11:34:56] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[11:37:44] *** Joins: cascalheira (~cascalhei@195.54.168.46)
+[11:38:35] *** Joins: rlivsey (~rlivsey@37.157.36.114)
+[11:39:50] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 268 seconds)
+[11:40:48] *** Quits: bengillies (~bengillie@195.138.194.116) (Quit: bengillies)
+[11:42:50] *** Joins: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com)
+[11:44:27] <locks> iamstef: poke, is the ember-rails README up to date?
+[11:45:11] <locks> iamstef: could you also explain https://github.com/emberjs/ember-rails/issues/98?
+[11:47:47] *** Joins: GitHub102 (~GitHub102@192.30.252.52)
+[11:47:47] <GitHub102> [ember.js] MrHus opened pull request #3374: A way to let users define custom made bound {{if}} statements (master...master)  http://git.io/4iSSmg
+[11:47:47] *** Parts: GitHub102 (~GitHub102@192.30.252.52) ()
+[11:48:10] *** Joins: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net)
+[11:54:10] *** Joins: kurko__ (~textual@177.4.12.143)
+[11:55:14] *** Quits: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net) (Remote host closed the connection)
+[11:56:01] *** Joins: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net)
+[11:56:31] *** Quits: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net) (Remote host closed the connection)
+[11:58:17] *** Joins: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr)
+[12:01:27] *** Quits: gunn (~gunn@121-74-58-100.telstraclear.net) (Ping timeout: 264 seconds)
+[12:04:38] *** Joins: gunn (~gunn@121-74-58-100.telstraclear.net)
+[12:04:47] *** Quits: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) (Quit: Computer has gone to sleep.)
+[12:06:42] <alexspeller> locks: ember-rails is a runtime gem
+[12:06:50] <alexspeller> locks: it pulls in AMS which is not assets only
+[12:08:55] *** Joins: KidkArolis (~textual@212.74.97.241)
+[12:09:18] *** Joins: bengillies (~bengillie@195.138.194.116)
+[12:14:44] *** lholmquist_ is now known as lholmquist
+[12:15:46] *** Joins: GitHub43 (~GitHub43@192.30.252.50)
+[12:15:46] <GitHub43> [ember.js] graup opened pull request #3375: Fixed a typo in link-to documentation (master...typo)  http://git.io/04Ytww
+[12:15:46] *** Parts: GitHub43 (~GitHub43@192.30.252.50) ()
+[12:16:21] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Quit: Leaving.)
+[12:20:23] *** Quits: losco (~losco@209.130.141.79) (Quit: Leaving...)
+[12:22:29] <locks> alexspeller: oh, poo.
+[12:23:45] *** Quits: jessicard (~textual@host86-140-63-97.range86-140.btcentralplus.com) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[12:24:01] <alexspeller> locks: why?
+[12:24:30] <locks> I'm not using AMS, and I had it in assets which broke my app :P
+[12:26:16] <mixonic> yeah, smells pretty weird to me
+[12:26:17] <alexspeller> You can probably work out a way to have it in assets, by doing if ENV['RAILS_GROUPS'].include?("assets") config.ember.variant = :production
+[12:26:17] <alexspeller> or something like that
+[12:26:27] <mixonic> AMS being included
+[12:26:28] <alexspeller> but I'd just put it in the default group and be done with it, I don't think it will add a big overhead to your application
+[12:29:06] <locks> mixonic: makes sense, actually
+[12:29:25] <locks> mixonic: AMS and ember-data are supposed to work together out of the box
+[12:29:43] <mixonic> meh
+[12:29:56] <mixonic> I do not really love AMS
+[12:30:14] <mixonic> And do not thing using ember-rails should require you to use it for a presenter layer
+[12:30:17] <mixonic> *think
+[12:30:42] <mixonic> This is part of the point of HTTP and REST- you have a layer of abstraction
+[12:30:51] <locks> you have to serialize your models somehow
+[12:31:09] <mixonic> forcing new ember people to use a specific presenter (and one really not that great imo) is a Bad Thing
+[12:31:13] <locks> I'm not quite sure what are your qualms about AMS
+[12:31:33] <mixonic> really, even if AMS was great I would still not love coupling the two together
+[12:31:46] <mixonic> client-side tools should not dictate what you use on the server
+[12:31:53] <mixonic> that is a smell.
+[12:32:03] <locks> no one is dictating anything
+[12:33:16] <mixonic> if they want to use ember-rails, you are dictating that they use AMS "ember-rails is a runtime gem, it pulls in AMS which is not assets only"
+[12:33:17] <mixonic> ?
+[12:33:30] *** Joins: losco (~losco@209.130.141.79)
+[12:33:36] <locks> 1. no one is telling you to use AMS, even if it is included
+[12:34:00] <locks> 2. you don't have to use ember-rails. it's a package they made to ease the development of ember apps using rails on the back end. that's it
+[12:34:29] <locks> I'm seriously struggling to find a problem here
+[12:34:39] *** Joins: isale-eko (~chatzilla@cpc4-benw11-2-0-cust664.16-2.cable.virginmedia.com)
+[12:34:54] *** Quits: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[12:35:41] <mixonic> yeah, maybe I have simply mis-understood the comment. I'll look at ember-rails's repo. I've used it plenty of times, and never had it pull in AMS.
+[12:36:04] <mixonic> yeah, so it does https://github.com/emberjs/ember-rails/blob/master/ember-rails.gemspec#L16
+[12:36:34] <mixonic> so, if I use a custom presenter or Grape or ROAR or anything else
+[12:37:04] <mixonic> I cannot use ember-rail without a) mucking up the controller rendering pipeline with it's logic and b) loading AMS into memory to do nothing at all
+[12:37:25] <locks> don't use ember-rails then
+[12:37:45] <locks> that's like using Rails and saying you're forced to use ActiveRecord
+[12:38:02] *** Joins: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com)
+[12:38:26] <locks> your argument that AMS doesn't belong in the gem might be valid, depending on the goal of the gem
+[12:38:26] <mixonic> look: ember-rails (used to be/implies that is is) only about adding a client-side javascript framework to your build pipeline.
+[12:38:35] <locks> is it?
+[12:39:21] <locks> only a maintainer can weight in on that
+[12:39:23] <mixonic> it used to be, I know that from experience. And the read me says nothing about having a server-side presentation layer included.
+[12:39:32] <locks> clearly someone included it
+[12:39:45] *** Joins: petejkim (~petejkim@61.80.11.30)
+[12:39:46] <locks> it was tomhuda
+[12:39:50] <mixonic> yeah
+[12:39:57] <mixonic> so I can disagree with this- yes?
+[12:39:58] <alexspeller> https://github.com/emberjs/ember-rails/commit/3f5bfecc4e1a8dd40d2e899418a2885da37585e7
+[12:40:18] <locks> alexspeller: was reading this
+[12:40:18] <mixonic> a year ago!
+[12:40:25] <mixonic> well much longer than I thought, that's for sure
+[12:40:46] <locks> see, it's not loaded
+[12:41:42] *** Joins: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr)
+[12:41:43] <mixonic> yeah, so then even weirder
+[12:42:03] <locks> now it's weirder that you have a choice :P
+[12:42:10] *** Quits: dinualex08 (~alexdin@222.127.174.45) (Quit: This computer has gone to sleep)
+[12:42:24] <mixonic> I do not have a choice to use ember-rails without ams, unless I fork the repo
+[12:42:34] <mixonic> which I guess can be done
+[12:42:36] <locks> don't fucking use ember-rails
+[12:42:37] <alexspeller> mixonic: you don't have to
+[12:42:44] <locks> how is this hard to get?
+[12:42:54] <alexspeller> mixonic: you can just put an if statement in development.rb
+[12:42:57] <alexspeller> *production.rb
+[12:43:04] <alexspeller> and put the gem in the assets group
+[12:43:14] <alexspeller> FWIW I agree with you that it shouldn't be pulled in by default
+[12:43:16] *** Joins: jonasi (~jonasi@24.227.168.226)
+[12:43:19] <rwjblue> Good day, all
+[12:43:22] <alexspeller> But the workaroudn is trivial
+[12:43:40] <mixonic> whoa, ok, this is getting out of hand here. I have obviously not had the discussion I was trying to have.
+[12:43:41] <locks> rwjblue: howdy
+[12:43:42] *** Quits: KidkArolis (~textual@212.74.97.241) (Quit: KidkArolis)
+[12:44:01] *** Joins: turngate (~turngate@207.35.173.122)
+[12:44:22] <locks> mixonic: you're saying ember-rails just includes ember in the assets
+[12:44:23] <locks> it doesn't
+[12:44:48] <rwjblue> locks: I believe that it does include it (maybe that's not all it does though)
+[12:45:07] <locks> rwjblue: that's the issue
+[12:45:30] <rwjblue> Sorry, jumping in the middle isn't good :)
+[12:45:53] <locks> rwjblue: mixonic says that ember-rails shouldn't include AMS because it shouldn't
+[12:46:27] <locks> I'm arguing that the gem doesn't seem to be intended for what he thought it was intended for
+[12:47:00] <locks> it's also not 'forcing' you to use anything
+[12:47:17] *** Joins: KidkArolis (~textual@212.74.97.241)
+[12:47:41] <mixonic> locks: You really don't need to try and summarize my viewpoint. Obviously we were not communicating.
+[12:47:58] <mixonic> It's all in logs somewhere if anyone cares :-p which nobody does anyway.
+[12:47:58] <alexspeller> I think it's a reasonable proposition that "There should be a gem that's just the asset pipeline, and doesn't pull in unnecessary dependencies"
+[12:47:58] <alexspeller> Currently ember-rails is not it
+[12:48:06] <locks> whatever
+[12:48:07] <alexspeller> But I do think it's bad that AMS is a dependency, because that's technically a lie - it's not a dependency. The code will run fine without it. It's a suggested library
+[12:48:31] *** Joins: bmac (~bmac@75-150-66-249-NewEngland.hfc.comcastbusiness.net)
+[12:48:36] <rwjblue> Hrm. Well, I'm noone here, but I think in theory that AMS shouldn't be included by default in ember-rails (just easy to add and use).
+[12:49:00] <alexspeller> And locks, chill out, no-one is attacking you
+[12:49:13] <rwjblue> mixonic: No IRC logs just yet
+[12:49:22] <rwjblue> (on my todo list)
+[12:49:36] <alexspeller> rwjblue: I'm working on a project to make it unecessary
+[12:49:53] <alexspeller> I'm writing an IRC server with a built in web client
+[12:50:01] <rwjblue> alexspeller: AWESOME!
+[12:50:22] <rwjblue> I've had thoughts of an Ember IRC client for a while...
+[12:50:22] <alexspeller> built in logs, basically "IRC but with the things people like about campfire, but better"
+[12:50:22] <alexspeller> ETA a few weeks
+[12:50:54] <rwjblue> alexspeller: Sweet. I've got a bot that I helped write for our local RUG that I was gonna repurpose
+[12:50:54] <alexspeller> It will be free for public chat rooms, charge for private company chat stuff.
+[12:51:02] <alexspeller> In ember, obviously ;)
+[12:51:09] <rwjblue> :D
+[12:51:56] <rwjblue> alexspeller: That is awesome
+[12:51:56] <alexspeller> And it's embeddable, so it'll be possible to put an IRC room on a website in an iframe easily
+[12:51:59] <alexspeller> Anyways, I will keep you posted
+[12:52:24] <rwjblue> alexspeller: Please do, I am a bit jaded by not getting into the IRCCloud beta...
+[12:52:41] <rwjblue> Phonegap iOS client?
+[12:53:47] <rwjblue> Cordova (re-names suck)
+[12:53:48] <alexspeller> It's close but I really don't want to open alpha until I'm confident it's stable
+[12:53:48] <alexspeller> Eventually
+[12:54:05] <alexspeller> I am but one man - although there are plenty of nice IRC clients for iPhone already, so not a huge issue
+[12:54:06] <rwjblue> Sounds exciting
+[12:54:29] <rwjblue> Yes, but none with history (that I can find)
+[12:54:50] <rwjblue> Like you said: I want campfire for IRC...
+[12:55:46] *** Joins: GitHub108 (~GitHub108@192.30.252.53)
+[12:55:47] <GitHub108> [data] wycats closed issue #651: Side-loading large quantities of associated records raises 414 (Request-URI Too Large)   http://git.io/q29pLA
+[12:55:47] *** Parts: GitHub108 (~GitHub108@192.30.252.53) ()
+[12:55:57] <rwjblue> OK, then *when* I get to my IRC bot, I'll ignore logging and just add some niceties (pretty GH info, links, etc)
+[12:55:57] <alexspeller> rwjblue: history is built in to the IRC server. You get the last 100 messages replayed when you connect with any client (configurable per-user)
+[12:56:17] <rwjblue> Shows what I know about the protocol
+[12:56:18] <locks> https://github.com/emberjs/ember-rails/pull/256/files rwjblue alexspeller mixonic
+[12:57:32] <locks> feel free to submit a PR removing AMS from the gemspec
+[12:58:00] <alexspeller> rwjblue: that's only in my server, not a standard feature
+[12:58:30] <rwjblue> alexspeller: OK, gotcha! Great, now I gotta wait :)
+[12:58:36] *** Joins: GitHub4 (~GitHub4@192.30.252.53)
+[12:58:36] <GitHub4> [data] wycats closed issue #241: Limit to number of ids on GET  http://git.io/x_U__A
+[12:58:36] *** Parts: GitHub4 (~GitHub4@192.30.252.53) ()
+[12:58:45] <rwjblue> Sounds like a fun project though
+[12:59:01] <rwjblue> locks: That PR looks good to me (just commented)
+[12:59:08] *** Quits: petejkim (~petejkim@61.80.11.30) (Quit: petejkim)
+[12:59:42] <rwjblue> But I don't think including AMS in the gemspec adds anything that wouldn't be added if the actual app included it
+[13:00:16] <alexspeller> rwjblue: I've been using celluloid, it's really awesome for async ruby
+[13:00:20] *** Joins: tboyt (~textual@ool-457e9abe.dyn.optonline.net)
+[13:00:23] <locks> alexspeller: I was just about to make that post
+[13:00:40] <alexspeller> rwjblue: correct, I think that's myself and mixonic's argument
+[13:01:14] *** Quits: Oddskar (~Oddskar@gw.conveneer.ideon.se) (Ping timeout: 268 seconds)
+[13:01:15] *** Joins: Oddskar_ (~Oddskar@gw.conveneer.ideon.se)
+[13:02:20] <alexspeller> locks: :)
+[13:02:36] <rwjblue> alexspeller: I've played around with celluloid a little, but not enough.
+[13:02:48] <rwjblue> alexspeller: Ping me if you want help :)
+[13:02:57] *** Joins: tehviking (~tehviking@12.237.107.68)
+[13:03:21] <rwjblue> alexspeller: Also, congrats on landing the query params PR
+[13:03:44] <alexspeller> Thanks, I'm super happy about that. My first major contribution to Ember core
+[13:04:15] * locks hifives alexspeller
+[13:04:27] <alexspeller> :) Hifive!
+[13:04:29] <rwjblue> I saw some twitter chatter about switching around the param order, do you think that'll happen?
+[13:05:02] <alexspeller> rwjblue: I hope so - if wycats gives the go ahead I'll implement that today
+[13:05:24] *** Joins: twokul (~twokul@64.119.141.126)
+[13:05:31] <locks> ember's mascot should be Flash, at the speed it moves
+[13:05:44] <locks> maybe Tomster is speedy gonzalez cousin
+[13:05:46] <rwjblue> that sounds like a good plan.  Shouldn't be breaking though right? Since you can just check the count of args...
+[13:06:07] <rwjblue> locks: You ever tried to catch a hamster that got loose in the house?
+[13:06:16] <twokul> flash? oh no oh no
+[13:06:21] <rwjblue> Kinda like chasing a chicken
+[13:06:41] <locks> rwjblue: the hamster I had was a bit of a fat ass
+[13:06:48] <rwjblue> LOL
+[13:06:49] <locks> so it wasn't that hard
+[13:07:16] <rwjblue> I guess, the cats and dogs chasing it around gave mine a good incentive to be quick.
+[13:07:46] <rwjblue> Who here knows the skinny on SauceLabs?
+[13:07:47] <wycats> alexspeller: I think the strategy we discussed on Twitter will work
+[13:07:54] <rwjblue> Awesome
+[13:07:56] <alexspeller> wycats: awesome, I will implement
+[13:08:05] <locks> ¡hola!
+[13:08:17] <alexspeller> Will be later, need to do real work for my day job first :(
+[13:08:27] <rwjblue> Work :(
+[13:08:37] <wycats> alexspeller: thoughts on just merging into params?
+[13:08:42] <locks> alexspeller: so what you're saying is that tilde should hire you O:)
+[13:08:49] <wycats> A la rails
+[13:08:49] *** Quits: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com) (Quit: Leaving.)
+[13:09:47] <wycats> Why doesn't merging work for beforeModel?
+[13:09:54] <wycats> I must be missing some nuance
+[13:11:57] <alexspeller> wycats: beforeModel / afterModel don't get params :) https://github.com/tildeio/router.js/blob/master/lib/router.js#L978
+[13:12:13] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[13:12:15] <alexspeller> I think it still makes sense for them to get queryParams though
+[13:12:31] <wycats> Why do they need queryParams but not params?
+[13:12:34] <wycats> Seems odd
+[13:15:01] <alexspeller> The way I've looked at it conceptually is that "params serialize/deserialize to model loading info" wheras "queryParams serialize / deserialize to metadata"
+[13:15:05] <alexspeller> For example, in beforeModel you might want to have an ?authToken=foo bara
+[13:15:13] <alexspeller> *param
+[13:15:13] <alexspeller> And redirect to /auth if it's not there without even touching the model
+[13:15:51] *** Quits: isale-eko (~chatzilla@cpc4-benw11-2-0-cust664.16-2.cable.virginmedia.com) (Quit: ChatZilla 0.9.90.1 [Firefox 23.0.1/20130814063812])
+[13:17:17] <alexspeller> In afterModel you may want to redirect based on queryParams and model. E.g. if post.get('private') && !queryParams.authToken (obviously that shouldn't be your security model but you get the ida)
+[13:17:37] <alexspeller> In setupController, you'd apply controller state, e.g. controller.set('sortProperties', [queryParams.sort])
+[13:18:39] *** Quits: tboyt (~textual@ool-457e9abe.dyn.optonline.net) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[13:18:39] <alexspeller> Although, in some cases, it would affect the model, e.g. store.find('post', {page: queryParams.page})
+[13:19:01] <wycats> I think it makes sense conceptually
+[13:19:24] <wycats> http://railsisrael2013.events.co.il/presentations/849-off-the-menu-building-a-client-side-with-ember-and-rails
+[13:19:41] <wycats> alexspeller: go ahead with the varargs approach and I'll give it some thought
+[13:19:41] <alexspeller> What is still left to do is to flag somehow that queryParams don't affect the model
+[13:19:54] <wycats> It's behind a flag so we have time to tune it
+[13:20:04] <wycats> The next branch to beta isn't for a while
+[13:20:11] *** Joins: catdog123 (~catdog123@c1fw224.constantcontact.com)
+[13:20:42] <wycats> We should get people using it on canary to get some feedback
+[13:20:43] <alexspeller> Currently, if you only use it to set sort order, the model hook will be called and your data will be reloaded. I wanted to get this merged because it was getting quite big, but that shouldn't be hard to add
+[13:20:54] <alexspeller> exactly, really wanted to get the basics out there
+[13:20:59] <alexspeller> feedback will be useful
+[13:21:13] *** Quits: jonasi (~jonasi@24.227.168.226) (Quit: jonasi)
+[13:21:23] <wycats> We should focus on making sure the feature is "Go" at the next branch
+[13:21:33] <wycats> 6 weeks should be enough time :p
+[13:21:43] <alexspeller> hopefully!
+[13:21:56] <wycats> Yep
+[13:22:01] <locks> "6 wks should be enough, so I'm giving you 4 days" O:)
+[13:22:05] <wycats> Are you using it in an app?
+[13:22:34] *** Joins: GitHub0 (~GitHub0@192.30.252.50)
+[13:22:34] <GitHub0> [ember.js] asaf opened issue #3376: Programmatically Components creation / Extending from Components  http://git.io/NstjjQ
+[13:22:34] *** Parts: GitHub0 (~GitHub0@192.30.252.50) ()
+[13:23:17] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[13:24:05] <locks> wycats: could you weigh in on the discussion? https://github.com/emberjs/ember-rails/pull/256
+[13:24:13] <alexspeller> Not yet - we have an important demo tomorrow so I didn't want to strip out the old solution (my ember-query extension) at the last minute. Now it's in master we'll be upgrading ember tomorrow and giving it some real exercise
+[13:24:13] <alexspeller> I have a version of TomsterMail (the homepage demo) that uses it that I used for development
+[13:24:38] <alexspeller> But as of next week, it should be going through some pretty intense QA from our QA team, so that should help catch any issues
+[13:27:14] *** Joins: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com)
+[13:28:22] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 268 seconds)
+[13:30:19] *** Joins: dcherman (~dcherman@ool-4356093e.dyn.optonline.net)
+[13:31:27] *** Joins: petejkim (~petejkim@61.80.11.30)
+[13:37:40] <rwjblue> fivetanley: Ping
+[13:37:57] *** Quits: dcherman (~dcherman@ool-4356093e.dyn.optonline.net) (Ping timeout: 245 seconds)
+[13:41:27] *** Quits: kurko__ (~textual@177.4.12.143) (Ping timeout: 240 seconds)
+[13:42:47] *** Joins: jsteiner (~Adium@66.228.83.116)
+[13:42:57] *** Joins: dcherman (~dcherman@164.55.254.106)
+[13:43:43] *** Joins: kurko__ (~textual@177.4.12.235)
+[13:45:26] *** Joins: sjkane (~steven@38.106.196.126)
+[13:54:18] *** Joins: trek (~textual@74.201.7.111)
+[13:56:51] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Quit: Leaving.)
+[13:58:56] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[14:01:26] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[14:03:33] *** Quits: KidkArolis (~textual@212.74.97.241) (Quit: KidkArolis)
+[14:05:52] *** Quits: huafu_ (~huafu@cpe-70-95-105-36.hawaii.res.rr.com) (Remote host closed the connection)
+[14:08:20] *** Joins: KidkArolis (~textual@212.74.97.241)
+[14:09:53] *** Quits: rlivsey (~rlivsey@37.157.36.114) (Quit: Computer has gone to sleep.)
+[14:12:56] *** Quits: catdog123 (~catdog123@c1fw224.constantcontact.com) (Remote host closed the connection)
+[14:14:59] <hjdivad_> ssured: ping
+[14:15:15] <ssured> hjdivad: pong
+[14:15:27] <hjdivad_> ssured: you pinged me earlier?
+[14:15:30] <hjdivad_> what's up?
+[14:15:40] <ssured> yeah this morning
+[14:16:04] <ssured> https://github.com/emberjs/ember.js/pull/3367
+[14:16:20] <ssured> is my current state of mind on the array cps
+[14:16:27] <rwjblue> ssured: Thanks for writting that up
+[14:16:36] <ssured> yesterday night was a little too late...
+[14:17:58] <hjdivad_> ssured: have you tried depending on model.@each.filter ?
+[14:18:06] <hjdivad_> oh sorry wat
+[14:18:11] <hjdivad_> i meant model.@each.tag
+[14:18:18] <hjdivad_> but this does not solve the problem of filter being dynamic
+[14:18:31] <hjdivad_> so there is totally support for watching item properties in array computed
+[14:18:37] <hjdivad_> using @each.<itemPropertyName>
+[14:18:52] *** Joins: rlivsey (~rlivsey@37.157.36.114)
+[14:18:54] <ssured> indeed
+[14:19:11] <ssured> http://jsbin.com/AsefOzO/6/edit is the only solution I can think of in the current system
+[14:19:12] <hjdivad_> this is a bit of an aside though; it does not handle the filter value indirection
+[14:19:49] *** Joins: raila (~dad@p54AFD7FD.dip0.t-ipconnect.de)
+[14:20:23] *** Joins: catdog123 (~catdog123@c1fw224.constantcontact.com)
+[14:21:16] <hjdivad_> this is totally analogous to the sorting case
+[14:21:17] <tchak> hjdivad_ the last arguments should be passed to `property`, so the whole CP be rebuild on object property change, right ?
+[14:21:30] <mixonic> hjdivad_ ssured thanks for all the work on array CPs. I watched a bunch of tickets this AM to try and stay up to date
+[14:22:39] <ssured> hjdivad_: what do you mean by analogous to the sorting case?
+[14:22:50] <hjdivad_> tchak: confirm, i think that would work
+[14:22:58] *** Joins: teddyZ (~teddy@193.227.167.83)
+[14:22:59] <hjdivad_> ah
+[14:23:00] <hjdivad_> no
+[14:23:08] <hjdivad_> it will treat `filter` as a dependent array
+[14:23:17] <tchak> I would expect any macro to just pass to arrayComputed last arguments
+[14:23:21] <hjdivad_> there is no way of distinguishing dependent non-array from dependent array
+[14:23:33] <tchak> hmm
+[14:23:33] <hjdivad_> yes the problem is that arrayComputed assumes all dependent keys are arrays
+[14:23:40] <hjdivad_> but tchak you bring up a great point
+[14:23:47] <hjdivad_> right now array computed just cries with an Ember.assert or something
+[14:23:48] <tchak> I missed something :)
+[14:23:55] <hjdivad_> however it could simply invalidate on a non-array dependent key
+[14:24:15] <tchak> oh
+[14:24:23] *** Quits: joachimhs (~joahaage@80.91.33.151) (Ping timeout: 260 seconds)
+[14:24:24] <hjdivad_> ssured: Em.computed.sort handles dynamic sort properties, exactly as you want with Em.computed.filter
+[14:24:27] <hjdivad_> but does not do the static case
+[14:24:48] <ssured> the issue is some array cps take one array as an argument (like map/filter) and some take more (intersect, diff)
+[14:24:53] <hjdivad_> sortedThings: Em.computed.sort('someThings', 'sortProperties'), sortProperties: ['name', 'age']
+[14:25:38] *** Quits: turngate (~turngate@207.35.173.122) (Quit: turngate)
+[14:25:40] <ssured> hjdivad_: but sort sorts, and filter filters? I think I'm missing something...
+[14:25:57] <tchak> hjdivad_I have another question, how I handle ascending descending order in sort ?
+[14:26:12] <tchak> SortableMixin implements it
+[14:26:20] <hjdivad_> tchak: wat
+[14:26:21] <hjdivad_> deny?
+[14:26:27] <hjdivad_> SortableMixin has only a single flag no?
+[14:26:34] <tchak> yes
+[14:26:36] <hjdivad_> did someone add proper sort ordering?
+[14:26:40] <tchak> that invers the order of sorting
+[14:26:51] *** Quits: Oddskar_ (~Oddskar@gw.conveneer.ideon.se) (Quit: Oddskar_)
+[14:26:52] <hjdivad_> tchak: Em.computed.sort has per-property ordering
+[14:26:59] <tchak> ah ?
+[14:27:02] <hjdivad_> sortProperties: ['name:asc', 'whatever:desc']
+[14:27:02] <tchak> I missed something
+[14:27:06] <tchak> oh ok
+[14:27:09] <hjdivad_> if you omit :<direction> default is asc
+[14:27:14] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[14:27:16] <hjdivad_> this probably needs docs
+[14:27:25] <tchak> nice
+[14:27:34] *** Joins: Oddskar (~Oddskar@gw.conveneer.ideon.se)
+[14:27:53] <hjdivad_> ssured: I meant only that when filtering against a set of values and when sorting by some set of properties, you have the same choice: do you treat the values as static or dynamic
+[14:28:02] <mixonic> hjdivad_ I'm still concerned about https://github.com/emberjs/ember.js/issues/3332. ssured mentioned that it may be intentional that array CPs are not sync? Is that the current thinking? Feels pretty un-intuitive at first blush.
+[14:28:03] <hjdivad_> filter treats them as static and sort treats them as dynamic
+[14:28:23] * mixonic patiently waits his turn as hjdivad_ is flooded with chats
+[14:30:33] <ssured> hjdivad_: when I put my Ember hat on I think there is no choice. All values should be treated dynamic, unless impossible (regular object) or explicitly specified as static. Being dynamic with no surprises is what Ember makes Ember imho
+[14:30:41] <hjdivad_> mixonic: it is only the last case that is async yes?
+[14:30:46] <hjdivad_> this is because invalidation is async
+[14:31:14] <hjdivad_> invalidation is only done in the standard macros min and max
+[14:31:34] <hjdivad_> what i'm saying can't be right
+[14:31:38] <hjdivad_> this doesn't explain your fiddle
+[14:32:26] <hjdivad_> okay
+[14:32:29] <hjdivad_> what i'm saying is almost right
+[14:32:32] <hjdivad_> invalidations async
+[14:32:37] <hjdivad_> but ALSO item property changes async
+[14:32:43] <hjdivad_> because they are coalesced
+[14:32:45] <hjdivad_> this is totally intentional
+[14:32:58] <tchak> hjdivad_I think I have some wired bugs because of it
+[14:32:59] <tchak> https://github.com/emberjs/ember.js/blob/master/packages/ember-runtime/lib/system/subarray.js#L136
+[14:33:00] <tchak> here
+[14:33:09] <hjdivad_> so if you set lord bryan's first child's age several times
+[14:33:25] <tchak> some times _findOperation is called by removeItem when the item was already removed
+[14:33:28] <hjdivad_> you will only update once
+[14:33:32] <tchak> si gos not found path
+[14:33:55] <hjdivad_> tchak: do you get this on master?  there was a bug related to this that was fixed recently
+[14:34:12] <ssured> I just checked against canary, still happens
+[14:35:02] <tchak> hmm, I think it happened on master a few times
+[14:35:10] <mixonic> hjdivad_: cool, I understand why async would be good. My concern is that this is *very* different from any other kinds of properties, and how we could help people not shoot themselves in the foot with it.
+[14:35:13] <tchak> I managed to work around it
+[14:35:17] <ssured> hjdivad_: I think your PR is not yet merged
+[14:35:25] <hjdivad_> tchak: https://github.com/emberjs/ember.js/pull/3361
+[14:35:33] <hjdivad_> can you check if this PR fixes?
+[14:35:36] <hjdivad_> and if so comment on the PR?
+[14:35:43] <tchak> cool
+[14:35:49] <hjdivad_> It's hard to know for sure what you are runninng into without a fiddle
+[14:35:58] * rwjblue wishes we could have PR builds
+[14:36:03] <hjdivad_> oh my god what a good idea
+[14:36:05] <mixonic> I'd expect the invalid property to force re-computation if I get() within the same frame
+[14:36:10] <hjdivad_> imagine if someone was working on that
+[14:36:15] *** Quits: ianstarz_ (uid13130@gateway/web/irccloud.com/x-dnwmdxwlzlhfuelc) (Ping timeout: 264 seconds)
+[14:36:19] <hjdivad_> i feel like there's an rwjblue somewhere who had this exact same brilliant idea
+[14:36:20] <hjdivad_> ^_^
+[14:36:24] <rwjblue> LOL
+[14:36:41] <rwjblue> I believe that we got approval for the basic idea this morning
+[14:36:53] <hjdivad_> yes I saw a wild wycats :+1: appear
+[14:37:22] <rwjblue> hjdivad_: I need to understand the SauceLabs stuff a bit more to make sure it can easily be fit into the same system
+[14:37:23] <ssured> http://builds.emberjs.com/canary/ember.js?pr=3361 doesn't work yet ? ;)
+[14:37:30] *** Quits: microfed (~microfed@188.123.231.15) (Ping timeout: 245 seconds)
+[14:37:38] <rwjblue> I know fivetanley wanted to have a quick pow-wow about it too
+[14:37:58] <rwjblue> ssured: Nope, not yet.
+[14:38:07] <ssured> would be awesome
+[14:38:09] <rwjblue> ssured: Details here: https://github.com/emberjs/ember-dev/issues/31
+[14:38:13] <rwjblue> IT WILL HAPPEN
+[14:38:57] <ssured> amazing stuff guys!
+[14:40:17] <hjdivad_> mixonic: this is a good point.  I think we can relatively easily force sync for both cases, but we will want to think about it to make sure it's not a performance footgun for common cases
+[14:41:36] *** Quits: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr) (Quit: Textual IRC Client: www.textualapp.com)
+[14:41:40] <rwjblue> So how do we actually run Sauce for EmberJS and get a pass/fail response?
+[14:41:50] <rwjblue> I'm finding their site to be somewhat cryptic
+[14:42:34] <rwjblue> I don't know why they don't have any examples of JS projects using QUnit on Ruby :)
+[14:42:40] <rwjblue> Seems so normal
+[14:43:46] <hjdivad_> rwjblue: i don't know how to do this in ruby sadly
+[14:43:52] <hjdivad_> in jsland there's a grunt plugin
+[14:44:12] <hjdivad_> rwjblue: https://github.com/tildeio/oasis.js/blob/master/configurations/saucelabs-qunit.js
+[14:44:21] <hjdivad_> rwjblue: https://github.com/tildeio/oasis.js/blob/master/package.json
+[14:44:32] <hjdivad_> worst case you can look at grunt-saucelabs-connect
+[14:44:37] <hjdivad_> which is just a wrapper around the jar
+[14:44:49] <hjdivad_> but yes it is crazy there is not a copy-paste-modify on saucelabs for this
+[14:47:47] <rwjblue> So basically you run a java command and it tunnels back to your site?
+[14:47:54] <rwjblue> Or am I just completely missing the point
+[14:47:56] <hjdivad_> yes exactly
+[14:48:14] <hjdivad_> you start your server locally, run sauce-connect, then use the tunnel to control a remote browser once the vm has started
+[14:48:27] <ssured> hjdivad_: Sorry, but I have to leave in like 15 minutes, it s eod here. About the array CP properties you said: I meant only that when filtering against a set of values and when sorting by some set of properties, you have the same choice: do you treat the values as static or dynamic
+[14:48:39] <rwjblue> OK, so how do you get a final pass/fail at the end?
+[14:48:40] <ssured> I think there is no choice. All values should be treated dynamic, unless impossible (regular object) or explicitly specified as static. Being dynamic with no surprises is what Ember makes Ember IMHO
+[14:49:03] <hjdivad_> ssured: i think we should have different macros to support both
+[14:49:10] <hjdivad_> a cost of the dynamic approach is you need another level of indirection
+[14:49:19] <hjdivad_> because you need a property just to tell you what properties to sort/filter
+[14:49:29] <hjdivad_> but i totally agree dynamic would have been a better fallback than static
+[14:49:44] <hjdivad_> ssured: let's totally build an array computed macro for dynamic filter
+[14:49:52] *** Joins: microfed (~microfed@188.123.231.15)
+[14:50:06] <ssured> so then it boils down to documenting the current limitations of the array cps
+[14:50:09] <hjdivad_> rwjblue: i actually don't know.  I use a grunt plugin that does this for me
+[14:50:18] <rwjblue> Time to go digging
+[14:50:28] *** Joins: turngate (~turngate@207.35.173.122)
+[14:50:33] <ssured> and showing alternatives like the second jsbin, and implementing some more advanced array cps
+[14:50:48] <hjdivad_> ssured: of the macros... you can totally do this with `Ember.reduceComputed` and `Ember.arrayComputed`
+[14:50:56] <hjdivad_> we just don't have macros for the dynamic filter case
+[14:51:05] <hjdivad_> but almost all of the hard work is in the primitive
+[14:51:08] <rwjblue> I'm thinking a redis queue (sidekiq from ruby-land) with X-workers at a time.
+[14:51:29] <ssured> I know that its possible with reduceComputed and arrayComputed, but I think that thats too hard for most people
+[14:53:07] <hjdivad_> rwjblue: it looks like the way to do this is to inject js
+[14:53:11] *** Quits: raila (~dad@p54AFD7FD.dip0.t-ipconnect.de) (Quit: Leaving.)
+[14:53:31] <rwjblue> Into the server output?
+[14:54:11] <hjdivad_> rwjblue: in whatever controls the browser
+[14:54:18] <hjdivad_> so no, not the server
+[14:54:20] <rwjblue> OK, gotcha.
+[14:54:23] <hjdivad_> but a thing you can do with selenium is to inject js
+[14:54:26] <rwjblue> Sorry I'm new to this game
+[14:54:57] <rwjblue> Alright, I'm gonna go dig through the grunt-saucelabs-connect source to see how they do it.
+[14:55:04] <rwjblue> Is there a #sauce-labs ?
+[14:55:16] <hjdivad_> rwjblue: unknown
+[14:55:31] <hjdivad_> rwjblue: https://github.com/axemclion/grunt-saucelabs/blob/master/tasks/saucelabs.js#L334-L407
+[14:55:37] <hjdivad_> may tell you some things
+[14:55:38] <hjdivad_> not sure
+[14:55:52] <hjdivad_> but this module is what's used for this exact thing in oasis
+[14:55:53] <rwjblue> hjdivad_: OK, thanks for the help.  Will ping you back when I am more informed and have a basic idea of the roadmap...
+[14:55:59] <rwjblue> Awesome, thank you again
+[14:56:03] *** Joins: GitHub161 (~GitHub161@192.30.252.52)
+[14:56:03] <GitHub161> [ember.js] TLINDEN opened issue #3377: bare </script> tags lead to render failure if embedded in standalone html  http://git.io/KhJ67Q
+[14:56:03] *** Parts: GitHub161 (~GitHub161@192.30.252.52) ()
+[14:56:13] <hjdivad_> rwjblue: there must be a ruby/rails example of this somewhere
+[14:56:33] <hjdivad_> we used to have this exact setup on a jenkins box
+[14:56:35] <rwjblue> hjdivad_: Yeah, they have ruby examples, but I do not beleive they use QUnit
+[15:06:23] *** Quits: andrei1089 (~andrei@86.122.11.220) (Ping timeout: 260 seconds)
+[15:08:05] <locks> iamstef: https://github.com/emberjs/ember-rails/pull/152/files this was merged, but it disappeared
+[15:08:11] <locks> iamstef: and the README is ambiguous again
+[15:08:31] <locks> not ambiguous, just straight wrong
+[15:08:39] *** Joins: ericf (~ericf@c-76-119-141-119.hsd1.ma.comcast.net)
+[15:09:02] <ssured> hjdivad_: I'm off home, thanks and I'll try to document the current behavior in the coming days.
+[15:09:23] <hjdivad_> ssured: awesome.  and we should totally pair on building a dynamic filter ^_^
+[15:10:01] <ssured> hjdivad_: sounds cool
+[15:10:19] *** Quits: ssured (~sjoerd@launchcafe.osso.nl) (Quit: ssured)
+[15:11:32] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[15:16:17] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 268 seconds)
+[15:17:08] *** Quits: catdog123 (~catdog123@c1fw224.constantcontact.com) (Remote host closed the connection)
+[15:17:33] *** Joins: duggiefresh (~duggiefre@c1fw224.constantcontact.com)
+[15:22:51] *** Joins: jergason (~jergason@c-71-199-42-48.hsd1.ut.comcast.net)
+[15:25:24] *** Quits: duggiefresh (~duggiefre@c1fw224.constantcontact.com) (Remote host closed the connection)
+[15:25:41] *** Joins: duggiefresh (~duggiefre@c1fw224.constantcontact.com)
+[15:28:05] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[15:30:43] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Quit: mjijackson)
+[15:31:40] *** Quits: Oddskar (~Oddskar@gw.conveneer.ideon.se) (Ping timeout: 245 seconds)
+[15:34:22] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[15:34:28] *** Quits: Christophe_be (~Adium@d51530F99.static.telenet.be) (Quit: Leaving.)
+[15:34:43] *** Joins: tboyt (~textual@ool-457e9abe.dyn.optonline.net)
+[15:35:07] <rwjblue> hjdivad_: Thanks for pointing me to the grunt-saucelabs stuff. I *think* that we can use that. All we need ruby for is the build step itself. This project could be a node project (which would mean I could just use grunt-saucelabs).
+[15:35:17] <rwjblue> 1) Does that make sense?
+[15:35:51] <hjdivad_> rwjblue: yes this seems totally 100% reasonable
+[15:36:05] <rwjblue> Or at least the runners would be node
+[15:36:06] <hjdivad_> the only downside is that it increases the number of tools used in ember-dev
+[15:36:17] <rwjblue> hjdivad_: I think this is another project
+[15:36:18] <hjdivad_> so maybe makes contributing a little more difficult
+[15:36:29] <hjdivad_> rwjblue: ah okay right
+[15:36:30] <rwjblue> ember-dev would learn how to 'build insecure'
+[15:36:31] <hjdivad_> in that case
+[15:36:33] <rwjblue> or something
+[15:36:38] <hjdivad_> in that case use grunt
+[15:36:43] <hjdivad_> and steal the config from oasis
+[15:36:46] <rwjblue> Yep
+[15:36:49] <hjdivad_> will be way easier
+[15:37:02] <hjdivad_> this will get us to a first draft
+[15:37:07] <hjdivad_> we will want to change it to cycle keys
+[15:37:17] <hjdivad_> because right now oasis builds suck if too many go off at once
+[15:37:23] <hjdivad_> this only works okay because the activity is low enough
+[15:37:27] <hjdivad_> for ember this will make us very sad
+[15:37:32] <rwjblue> hjdivad_: I am thinking redis backed queue
+[15:37:37] <hjdivad_> that's fine
+[15:37:45] <rwjblue> Then only pop X at a time
+[15:37:49] <hjdivad_> yes exactly
+[15:39:25] <rwjblue> So the github hook just adds an item to the redis queue to build the artifacts (insecure.emberjs.com bucket perhaps?)
+[15:39:51] <hjdivad_> yeah
+[15:39:52] <rwjblue> Then we have another process popping items X at a time
+[15:40:02] <hjdivad_> and that process needs to know what sauce keys are in use
+[15:40:09] <hjdivad_> and to wait if it can't find an available key to use
+[15:40:28] <hjdivad_> the thing is, the subaccount keys are totally unrelated to the workers
+[15:40:29] <rwjblue> hjdivad_: I think we could also use redis for that
+[15:40:36] <hjdivad_> so i don't know if sauce even cares if we just have like 100 keys and let them do the queueing
+[15:40:45] <rwjblue> Wait why are the subaccounts unrelated?
+[15:40:54] <hjdivad_> subaccounts have different keys
+[15:40:59] <hjdivad_> but they share a pool of workers
+[15:41:07] <rwjblue> Right so 1 worker == 1 subaccount right?
+[15:41:07] <hjdivad_> so jobs will still be queued on the sauce end
+[15:41:11] <hjdivad_> deny
+[15:41:14] <rwjblue> GRRRRR
+[15:41:19] <hjdivad_> they are totally separate things
+[15:41:32] <hjdivad_> because you can use subaccounts to, for instance, invite people to use your sauce account
+[15:41:33] * rwjblue grumbles
+[15:41:37] <hjdivad_> but you don't get more workers by doing this
+[15:41:40] <rwjblue> Ok I see
+[15:41:44] <hjdivad_> you just get a new key someone else can use
+[15:41:48] <wycats> What have I missed?
+[15:41:49] <rwjblue> So do we even need subaccounts for this?
+[15:42:00] <hjdivad_> yes
+[15:42:03] <hjdivad_> because of a different issue
+[15:42:15] <hjdivad_> you cannot have two tunnels (eg for two different builds) using the same key at the same time
+[15:42:16] <rwjblue> wycats: Just chatting about the SauceLabs stuff
+[15:42:29] <hjdivad_> i don't know why you can't, but i suspect it's something like you wind up with two builds controlling the same browser
+[15:42:47] <rwjblue> so we do need 1 subaccount per worker (for the tunneling)
+[15:43:11] <rwjblue> But that doesn't == the number of concurrent runs?
+[15:43:54] *** Quits: jergason (~jergason@c-71-199-42-48.hsd1.ut.comcast.net) (Quit: jergason)
+[15:44:15] <rwjblue> I'm going to totally ghetto hack something together today/tomorrow and maybe we could chat (not IRC) to make sure I'm on the right track
+[15:44:27] <rwjblue> Also, I'm not sure how to test drive this process
+[15:45:02] <hjdivad_> rwjblue: it's a little more complicated.  Keep in mind each build will run the suite multiple times
+[15:45:12] <hjdivad_> you need a subaccount (ie a key) per concurrent build
+[15:45:14] <hjdivad_> but NOT per worker
+[15:45:23] <hjdivad_> using one key you can have multiple workers for the same build
+[15:45:30] <hjdivad_> what you cannot do is have multiple builds use the same key
+[15:45:42] <hjdivad_> I don't believe this is a fundamental problem: ie i think sauce could fix this restriction
+[15:45:43] <rwjblue> hjdivad_: OK and that is because of the tunnels?
+[15:45:48] <hjdivad_> it is a totally nonobvious restriction
+[15:45:49] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Remote host closed the connection)
+[15:45:52] <rwjblue> Ahh, OK
+[15:45:59] <hjdivad_> it might even be a problem specifically with sauce-connect
+[15:46:11] <rwjblue> So 1 worker runs tests on say 5 browsers concurrently
+[15:46:19] <rwjblue> ?
+[15:46:22] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[15:46:22] <hjdivad_> no
+[15:46:33] <rwjblue> :( Sorry for my density
+[15:46:33] <hjdivad_> 1 worker runs 1 test on 1 browser
+[15:46:54] <hjdivad_> if you have 2 builds, then need 2 different keys for 2 different (sub) accounts.  They will each use the same pool of workers
+[15:47:24] <rwjblue> I think we are mixing the term worker here
+[15:47:32] <hjdivad_> by worker i mean sauce vm
+[15:47:43] <hjdivad_> which is distinct from a sauce account/subaccount
+[15:47:43] <rwjblue> When I say worker I mean a process that we run on our side to kick off a suace run
+[15:47:52] <hjdivad_> oh ah
+[15:47:53] <rwjblue> I'm talking about 'queue workers' from the PR queue
+[15:47:54] <hjdivad_> aaaaah
+[15:47:58] <hjdivad_> yes okay
+[15:48:01] <hjdivad_> we are both using worker differently
+[15:48:07] <hjdivad_> how a miscommunication is made?
+[15:48:23] <hjdivad_> okay, yes we want 1 rwjblue.worker per subaccount
+[15:48:27] <rwjblue> OK, so lemme try to see if I get it
+[15:49:00] <rwjblue> So 1 of OUR workers per subaccount (which will correlate to many sauce workers (one for each browser))
+[15:49:12] *** Joins: veader (~veader@c-24-98-97-140.hsd1.ga.comcast.net)
+[15:49:15] <hjdivad_> yes
+[15:49:18] <hjdivad_> exactly so
+[15:49:26] *** Joins: javascri_ (~javascrip@97.75.169.254)
+[15:49:37] <rwjblue> And each of our worker jobs need a separate subaccount because they will each need a separate port for saucelabs connect
+[15:49:48] <hjdivad_> yes
+[15:50:02] <hjdivad_> which must not use the same key
+[15:50:08] <hjdivad_> for reasons that are totally unclear to me
+[15:50:25] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Read error: Connection reset by peer)
+[15:50:33] <rwjblue> right so from my perspective each of our queue workers will == a saucelabs subaccount
+[15:50:40] <hjdivad_> yes
+[15:50:42] <hjdivad_> confirm
+[15:51:33] <rwjblue> OK so if we get 3 'keys' (aka subaccounts) from sauce each of those can run X concurrent browser tests on that particular build, right?
+[15:51:53] *** Joins: GitHub176 (~GitHub176@192.30.252.53)
+[15:51:53] <GitHub176> [website] ugisozols opened pull request #853: Fix typo. (master...fix_typo)  http://git.io/1LiAaQ
+[15:51:53] *** Parts: GitHub176 (~GitHub176@192.30.252.53) ()
+[15:52:00] <hjdivad_> yeah with the caveat that they all share a pool of workers
+[15:52:18] <hjdivad_> so if we have 3 subaccounts and we want to run against 5 browser configs and we have 6 workers, we only get 6 parallel builds
+[15:52:20] <hjdivad_> the rest will be queued
+[15:52:39] <hjdivad_> so we could run one build's configs entirely in parallel
+[15:52:40] <rwjblue> But queued on their side or we have to do it?
+[15:52:42] <hjdivad_> their side
+[15:52:47] <hjdivad_> so from our POV not a problem
+[15:52:54] <hjdivad_> it will only affect how long the test runs take
+[15:52:55] <rwjblue> OK, that makes it easier for us
+[15:53:08] <hjdivad_> because initially there will be a wait of unknown time while the job is queued on the saucelabs side
+[15:53:19] <rwjblue> What is the default number of sauce workers for an OSS project?
+[15:55:29] <rwjblue> So from our workers perspective it will: 1) start sauce-connect on a new port for a specific subaccount; 2) start a webserver component to serve teh assets; 3) Run the grunt task; 4) wait for completion
+[15:55:37] <rwjblue> 1 and 2 may need to be swapped
+[15:56:25] <ericberry> rwjblue: I LOVE the builds section
+[15:56:28] <ericberry> killer job!
+[15:56:31] <ericberry> you and twokul
+[15:56:43] <rwjblue> ericberry: Thanks!
+[15:56:54] <hjdivad_> rwjblue: 3 workers
+[15:56:58] <hjdivad_> but check with wycats
+[15:57:02] <hjdivad_> i think sauce was going to give ember > 3
+[15:57:08] <rwjblue> OK, gotcha
+[15:57:08] <hjdivad_> but for our open sauce account we have 3 workers
+[15:57:34] <rwjblue> And we can have unlimted subaccounts (not that it helps us)
+[15:58:05] <rwjblue> hjdivad_: Did my worker steps make sense?
+[15:58:37] <hjdivad_> rwjblue: yes
+[15:58:45] *** Joins: GitHub53 (~GitHub53@192.30.252.50)
+[15:58:45] <GitHub53> [website] rjackson closed pull request #853: Fix typo. (master...fix_typo)  http://git.io/1LiAaQ
+[15:58:45] *** Parts: GitHub53 (~GitHub53@192.30.252.50) ()
+[15:58:45] *** Joins: GitHub62 (~GitHub62@192.30.252.54)
+[15:58:45] <GitHub62> [website] rjackson pushed 2 new commits to master: http://git.io/ajictg
+[15:58:45] <GitHub62> website/master 6d41792 Uģis Ozols: Fix typo.
+[15:58:45] <GitHub62> website/master 49f676c Robert Jackson: Merge pull request #853 from ugisozols/fix_typo...
+[15:58:45] *** Parts: GitHub62 (~GitHub62@192.30.252.54) ()
+[15:59:07] <rwjblue> OK, I'll hack something together over the coming day or two (hopefully)
+[15:59:57] *** Joins: peterwagenet (~peterwagn@38.122.7.254)
+[15:59:57] *** ChanServ sets mode: +o peterwagenet
+[16:00:25] <wycats> Dunno but they bumped us
+[16:03:35] *** Joins: jergason (~jergason@65.181.53.2)
+[16:06:01] *** Quits: jsteiner (~Adium@66.228.83.116) (Quit: Leaving.)
+[16:06:11] <peterwagenet> good morning
+[16:06:14] <peterwagenet> wow, lots to catch up on
+[16:06:22] <rwjblue> peterwagenet: Exciting times
+[16:11:12] *** Joins: GitHub14 (~GitHub14@192.30.252.51)
+[16:11:12] <GitHub14> [ember.js] stefanpenner pushed 2 new commits to master: http://git.io/3eOu6Q
+[16:11:12] <GitHub14> ember.js/master c6cbd7c graup: Fixed a typo in link-to documentation
+[16:11:12] <GitHub14> ember.js/master ebdba82 Stefan Penner: Merge pull request #3375 from graup/typo...
+[16:11:12] *** Parts: GitHub14 (~GitHub14@192.30.252.51) ()
+[16:11:12] *** Joins: GitHub158 (~GitHub158@192.30.252.54)
+[16:11:12] <GitHub158> [ember.js] stefanpenner closed pull request #3375: Fixed a typo in link-to documentation (master...typo)  http://git.io/04Ytww
+[16:11:12] *** Parts: GitHub158 (~GitHub158@192.30.252.54) ()
+[16:11:36] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[16:14:29] *** Joins: GitHub15 (~GitHub15@192.30.252.50)
+[16:14:29] <GitHub15> [data] wycats pushed 3 new commits to master: http://git.io/weiAWw
+[16:14:29] <GitHub15> data/master 2260325 Adam Sunderland: adding unloadAll method for store...
+[16:14:29] <GitHub15> data/master 0c514b6 Adam Sunderland: unload data in store directly
+[16:14:29] <GitHub15> data/master 54915f4 Yehuda Katz: Merge pull request #1265 from iterion/unload-all...
+[16:14:29] *** Parts: GitHub15 (~GitHub15@192.30.252.50) ()
+[16:14:32] *** Joins: GitHub183 (~GitHub183@192.30.252.53)
+[16:14:33] <GitHub183> [data] wycats closed pull request #1265: Adding unloadAll method for store (master...unload-all)  http://git.io/m8D0dw
+[16:14:33] *** Parts: GitHub183 (~GitHub183@192.30.252.53) ()
+[16:15:54] *** Quits: rlivsey (~rlivsey@37.157.36.114) (Quit: Computer has gone to sleep.)
+[16:16:10] *** Joins: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net)
+[16:16:28] *** Joins: cloke (~cloke@66.159.97.90)
+[16:21:53] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Quit: Leaving.)
+[16:26:54] *** Joins: jsteiner (~Adium@66.228.83.116)
+[16:27:57] *** Joins: devinus (~devinus@65.107.181.222.ptr.us.xo.net)
+[16:28:52] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[16:31:07] *** Quits: mixonic (~anonymous@ool-ae2c37d6.dyn.optonline.net) (Quit: mixonic)
+[16:32:08] *** Joins: rakl (~rakl@sonic.mochaleaf.com)
+[16:33:14] *** Joins: GitHub23 (~GitHub23@192.30.252.54)
+[16:33:14] <GitHub23> [data] abobwhite opened issue #1266: Model find returns 404 and is cached on future attempts  http://git.io/ARKJCQ
+[16:33:14] *** Parts: GitHub23 (~GitHub23@192.30.252.54) ()
+[16:33:26] *** Quits: turngate (~turngate@207.35.173.122) (Quit: turngate)
+[16:33:31] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 264 seconds)
+[16:33:46] *** Joins: ianstarz_ (uid13130@gateway/web/irccloud.com/x-oyjhsvhqjyvtzbyt)
+[16:34:43] <Cyril-sf_> good morning. I want to retrieve the string that represents a class without the namespace ( App.Post -> "Post" ). Beside removing the part/namespace before the ".", is there a better/more emberish solution?
+[16:47:50] *** Joins: turngate (~turngate@207.35.173.122)
+[16:50:09] *** Joins: jschi (~textual@76.77.154.9)
+[16:52:08] <rakl> Is the store available in a component?
+[16:55:56] *** Joins: elucid_ (~justin@24-52-243-236.cable.teksavvy.com)
+[16:57:33] *** Quits: twokul (~twokul@64.119.141.126) (Remote host closed the connection)
+[16:57:59] *** Quits: losco (~losco@209.130.141.79) (Quit: Leaving...)
+[16:58:32] *** Quits: duggiefresh (~duggiefre@c1fw224.constantcontact.com) (Remote host closed the connection)
+[16:58:51] *** Joins: twokul (~twokul@64.119.141.126)
+[16:58:54] *** Quits: trek (~textual@74.201.7.111) (Ping timeout: 264 seconds)
+[17:01:36] *** Joins: GitHub112 (~GitHub112@192.30.252.54)
+[17:01:36] <GitHub112> [ember.js] GavinJoyce opened pull request #3378: Corrected mistake in Em.computed.equal docs (master...master)  http://git.io/wx8JgQ
+[17:01:36] *** Parts: GitHub112 (~GitHub112@192.30.252.54) ()
+[17:04:16] <twokul> Cyril-sf_: not that I can think of :/
+[17:06:08] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[17:08:50] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[17:11:53] *** Quits: turngate (~turngate@207.35.173.122) (Quit: turngate)
+[17:12:18] *** Joins: jlsuttles (~jlsuttles@cpe-75-83-194-178.socal.res.rr.com)
+[17:13:37] *** Joins: duggiefresh (~duggiefre@c1fw224.constantcontact.com)
+[17:15:14] *** Quits: tboyt (~textual@ool-457e9abe.dyn.optonline.net) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[17:16:06] *** Joins: Christophe_be (~Adium@94.139.47.92)
+[17:18:36] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[17:19:12] *** Quits: jergason (~jergason@65.181.53.2) (Quit: jergason)
+[17:19:45] *** Joins: tboyt (~textual@ool-457e9abe.dyn.optonline.net)
+[17:20:41] <locks> out of nowhere I'm getting a "DS is not defined" in production :C
+[17:22:43] <Cyril-sf_> twokul: thanks
+[17:22:50] *** Joins: GitHub124 (~GitHub124@192.30.252.50)
+[17:22:51] <GitHub124> [data] Cyril-sf opened pull request #1267: The type of a polymorphic belongsTo is serialized properly. (master...fix_polymorphic_belongs_to_serialization)  http://git.io/ltB4Lg
+[17:22:51] *** Parts: GitHub124 (~GitHub124@192.30.252.50) ()
+[17:23:24] *** Joins: jergason (~jergason@65.181.53.2)
+[17:24:02] *** Joins: turngate (~turngate@207.35.173.122)
+[17:30:25] *** Joins: rafshar (~rafshar@72.34.113.210)
+[17:32:06] *** Quits: vanstee (~vanstee@c-98-192-35-156.hsd1.ga.comcast.net) (Quit: Computer has gone to sleep.)
+[17:36:14] *** Joins: vanstee (~vanstee@c-98-192-35-156.hsd1.ga.comcast.net)
+[17:40:27] <shwoodard> hey y'all.  I put together a js bin that I think demonstrates some inconsistencies with the way TextField views are bound, http://jsbin.com/EQodebE/3/edit
+[17:40:39] <shwoodard> does anyone have a second to take a look and give me some feedback?
+[17:42:20] *** Quits: rwjblue (~rjackson@li578-211.members.linode.com) (Quit: leaving)
+[17:44:37] *** Joins: jrolfs (~jrolfs@184.23.135.60)
+[17:45:50] *** Joins: GitHub90 (~GitHub90@192.30.252.49)
+[17:45:50] <GitHub90> [ember.js] stefanpenner closed pull request #3378: Corrected mistake in Em.computed.equal docs (master...master)  http://git.io/wx8JgQ
+[17:45:50] *** Parts: GitHub90 (~GitHub90@192.30.252.49) ()
+[17:45:50] *** Joins: GitHub64 (~GitHub64@192.30.252.48)
+[17:45:50] <GitHub64> [ember.js] stefanpenner pushed 2 new commits to master: http://git.io/S32sXQ
+[17:45:50] <GitHub64> ember.js/master 7fe8594 Gavin Joyce: corrected mistake in Em.computed.equal docs
+[17:45:50] <GitHub64> ember.js/master 305502a Stefan Penner: Merge pull request #3378 from GavinJoyce/master...
+[17:45:50] *** Parts: GitHub64 (~GitHub64@192.30.252.48) ()
+[17:45:50] *** Quits: Christophe_be (~Adium@94.139.47.92) (Read error: Connection reset by peer)
+[17:45:52] *** Joins: Christophe_be1 (~Adium@94.139.47.92)
+[17:46:38] *** Joins: rwjblue (uid13999@gateway/web/irccloud.com/x-azukshdgkblctyri)
+[17:47:59] *** Quits: javascri_ (~javascrip@97.75.169.254) (Remote host closed the connection)
+[17:48:18] *** Quits: bengillies (~bengillie@195.138.194.116) (Ping timeout: 256 seconds)
+[17:48:35] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[17:48:52] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Read error: Connection reset by peer)
+[17:49:03] *** Quits: KidkArolis (~textual@212.74.97.241) (Quit: KidkArolis)
+[17:49:19] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[17:51:21] *** Joins: KidkArolis (~textual@212.74.97.241)
+[17:52:07] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[17:54:20] *** Joins: coffeeofficer (~coffeeoff@rrcs-50-75-172-223.nys.biz.rr.com)
+[17:55:26] *** Joins: coffeeof_ (~coffeeoff@rrcs-50-75-172-223.nys.biz.rr.com)
+[17:55:26] *** Quits: coffeeofficer (~coffeeoff@rrcs-50-75-172-223.nys.biz.rr.com) (Read error: Connection reset by peer)
+[17:56:09] *** Quits: KidkArolis (~textual@212.74.97.241) (Client Quit)
+[17:59:17] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[18:01:53] *** Quits: elucid_ (~justin@24-52-243-236.cable.teksavvy.com) (Quit: elucid_)
+[18:03:52] *** Quits: teddyZ (~teddy@193.227.167.83) (Quit: Leaving)
+[18:04:17] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[18:08:13] *** Quits: dcherman (~dcherman@164.55.254.106) (Ping timeout: 240 seconds)
+[18:14:08] *** Joins: GitHub188 (~GitHub188@192.30.252.55)
+[18:14:08] <GitHub188> [ember.js] bmac opened pull request #3379: Replace crossLink with a markdown link. (master...fix-cross-link)  http://git.io/g7g3xA
+[18:14:08] *** Parts: GitHub188 (~GitHub188@192.30.252.55) ()
+[18:14:33] *** Quits: twokul (~twokul@64.119.141.126) (Remote host closed the connection)
+[18:18:36] *** Joins: GitHub22 (~GitHub22@192.30.252.52)
+[18:18:37] <GitHub22> [ember.js] bmac opened pull request #3380: Add docs on setting query params to the link-to helper and route.transit... (master...document-query-params)  http://git.io/KZ-F2g
+[18:18:37] *** Parts: GitHub22 (~GitHub22@192.30.252.52) ()
+[18:20:21] *** Joins: ryanrt1 (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net)
+[18:21:05] *** Joins: huafu (~huafu@cpe-70-95-105-36.hawaii.res.rr.com)
+[18:22:16] *** Joins: dcherman (~dcherman@164.55.254.106)
+[18:23:42] *** Joins: NivenHuH (~NivenWuss@sonic.mochaleaf.com)
+[18:24:33] *** Quits: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com) (Quit: jonasi)
+[18:25:53] *** Joins: Christophe_be (~Adium@94.139.47.249)
+[18:26:35] *** Quits: Christophe_be1 (~Adium@94.139.47.92) (Ping timeout: 260 seconds)
+[18:28:51] *** Quits: Christophe_be (~Adium@94.139.47.249) (Client Quit)
+[18:31:21] *** Joins: KidkArolis (~textual@90.212.193.130)
+[18:32:10] *** Joins: Christophe_be (~Adium@94.139.47.249)
+[18:32:10] *** Quits: Christophe_be (~Adium@94.139.47.249) (Client Quit)
+[18:34:06] *** Joins: Christophe_be (~Adium@94.139.47.249)
+[18:36:05] *** Joins: alexd08 (~alexdin@222.127.174.45)
+[18:37:13] *** Quits: Christophe_be (~Adium@94.139.47.249) (Client Quit)
+[18:42:06] *** Quits: alexd08 (~alexdin@222.127.174.45) (Ping timeout: 245 seconds)
+[18:47:57] *** Joins: Christophe_be (~Adium@94.139.47.249)
+[18:48:19] *** Joins: GitHub161 (~GitHub161@192.30.252.55)
+[18:48:19] <GitHub161> [ember.js] wagenet deleted remove-ember-states at 324d415: http://git.io/e1ONTg
+[18:48:19] *** Parts: GitHub161 (~GitHub161@192.30.252.55) ()
+[18:48:24] *** Joins: GitHub135 (~GitHub135@192.30.252.53)
+[18:48:24] <GitHub135> [ember.js] wagenet deleted failing-yieldAction at 018e207: http://git.io/_pM8FQ
+[18:48:24] *** Parts: GitHub135 (~GitHub135@192.30.252.53) ()
+[18:48:28] *** Joins: GitHub179 (~GitHub179@192.30.252.54)
+[18:48:28] <GitHub179> [ember.js] wagenet deleted b8515672a02b43a9b5800f840e9a209aef5d6297 at 4e75d2b: http://git.io/8siMmQ
+[18:48:28] *** Parts: GitHub179 (~GitHub179@192.30.252.54) ()
+[18:48:29] *** Joins: GitHub18 (~GitHub18@192.30.252.51)
+[18:48:29] <GitHub18> [ember.js] wagenet deleted container-view-array at 32503f9: http://git.io/NEySKw
+[18:48:29] *** Parts: GitHub18 (~GitHub18@192.30.252.51) ()
+[18:48:29] *** Joins: GitHub97 (~GitHub97@192.30.252.54)
+[18:48:29] <GitHub97> [ember.js] wagenet deleted control at f1ac818: http://git.io/ssFZiQ
+[18:48:29] *** Parts: GitHub97 (~GitHub97@192.30.252.54) ()
+[18:48:33] *** Joins: GitHub54 (~GitHub54@192.30.252.53)
+[18:48:33] <GitHub54> [ember.js] wagenet deleted new-router at bdcb513: http://git.io/HQmzAw
+[18:48:33] *** Parts: GitHub54 (~GitHub54@192.30.252.53) ()
+[18:48:34] *** Joins: GitHub132 (~GitHub132@192.30.252.54)
+[18:48:34] <GitHub132> [ember.js] wagenet deleted optimize-chains at 7758d8e: http://git.io/hyKgLw
+[18:48:34] *** Parts: GitHub132 (~GitHub132@192.30.252.54) ()
+[18:48:39] *** Joins: GitHub3 (~GitHub3@192.30.252.52)
+[18:48:39] <GitHub3> [ember.js] wagenet deleted cp-super at cae0447: http://git.io/fEI5Xw
+[18:48:39] *** Parts: GitHub3 (~GitHub3@192.30.252.52) ()
+[18:48:39] *** Joins: GitHub161 (~GitHub161@192.30.252.49)
+[18:48:39] <GitHub161> [ember.js] wagenet deleted simplify-properties at 8b646a4: http://git.io/gCYnWQ
+[18:48:39] *** Parts: GitHub161 (~GitHub161@192.30.252.49) ()
+[18:48:43] *** Joins: GitHub40 (~GitHub40@192.30.252.50)
+[18:48:43] <GitHub40> [ember.js] wagenet deleted 1-0-beta at 6041912: http://git.io/gq1YWQ
+[18:48:43] *** Parts: GitHub40 (~GitHub40@192.30.252.50) ()
+[18:49:03] *** Quits: jsteiner (~Adium@66.228.83.116) (Quit: Leaving.)
+[18:49:09] *** Joins: GitHub186 (~GitHub186@192.30.252.51)
+[18:49:09] <GitHub186> [ember.js] wagenet deleted 0-9-stable at ff827c1: http://git.io/ICfUBg
+[18:49:09] *** Parts: GitHub186 (~GitHub186@192.30.252.51) ()
+[18:49:14] *** Joins: GitHub134 (~GitHub134@192.30.252.54)
+[18:49:14] <GitHub134> [ember.js] wagenet deleted router-v2 at 8d6d771: http://git.io/EHsc3A
+[18:49:14] *** Parts: GitHub134 (~GitHub134@192.30.252.54) ()
+[18:49:19] *** Joins: jsteiner (~Adium@66.228.83.116)
+[18:49:19] *** Quits: Christophe_be (~Adium@94.139.47.249) (Client Quit)
+[18:49:23] *** Joins: GitHub170 (~GitHub170@192.30.252.50)
+[18:49:23] <GitHub170> [ember.js] wagenet deleted observer-arguments at 365440d: http://git.io/fdhB-g
+[18:49:23] *** Parts: GitHub170 (~GitHub170@192.30.252.50) ()
+[18:49:26] *** Joins: GitHub66 (~GitHub66@192.30.252.51)
+[18:49:27] <GitHub66> [ember.js] wagenet deleted rerender-template-changes at 5c99a54: http://git.io/jbBOoQ
+[18:49:27] *** Parts: GitHub66 (~GitHub66@192.30.252.51) ()
+[18:51:38] *** Joins: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com)
+[18:52:33] <peterwagenet> branch cleanup :)
+[18:53:15] <rwjblue> Love it!
+[18:53:40] <rwjblue> All those branches make it difficult to pick beta from the drop down..
+[18:55:48] <peterwagenet> still more to go
+[18:57:25] <peterwagenet> rwjblue: what's your status?
+[18:57:31] *** Quits: KidkArolis (~textual@90.212.193.130) (Ping timeout: 264 seconds)
+[18:57:54] <rwjblue> available
+[18:58:17] *** Joins: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com)
+[18:58:49] *** Quits: devinus (~devinus@65.107.181.222.ptr.us.xo.net) (Quit: devintorr.es)
+[18:58:52] *** Joins: KidkArolis (~textual@90.212.193.130)
+[18:59:55] *** Joins: GitHub15 (~GitHub15@192.30.252.50)
+[18:59:55] <GitHub15> [ember.js] wagenet closed pull request #1770: Optional 'once' parameter in add(Before)Observer. (master...once-observers)  http://git.io/xMPsmQ
+[18:59:55] *** Parts: GitHub15 (~GitHub15@192.30.252.50) ()
+[19:01:29] <rwjblue> peterwagenet: Status regarding?
+[19:02:16] <rwjblue> In general I have a list. I am working on a full integration test for the new multi-branch stuff (nearly done, but getting weird Travis failures).
+[19:03:20] <rwjblue> I am also working on the basic parts of ember-dev/31 which will give us SauceLabs for PR's if I do it right...
+[19:03:35] *** Joins: GitHub110 (~GitHub110@192.30.252.51)
+[19:03:35] <GitHub110> [ember.js] wagenet closed pull request #2214: Pass through any extra .trigger params in the event dispatcher (master...master)  http://git.io/iHmwVQ
+[19:03:35] *** Parts: GitHub110 (~GitHub110@192.30.252.51) ()
+[19:03:43] *** Joins: mjijackson_ (~michael@astound-69-42-2-25.ca.astound.net)
+[19:04:10] <peterwagenet> rwjblue: nice :)
+[19:05:04] <rwjblue> Here are the changes for my integration test branch: https://github.com/rjackson/ember-dev/compare/add_multi_branch_integration_test
+[19:05:20] <rwjblue> Local test runs work perfectly, but Travis doesn't
+[19:05:22] *** Joins: devinus (~devinus@65.107.181.222.ptr.us.xo.net)
+[19:05:30] <rwjblue> Build failure here: https://travis-ci.org/rjackson/ember-dev/builds/11206239
+[19:05:40] <rwjblue> Debugging Travis failures is kinda the worst...
+[19:05:50] <rwjblue> Feedback loop is super slow
+[19:07:54] *** Joins: jmadsen (~jmadsen@66.219.202.141.provo.dynamic.broadweavenetworks.net)
+[19:07:54] *** Quits: cascalheira (~cascalhei@195.54.168.46) (Quit: Leaving...)
+[19:08:09] *** Joins: GitHub137 (~GitHub137@192.30.252.49)
+[19:08:09] <GitHub137> [ember.js] wagenet closed pull request #2757: Router now observes the 'title' property on route handlers and sets document.title (master...router-title)  http://git.io/6d2NBg
+[19:08:09] *** Parts: GitHub137 (~GitHub137@192.30.252.49) ()
+[19:08:14] *** Joins: GitHub172 (~GitHub172@192.30.252.55)
+[19:08:14] <GitHub172> [ember.js] wagenet reopened pull request #2757: Router now observes the 'title' property on route handlers and sets document.title (master...router-title)  http://git.io/6d2NBg
+[19:08:14] *** Parts: GitHub172 (~GitHub172@192.30.252.55) ()
+[19:08:53] *** Quits: mjijackson_ (~michael@astound-69-42-2-25.ca.astound.net) (Quit: mjijackson_)
+[19:09:15] *** Joins: GitHub163 (~GitHub163@192.30.252.50)
+[19:09:16] <GitHub163> [website] eccegordo opened issue #854: What new section for website  http://git.io/XiSxRw
+[19:09:16] *** Parts: GitHub163 (~GitHub163@192.30.252.50) ()
+[19:10:40] *** Joins: mjijackson_ (~michael@astound-69-42-2-25.ca.astound.net)
+[19:10:43] *** Quits: peterwagenet (~peterwagn@38.122.7.254) (Quit: Leaving.)
+[19:11:20] *** Quits: rakl (~rakl@sonic.mochaleaf.com) (Quit: sleeping)
+[19:12:29] *** Quits: rafshar (~rafshar@72.34.113.210) (Quit: rafshar)
+[19:14:01] *** Quits: mjijackson_ (~michael@astound-69-42-2-25.ca.astound.net) (Client Quit)
+[19:14:51] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[19:19:02] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Ping timeout: 248 seconds)
+[19:19:19] *** Quits: jlsuttles (~jlsuttles@cpe-75-83-194-178.socal.res.rr.com) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[19:20:07] *** Joins: GitHub182 (~GitHub182@192.30.252.49)
+[19:20:08] <GitHub182> [data] nragaz opened issue #1268: Date serialization doesn't respect timestamps  http://git.io/YDHlcw
+[19:20:08] *** Parts: GitHub182 (~GitHub182@192.30.252.49) ()
+[19:30:30] *** Quits: tehviking (~tehviking@12.237.107.68) (Remote host closed the connection)
+[19:32:54] *** Joins: GitHub121 (~GitHub121@192.30.252.48)
+[19:32:54] <GitHub121> [website] appleYaks opened pull request #855: Swap true result for false on template boolean check (master...patch-1)  http://git.io/leOFcg
+[19:32:54] *** Parts: GitHub121 (~GitHub121@192.30.252.48) ()
+[19:35:35] <raytiley> alexspeller: awesome work on the querystring stuff
+[19:35:35] <raytiley> i'm going to try rolling that in right now
+[19:36:30] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[19:36:30] *** Joins: cascalheira (~cascalhei@bl16-119-218.dsl.telepac.pt)
+[19:41:52] <rwjblue> twokul: You around?
+[19:43:20] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[19:44:26] *** Joins: GitHub31 (~GitHub31@192.30.252.53)
+[19:44:26] <GitHub31> [ember.js] stefanpenner pushed 2 new commits to master: http://git.io/5Pz1Gw
+[19:44:26] <GitHub31> ember.js/master a0542eb bmac: Replace crossLink with a markdown link
+[19:44:26] <GitHub31> ember.js/master 18632ca Stefan Penner: Merge pull request #3379 from bmac/fix-cross-link...
+[19:44:26] *** Parts: GitHub31 (~GitHub31@192.30.252.53) ()
+[19:44:29] *** Joins: GitHub89 (~GitHub89@192.30.252.54)
+[19:44:29] <GitHub89> [ember.js] stefanpenner closed pull request #3379: Replace crossLink with a markdown link. (master...fix-cross-link)  http://git.io/g7g3xA
+[19:44:29] *** Parts: GitHub89 (~GitHub89@192.30.252.54) ()
+[19:45:05] <locks> query params will come really handy for an app I'm building
+[19:45:39] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Quit: Leaving.)
+[19:48:48] *** Quits: cloke (~cloke@66.159.97.90) (Ping timeout: 276 seconds)
+[19:50:35] *** Quits: devinus (~devinus@65.107.181.222.ptr.us.xo.net) (Quit: devintorr.es)
+[19:50:36] *** Joins: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net)
+[19:52:32] *** Joins: javascri_ (~javascrip@97.75.169.254)
+[19:52:51] *** Joins: rafshar (~rafshar@72.34.113.210)
+[19:52:58] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Read error: Operation timed out)
+[19:53:44] *** Quits: veader (~veader@c-24-98-97-140.hsd1.ga.comcast.net) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[19:54:19] *** Joins: cloke (~cloke@66.159.97.90)
+[19:54:43] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[19:55:49] *** Quits: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com) (Quit: Computer has gone to sleep.)
+[19:57:57] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Quit: mjijackson)
+[19:59:22] *** Joins: KendrickVT (~Adium@66.129.76.132)
+[20:02:55] *** Joins: trombom (~trombom@64.187.175.91)
+[20:07:12] *** Quits: trombom (~trombom@64.187.175.91) (Quit: trombom)
+[20:07:18] *** Joins: jergason_ (~jergason@65.181.53.2)
+[20:07:30] *** Quits: javascri_ (~javascrip@97.75.169.254) (Remote host closed the connection)
+[20:07:31] *** Joins: tehviking (~tehviking@rrcs-67-78-65-50.sw.biz.rr.com)
+[20:07:37] *** Joins: trombom (~trombom@64.187.175.91)
+[20:08:03] *** Quits: jergason (~jergason@65.181.53.2) (Ping timeout: 264 seconds)
+[20:08:04] *** jergason_ is now known as jergason
+[20:08:04] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[20:08:10] *** Joins: peterwagenet (~peterwagn@38.122.7.254)
+[20:08:10] *** ChanServ sets mode: +o peterwagenet
+[20:08:43] *** coffeeof_ is now known as coffeeofficer
+[20:08:52] *** Joins: GitHub114 (~GitHub114@192.30.252.49)
+[20:08:52] <GitHub114> [data] lauhub opened issue #1269: queryFixtures adapter always return false after several queries (1.0.0-beta.2)  http://git.io/gTq_WQ
+[20:08:52] *** Parts: GitHub114 (~GitHub114@192.30.252.49) ()
+[20:12:05] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Ping timeout: 245 seconds)
+[20:12:43] <peterwagenet> rwjblue: I see multiple things on travis
+[20:12:45] <peterwagenet> what do you expect?
+[20:13:06] <peterwagenet> rwjblue: also https://github.com/travis-ci/travis-boxes
+[20:13:49] <peterwagenet> http://about.travis-ci.org/fr/docs/dev/worker/
+[20:14:00] <rwjblue> Thanks
+[20:14:06] <rwjblue> Looking at it now.
+[20:14:10] *** Quits: KidkArolis (~textual@90.212.193.130) (Ping timeout: 245 seconds)
+[20:14:12] <peterwagenet> not sure why that's a french link
+[20:14:24] <rwjblue> I'm getting failures on my git commands, and I don't know why.
+[20:14:30] <rwjblue> Of course it all works locally
+[20:14:47] <rwjblue> I've tried on the same versions of git that travis is using also
+[20:15:02] <peterwagenet> http://pivotallabs.com/debugging-travis-builds/
+[20:15:26] <peterwagenet> you should try running a travis box locally
+[20:15:52] <rwjblue> Agree.  Thanks for the tip! Trying now.
+[20:16:14] <peterwagenet> though this says its outdated: https://groups.google.com/forum/#!msg/travis-ci/d1iANFN2_iI/Vv0XtdR4D2cJ
+[20:16:24] *** Joins: KidkArolis (~textual@90.212.193.130)
+[20:16:59] *** Quits: dgeb (~dgeb@c-24-91-111-240.hsd1.nh.comcast.net) (Remote host closed the connection)
+[20:17:18] <peterwagenet> https://bluebox.net/press-releases/travis-ci
+[20:17:18] <peterwagenet> yeah, looks like it :/
+[20:17:34] *** Quits: jmadsen (~jmadsen@66.219.202.141.provo.dynamic.broadweavenetworks.net) (Quit: --)
+[20:17:36] *** Joins: dgeb (~dgeb@208.87.215.5)
+[20:17:44] <peterwagenet> so nevermind I guess
+[20:17:46] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[20:18:47] <rwjblue> The travis-boxes repo was updated 3 months ago...
+[20:19:30] <peterwagenet> hmm, dunno
+[20:19:37] <peterwagenet> ask on #travis I guess
+[20:19:39] <rwjblue> I'm still fighting
+[20:19:41] <rwjblue> Will do.
+[20:19:58] <rwjblue> Just sucks getting sucked into bizarrro world.
+[20:20:00] <peterwagenet> drogus: ping
+[20:20:59] *** Joins: GitHub96 (~GitHub96@192.30.252.55)
+[20:21:00] <GitHub96> [ember.js] wagenet closed pull request #2966: Add failing test for observing @each.foo.bar (master...failing-test-for-nested-each)  http://git.io/ak67BA
+[20:21:00] *** Parts: GitHub96 (~GitHub96@192.30.252.55) ()
+[20:22:18] *** Quits: KendrickVT (~Adium@66.129.76.132) (Quit: Leaving.)
+[20:22:26] *** Joins: GitHub85 (~GitHub85@192.30.252.55)
+[20:22:26] <GitHub85> [ember.js] wagenet closed pull request #2982: [WIP] ArrayProxy cleanup: redundant code removal (master...arrayproxy_cleanup)  http://git.io/GnMSqw
+[20:22:26] *** Parts: GitHub85 (~GitHub85@192.30.252.55) ()
+[20:22:55] *** Joins: GitHub198 (~GitHub198@192.30.252.52)
+[20:22:55] <GitHub198> [ember.js] wagenet closed pull request #3045: add toEmberObjects to enumerable, add proxy method to Ember.Array (master...array-proxy-and-to-ember-objects)  http://git.io/gnw2Ow
+[20:22:55] *** Parts: GitHub198 (~GitHub198@192.30.252.52) ()
+[20:24:42] *** Joins: KendrickVT (~Adium@66.129.76.132)
+[20:29:12] <shwoodard> imo, we should addsomething like Ember.Object.createFromUnderscoreKeys that creates and Ember.Object and converts under_score keys to camelCase fields.  thoughts?
+[20:31:37] *** Joins: raila (~dad@p54AFD7FD.dip0.t-ipconnect.de)
+[20:33:54] *** Joins: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com)
+[20:36:59] *** Joins: Christophe_be (~Adium@94.139.47.249)
+[20:38:34] *** Quits: petejkim (~petejkim@61.80.11.30) (Quit: petejkim)
+[20:38:36] *** Quits: KendrickVT (~Adium@66.129.76.132) (Quit: Leaving.)
+[20:41:03] *** Joins: KendrickVT (~Adium@66.129.76.132)
+[20:41:12] *** Joins: petejkim (~petejkim@61.80.11.30)
+[20:41:30] <peterwagenet> rwjblue: I think we should also support [DOC
+[20:41:45] <peterwagenet> er [DOC canary/beta/release]
+[20:41:47] <peterwagenet> or something like that
+[20:42:08] <rwjblue> peterwagenet: I'm cool with that
+[20:42:45] <rwjblue> I'll add, but it won't really do anything until the auto cherry-picking stuff is pushing
+[20:43:28] <rwjblue> In other words: currently we are only running tests with the commits in multiple branches then throwing away at the end of the travis run
+[20:46:02] *** Joins: rakl (~rakl@sonic.mochaleaf.com)
+[20:46:22] *** Joins: GitHub31 (~GitHub31@192.30.252.48)
+[20:46:22] <GitHub31> [ember.js] wagenet pushed 2 new commits to master: http://git.io/daUzeg
+[20:46:22] <GitHub31> ember.js/master d799031 c0urg3tt3: Update link_to.js...
+[20:46:22] <GitHub31> ember.js/master 4bf59c2 Peter Wagenet: Merge pull request #3344 from c0urg3tt3/patch-4...
+[20:46:22] *** Parts: GitHub31 (~GitHub31@192.30.252.48) ()
+[20:46:23] *** Joins: GitHub45 (~GitHub45@192.30.252.50)
+[20:46:23] <GitHub45> [ember.js] wagenet closed pull request #3344: Update link_to.js (master...patch-4)  http://git.io/Ga6NlA
+[20:46:23] *** Parts: GitHub45 (~GitHub45@192.30.252.50) ()
+[20:46:42] *** Joins: GitHub58 (~GitHub58@192.30.252.54)
+[20:46:42] <GitHub58> [ember.js] wagenet pushed 1 new commit to beta: http://git.io/w5fbsQ
+[20:46:42] <GitHub58> ember.js/beta 2ecd35d c0urg3tt3: Update link_to.js...
+[20:46:42] *** Parts: GitHub58 (~GitHub58@192.30.252.54) ()
+[20:47:03] *** Joins: GitHub22 (~GitHub22@192.30.252.55)
+[20:47:03] <GitHub22> [ember.js] wagenet pushed 1 new commit to stable: http://git.io/NdcLrw
+[20:47:03] <GitHub22> ember.js/stable 0c2737c c0urg3tt3: Update link_to.js...
+[20:47:03] *** Parts: GitHub22 (~GitHub22@192.30.252.55) ()
+[20:50:26] *** Joins: GitHub198 (~GitHub198@192.30.252.53)
+[20:50:26] <GitHub198> [ember.js] wagenet closed pull request #3350: Removes long-deprecated getPath/setPath (master...remove-getPath-setPath-deprecations)  http://git.io/k4x-aQ
+[20:50:26] *** Parts: GitHub198 (~GitHub198@192.30.252.53) ()
+[20:50:27] *** Joins: GitHub47 (~GitHub47@192.30.252.53)
+[20:50:27] <GitHub47> [ember.js] wagenet pushed 2 new commits to master: http://git.io/EUeBUw
+[20:50:27] <GitHub47> ember.js/master e1199e1 Trek Glowacki: Removes long-deprecated getPath/setPath
+[20:50:27] <GitHub47> ember.js/master 4e531b7 Peter Wagenet: Merge pull request #3350 from trek/remove-getPath-setPath-deprecations...
+[20:50:27] *** Parts: GitHub47 (~GitHub47@192.30.252.53) ()
+[20:50:34] *** Quits: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net) (Remote host closed the connection)
+[20:53:07] *** Joins: isale-eko (~chatzilla@cpc4-benw11-2-0-cust664.16-2.cable.virginmedia.com)
+[20:53:27] *** Joins: johnjohnson (~johnernau@rrcs-67-78-32-178.sw.biz.rr.com)
+[20:54:31] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[20:56:13] <EvilTrout_> hmmm, when I make an action target a view, I can't get the jQuery.event anymore?
+[20:57:09] <hjdivad_> peterwagenet: https://github.com/emberjs/ember.js/pull/3361#issuecomment-24193704
+[20:57:22] <hjdivad_> hopefully these comments make sense
+[20:57:49] <hjdivad_> as i said on the PR, I think it's good, but it would be nice for someone else to have some familiarity with the reduce computed implementation
+[20:58:22] <hjdivad_> although it's changed a bit since we last worked on it, you're probably best placed (besides wycats) to review these PRs
+[20:59:37] *** Quits: zaius (~zaius@kelso.id.au) (Read error: Operation timed out)
+[21:03:28] *** Joins: zaius (~zaius@kelso.id.au)
+[21:03:52] *** Joins: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net)
+[21:05:02] <drogus> peterwagenet: hey
+[21:07:30] *** Joins: kamalfariz (~viki@50-1-123-234.dsl.dynamic.sonic.net)
+[21:08:33] <peterwagenet> drogus: what's the best way to debug failures that only happen on Travis?
+[21:08:52] <kamalfariz> anybody written tests for components that exercise actions? my actions aren't firing
+[21:08:53] <rwjblue> Pretty please?
+[21:09:16] <peterwagenet> hjdivad_: Can you update your PR for http://emberjs.com/guides/contributing/adding-new-features/
+[21:09:22] *** Joins: GitHub184 (~GitHub184@192.30.252.50)
+[21:09:22] <GitHub184> [website] Dave-Choi opened issue #856: API Class Descriptions don't have TOC links  http://git.io/_Uy8Ug
+[21:09:22] *** Parts: GitHub184 (~GitHub184@192.30.252.50) ()
+[21:10:01] <drogus> peterwagenet: I think that you could use our VM images, but I'm not really sure how to do that at the moment, I will ask and let you know
+[21:10:20] <rwjblue> drogus: Thank you. I'm having a helluva time tracking this one down...
+[21:10:27] <peterwagenet> drogus: thanks!
+[21:10:39] <drogus> is it on pro or org?
+[21:10:48] <rwjblue> org
+[21:10:59] <rwjblue> Hold on getting build links
+[21:11:11] <rwjblue> drogus: Sample failing test: https://travis-ci.org/rjackson/ember-dev/builds/11210610
+[21:11:12] <drogus> rwjblue: I was just going to ask for that :)
+[21:11:26] <rwjblue> Has something to do with the git checkouts
+[21:11:48] <rwjblue> It's testing this branch: https://github.com/rjackson/ember-dev/compare/add_multi_branch_integration_test
+[21:12:04] <rwjblue> the 10,000 foot overview is:
+[21:12:13] *** Quits: duggiefresh (~duggiefre@c1fw224.constantcontact.com) (Remote host closed the connection)
+[21:13:34] <hjdivad_> peterwagenet: is this brand new?  I don't see any commits tagged [BUGFIX beta]
+[21:13:37] <rwjblue> We are checking a PR for commits with specific strings ("[BUGFIX]","[SECURITY]") and then attempting to checkout the applicable branch (beta, stable, etc) then cherry-pick the commit into that branch
+[21:13:44] <rwjblue> hjdivad_: Yes
+[21:13:52] <rwjblue> Not actually working yet :)
+[21:13:58] <hjdivad_> gotcha
+[21:14:16] *** Joins: GitHub3 (~GitHub3@192.30.252.50)
+[21:14:16] <GitHub3> [ember.js] bakura10 opened pull request #3381: Allow extra parameters in the event dispatcher (master...extra-parameters-event-dispatcher)  http://git.io/o5Oc8Q
+[21:14:16] *** Parts: GitHub3 (~GitHub3@192.30.252.50) ()
+[21:14:54] *** Quits: Christophe_be (~Adium@94.139.47.249) (Quit: Leaving.)
+[21:15:16] <hjdivad_> rwjblue: [BUGFIX beta] "the commits" that will be cherry picked are all commits master..<pr-branch> ?
+[21:15:43] <rwjblue> Yes
+[21:16:04] <hjdivad_> rwjblue: do you handle merge commits okay?
+[21:16:09] <hjdivad_> basically ignore them I guess ^_^
+[21:16:23] <rwjblue> Umm, I'm not doing anything about them for now.
+[21:16:35] <hjdivad_> ok
+[21:16:35] <rwjblue> If they were to contain those strings it would try to do soemthing
+[21:16:41] <hjdivad_> uh
+[21:16:47] <hjdivad_> wait does EACH commit have to contain the string?
+[21:16:53] <rwjblue> hjdivad_: yes
+[21:16:54] <hjdivad_> or just the tip of the branch?
+[21:16:59] <rwjblue> Each commit
+[21:17:22] <rwjblue> Although the typical process for PR's is a single rebased commit, no?
+[21:17:35] <hjdivad_> okay so "the commits" referred to in travis testing is NOT master..<pr-branch> but only the subset of that range that includes the tag?
+[21:17:42] <hjdivad_> depends
+[21:17:48] <hjdivad_> it often makes sense to have a couple commits in a PR
+[21:18:03] <hjdivad_> in my case, someone made a PR that only had failing tests
+[21:18:12] <hjdivad_> i merged that PR and made a commit to fix
+[21:18:23] <hjdivad_> i *could* squash
+[21:18:38] <hjdivad_> but this seems unreasonable since the OP deserves credit for providing tests
+[21:18:47] <rwjblue> Yeah, true
+[21:19:14] <johnkpaul> With respect to PR's for bugs, who deicdes if something should be BUGFIX release or BUGFIX beta?
+[21:19:30] <johnkpaul> should I Just assume that it's a low priority issue?
+[21:20:24] <rwjblue> I think that the ops would tell you to change the message
+[21:20:30] <rwjblue> All of these are good concerns
+[21:20:55] <hjdivad_> rwjblue: i am going to tag all the commits
+[21:21:03] <hjdivad_> but i think it will be more straightforward to expect only the tip to be tagged
+[21:21:17] <rwjblue> hjdivad_: Totally doable from my perspective
+[21:21:19] <peterwagenet> johnkpaul: if it applies to code in release then it's bugfix release
+[21:21:32] <hjdivad_> that will be much closer to the semantics of eg Fix #n messages in github and other issue tracking systems
+[21:21:38] <rwjblue> Actually *might* be easier
+[21:21:39] <peterwagenet> if it applies to code in beta, but not stable, it's bugfix stable
+[21:21:41] <peterwagenet> er
+[21:21:43] <peterwagenet> bugfix beta
+[21:22:03] *** Quits: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net) (Remote host closed the connection)
+[21:22:10] <hjdivad_> rwjblue: yeah i think conceptually rebasing makes more sense than cherry picking in this case
+[21:22:15] <hjdivad_> in which case you can ignore merge commits entirely
+[21:22:23] <hjdivad_> rebasing will accidentally the whole merge commits
+[21:22:33] <johnkpaul> peterwagenet: ah, I undersatnd
+[21:22:34] <rwjblue> Right
+[21:22:37] <hjdivad_> i don't know what the semantics of cherry picking a merge commit are
+[21:22:41] <ericberry> alexspeller: do you know if this is ready to use? https://github.com/emberjs/ember.js/commit/31be677e29fed74c861cefd34d1a03a5adabab31 (ember-query)
+[21:22:43] <johnkpaul> thanks!
+[21:22:43] <hjdivad_> might be no-op, might be error
+[21:22:46] <rwjblue> hjdivad_: You cant
+[21:22:49] <rwjblue> it bonks at you
+[21:22:53] <hjdivad_> rightly so
+[21:23:03] <hjdivad_> cherry-pick merge commit is a strong indication of user error
+[21:23:06] <peterwagenet> hjdivad_: in your case, cherry-pick the test commit
+[21:23:13] <peterwagenet> and amend it to have the tag
+[21:23:16] <peterwagenet> it will keep his name on it
+[21:23:20] *** Quits: turngate (~turngate@207.35.173.122) (Ping timeout: 245 seconds)
+[21:23:26] <hjdivad_> peterwagenet: yes like i said i am tagging all of the commits
+[21:23:30] <hjdivad_> i just worry that this will be nonobvious
+[21:23:37] <hjdivad_> in part because it differs from Fix #n that people are used to
+[21:23:42] <ericberry> alexspeller: better question.. do you have any examples of these anywhere?
+[21:23:44] <peterwagenet> ericberry: it's as ready to use as any expiremental new feature is :)
+[21:24:02] <hjdivad_> where did this awesome release process come from?
+[21:24:15] <hjdivad_> oh i think i should be able to guess
+[21:24:18] <rwjblue> wycats and team dreamt it up
+[21:24:21] <ericberry> cool
+[21:24:23] <hjdivad_> i feel like there were some release managers named recently
+[21:24:27] <hjdivad_> rwjblue: very very cool
+[21:24:32] <rwjblue> Ah, yes
+[21:24:40] <rwjblue> I may have written some of the code.
+[21:24:53] <rwjblue> tboyt did the awesome feature flagging stuff
+[21:25:17] * rwjblue still doesn't completely understand defeatureify
+[21:25:55] <tboyt> rwjblue: maaaaggiiiiiccc
+[21:26:04] <rwjblue> LOLOLOLOLOLO
+[21:26:14] <rwjblue> Yeah, I kinda think so
+[21:26:19] <alexspeller> ericberry: you still around?
+[21:26:19] <rwjblue> It's cool magic though.
+[21:26:24] <tboyt> btw, i'm working on my first ember data project since the reboot and the new docs are AMAZING :D
+[21:26:29] <ericberry> alexspeller yes
+[21:26:47] <alexspeller> Did you see the PR? That's the closest to a guide there is for now
+[21:26:56] <alexspeller> https://github.com/emberjs/ember.js/pull/3182
+[21:27:20] <ericberry> alexspeller that's perfect. I'm going try it out
+[21:27:32] <alexspeller> Awesome, any feedback appreciated
+[21:27:48] <alexspeller> Be warned I'm about to submit a PR changing the param order after discussion with wycats
+[21:28:12] <ericberry> good to know
+[21:28:18] <ericberry> my usage of it is simple
+[21:31:42] <rwjblue> peterwagenet, drogus: I think I found my problem!
+[21:32:04] *** Quits: ryanrt1 (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net) (Quit: Leaving.)
+[21:32:16] <rwjblue> TRAVIS_COMMIT doesn't exist locally, but in the test 'current_revision' short circuits to use TRAVIS_COMMIT if present.
+[21:32:19] <mmun> hey hjdivad_ can I pick your brain for a second?
+[21:32:35] <rwjblue> Which means that when I checkout the other branches it is still being overridden...
+[21:32:55] <hjdivad_> mmun: sup?
+[21:32:55] *** Joins: raila1 (~dad@p5DC0EBD2.dip0.t-ipconnect.de)
+[21:33:02] *** Joins: GitHub180 (~GitHub180@192.30.252.50)
+[21:33:03] <GitHub180> [ember.js] wagenet closed pull request #3374: A way to let users define custom made bound {{if}} statements (master...master)  http://git.io/4iSSmg
+[21:33:03] *** Parts: GitHub180 (~GitHub180@192.30.252.50) ()
+[21:33:14] <mmun> hjdivad_: you said before that the post controller shouldn't have access to the comments controller
+[21:33:26] <mmun> but shouldn't it be a possibility?
+[21:33:45] *** Quits: raila (~dad@p54AFD7FD.dip0.t-ipconnect.de) (Ping timeout: 245 seconds)
+[21:34:15] *** Quits: johnjohnson (~johnernau@rrcs-67-78-32-178.sw.biz.rr.com) (Quit: Textual IRC Client: www.textualapp.com)
+[21:34:36] <hjdivad_> ah, i think i meant it can't have access to something like the CommentController
+[21:34:50] <hjdivad_> the point being that it's not within the nominal scope that gets created when you iterate
+[21:35:04] <mmun> maybe it's completely absurd, but i was thinking of an api like needs: [ 'comments:model.comments' ] would instantiate an array controller and fill it with that content
+[21:35:31] * hjdivad_ but this is how item controllers already work no?
+[21:35:42] <hjdivad_> if you {{#each comments}} with an itemController: 'comment'
+[21:35:52] <hjdivad_> you will get a CommentController whose content is the item in comments
+[21:35:59] <mmun> what I really want is a referent to the Array controller, not the item controller
+[21:36:20] <mmun> {{#each comments controllerName="comments"}} would be similar to viewName
+[21:36:38] <mmun> er that's confusing sorry
+[21:36:48] * hjdivad_ i thought #each had itemController now?
+[21:36:54] <peterwagenet> question for the peanut gallery: should this be considered a bugfix, or a feature? https://github.com/emberjs/ember.js/pull/3381
+[21:36:59] *** Joins: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net)
+[21:36:59] *** Quits: bmac (~bmac@75-150-66-249-NewEngland.hfc.comcastbusiness.net) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[21:37:06] <hjdivad_> omg i keep trolling myself with ⌘-enter in irccloud
+[21:37:12] *** Quits: KendrickVT (~Adium@66.129.76.132) (Quit: Leaving.)
+[21:37:24] <mmun> yeah it totally does
+[21:37:36] <mmun> but i don't see how you could reference these comment controllers from the post
+[21:37:37] *** Joins: GitHub155 (~GitHub155@192.30.252.55)
+[21:37:38] <GitHub155> [ember.js] wagenet closed pull request #3355: Added failing test for array computed observers (master...arraycomputedtests)  http://git.io/8gY0IA
+[21:37:38] *** Parts: GitHub155 (~GitHub155@192.30.252.55) ()
+[21:37:58] <mmun> you could (assuming your post scope thing was fixed) go the other way
+[21:38:09] <rwjblue> hjdivad_: I wondered about the all the /me messages
+[21:38:38] <hjdivad_> rwjblue: yeah i hate systems that send via enter b/c they're so anti multiline
+[21:38:53] <hjdivad_> so i almost always configure things to send on ⌘-enter
+[21:39:01] <hjdivad_> but this has caused some self-trolling here ^_^
+[21:39:02] <rwjblue> Ahh, that makes sense.
+[21:39:58] *** Joins: ryanrt1 (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net)
+[21:40:03] <johnkpaul> Is ther a way that I can get a qunit link for a specific test _not_ by number?
+[21:40:04] <mmun> basically there's no way to bind these item controllers to a property on the outer controller
+[21:40:11] <johnkpaul> my link to http://localhost:9292/?testNumber=2362 has broken because test 2362 has changed
+[21:40:29] <mmun> maybe that's an antipattern, i duno
+[21:40:32] <hjdivad_> mmun: you mean bind a property on the item controllers to a property on the outer controller c/d
+[21:41:25] <mmun> not really. what i really would like to do in the scope of the posts controller is to be able to do {{each controllers.comment}}
+[21:41:55] <mmun> comments oops
+[21:42:08] <hjdivad_> mmun: does your post not have a comments property?
+[21:42:18] <mmun> it does but it's the model, not the associated item controller
+[21:42:22] <hjdivad_> i would expect you to be able to {{#each comments}} on a PostController
+[21:42:25] *** Quits: KidkArolis (~textual@90.212.193.130) (Quit: KidkArolis)
+[21:42:42] <hjdivad_> not following
+[21:42:46] <hjdivad_> object controllers are proxies
+[21:42:47] <mmun> damnit sorry man
+[21:42:53] <hjdivad_> so if you have no comments property on your item controller
+[21:42:59] <hjdivad_> it will just get the value from the model
+[21:43:33] <hjdivad_> postController.get('comments')  will get you the post's comments if there is no comments property on the PostController
+[21:43:40] <hjdivad_> assuming PostController is an ObjectController (and not an ArrayController)
+[21:43:40] <mmun> i would expect there to be both a comments (which resolves to model.comments) and controllers.comments which resolves to the array controller that wraps that model
+[21:43:52] <mmun> and *I think* i would prefer to do this without requiring a template
+[21:44:16] *** Joins: KidkArolis (~textual@90.212.193.130)
+[21:44:58] <hjdivad_> rwjblue: how should i test that i'm feature flag detecting correctly?
+[21:45:24] <rwjblue> hjdivad_: Elaborate?
+[21:45:34] <rwjblue> Not sure what you mean ...
+[21:45:46] <hjdivad_> suppose in my impl i check against a typo: because the tests run with all features turned on, i won't see it
+[21:45:48] <hjdivad_> the tests will still pass
+[21:46:00] <peterwagenet> hjdivad_: I'd been assuming the tag should be a prefix, but I realized we never said it anyway
+[21:46:00] <peterwagenet> anywhere
+[21:46:01] <rwjblue> hjdivad_: I am working on that
+[21:46:03] <peterwagenet> rwjblue: ^
+[21:46:33] <hjdivad_> rwjblue: okay, so for now... i will stare very closely and this glowy rectangle and maybe hope a bit too
+[21:46:37] <rwjblue> peterwagenet: My tests search the full commit string
+[21:46:59] *** Quits: dcherman (~dcherman@164.55.254.106) (Ping timeout: 240 seconds)
+[21:47:03] <rwjblue> hjdivad_: You can force all the feature flags to enabled
+[21:47:11] <peterwagenet> rwjblue: so it will work no matter where it is
+[21:47:15] <peterwagenet> the only thing that matters if we want easy scanning of commit messages
+[21:47:15] <rwjblue> tboyt told be how yesterday but I can't remember yet
+[21:47:20] <rwjblue> peterwagenet: confirm
+[21:47:30] <rwjblue> I was confused by the post so I just figured what the hell...
+[21:47:57] <hjdivad_> rwjblue: but that's exactly the problem.  Suppose in my impl i check Ember.FEATURES.isEnabled('theFeatureWatisthisohcatwalkedonkeyboard')
+[21:48:00] <hjdivad_> the tests will still pass
+[21:48:05] <hjdivad_> because "all features" are enabled
+[21:48:08] <hjdivad_> but really my check is bad
+[21:48:26] <hjdivad_> i want to run tests with ONLY the feature i'm testing enabled
+[21:48:33] <rwjblue> Hrmmm
+[21:48:45] *** Quits: KidkArolis (~textual@90.212.193.130) (Ping timeout: 245 seconds)
+[21:48:58] <rwjblue> hjdivad_: that could be done, but isn't currently on my todo list...
+[21:49:18] <rwjblue> How would I know which feature flag to test?
+[21:49:25] <rwjblue> search the commit messages?
+[21:49:30] <peterwagenet> johnkpaul: clarification, only use [BUGFIX release] if it's urgent
+[21:49:37] <hjdivad_> rwjblue: i don't mean for the release process, i just mean for me while devving
+[21:49:50] <hjdivad_> i guess i want to run localhost:9292/?feature=theFeature
+[21:49:51] <peterwagenet> otherwise target beta unless it's brand-new code that didn't make it into a beta yet
+[21:49:56] <hjdivad_> that enables ONLY that feature
+[21:49:58] <hjdivad_> this way my tests run
+[21:50:00] <rwjblue> hjdivad_: Right, well you could just tell qunit to run the test prefix you created?
+[21:50:27] <rwjblue> hjdivad_: Just make your tests use a module prefix
+[21:50:40] <rwjblue> Then the exact syntax (or very close) will work
+[21:50:43] <ericberry> alexspeller: it works AMAZINGLY!!!
+[21:50:53] <alexspeller> Awesome :)
+[21:50:59] <rwjblue> Or am I missing something obvious here?
+[21:51:40] <hjdivad_> rwjblue: when i run the tests locally, using rake pipeline and none of the release process
+[21:51:45] <hjdivad_> what determines which features are enabled?
+[21:51:47] <hjdivad_> "Tests will always run with all features on, so make sure that any tests for the feature are passing against the current state of the feature."
+[21:51:53] <hjdivad_> makes me think isEnabled always returns true
+[21:52:01] *** Joins: GitHub14 (~GitHub14@192.30.252.51)
+[21:52:01] <GitHub14> [ember.js] wagenet closed issue #2389: Better Error Messages - Include Referrers  http://git.io/V4tF-Q
+[21:52:01] *** Parts: GitHub14 (~GitHub14@192.30.252.51) ()
+[21:52:39] <johnkpaul> peterwagenet: hmm, but how do I judge urgency?
+[21:52:45] <johnkpaul> I think it's _really_ urgent :)
+[21:53:10] <johnkpaul> I've had to apply this patch to 3 RCs and 1.0.0, I'm definitely not impartial
+[21:53:33] <rwjblue> hjdivad_: the features are on or off based on features.json in the root of the project
+[21:53:37] <hjdivad_> peterwagenet: sorry where do you want the tag?
+[21:53:41] <peterwagenet> johnkpaul: what's the link again?
+[21:53:46] <hjdivad_> peterwagenet: do you want it first thing on line 1 of the commit message?
+[21:53:53] <rwjblue> You could (for debugging only) set that up the way you need/want..
+[21:53:58] <johnkpaul> peterwagenet: you mean to the issue? https://github.com/emberjs/ember.js/pull/3100
+[21:53:59] <rwjblue> hjdivad_: Yes
+[21:54:23] <rwjblue> Sorry for cutting it short folks, gotta run...
+[21:54:32] <hjdivad_> rwjblue: sounds good.  So if i just check out master with no features.json everything is off?
+[21:54:49] <peterwagenet> I believe so
+[21:54:49] <rwjblue> Without a features.json everything is on
+[21:54:55] <peterwagenet> or not :P
+[21:54:59] <rwjblue> awww hell
+[21:55:04] <peterwagenet> I don't know
+[21:55:05] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[21:55:07] <rwjblue> tboyt can you confirm again?
+[21:55:20] <rwjblue> We went over it yesterday, but I've already lost track of my notes
+[21:55:25] <johnkpaul> peterwagenet: talking to me?
+[21:55:37] <peterwagenet> where a tboyt is?
+[21:55:47] <rwjblue> hjdivad_: I'll dig in and confirm for you tonight, but I gotta run guys...
+[21:55:51] *** Parts: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net) ()
+[21:56:10] *** Quits: ryanrt1 (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net) (Quit: Leaving.)
+[21:56:22] <hjdivad_> rwjblue: later, thanks for your time!
+[21:56:40] <hjdivad_> peterwagenet: maybe i have tagged things less incorrectly this time?
+[21:57:03] <twokul> if there's no features.json, everything is on
+[21:57:08] <twokul> rwjblue is correct
+[21:57:30] *** Joins: dcherman (~dcherman@ool-4356093e.dyn.optonline.net)
+[21:57:36] <mmun> maybe this gist makes things clearer https://gist.github.com/mmun/60109d630482ec0d19af
+[21:57:43] <twokul> unless I'm misreading this: If no features.json file exists, the build will be treated as Canary, and no defeatureification (fun word) will take place.
+[21:58:26] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[21:58:35] <peterwagenet> hjdivad_: we need some more clarification on our guide
+[21:58:45] <hjdivad_> twokul: okay great.  makes sense
+[21:58:56] <hjdivad_> so then the right thing to do is to test locally with a features.json that includes ONLY the new feature
+[21:59:01] <hjdivad_> that should catch the typo in impl case i think
+[21:59:07] <twokul> hjdivad_: c
+[21:59:47] <twokul> guys, how do you keep track of things that you discuss here
+[21:59:48] <twokul> ?
+[22:00:10] <twokul> does rwjblue take notes?
+[22:00:18] <twokul> or you just remember EVERYTHING
+[22:01:31] <peterwagenet> we try to remember
+[22:01:32] <peterwagenet> :P
+[22:01:34] <NivenHuH> twokul: EJSDEVNLP
+[22:02:03] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[22:02:04] <twokul> NivenHuH: EJSDEVNLP ?
+[22:02:19] <NivenHuH> emberjs-dev natural language processor
+[22:02:25] <rakl> how come sometimes it's `send` and sometimes it's `sendAction`?
+[22:02:27] <tboyt> twokul: c on your interpretation
+[22:02:33] <NivenHuH> rakl ^^
+[22:02:37] <twokul> NivenHuH: oh boy
+[22:02:38] <tboyt> no features.json -> canary build, feature flags need to be enabled at runtime
+[22:02:43] <rakl> HNNLP?
+[22:02:52] <rakl> hnnlp.herokuapp.com
+[22:02:53] <NivenHuH> EJSDEVIRCNLP
+[22:03:07] <peterwagenet> tboyt: want to double check this? https://github.com/emberjs/ember.js/pull/3365
+[22:03:32] <peterwagenet> rakl: good question
+[22:03:59] *** Joins: dgeb_ (~dgeb@c-24-91-111-240.hsd1.nh.comcast.net)
+[22:04:00] <tboyt> peterwagenet: lgtm
+[22:04:23] <peterwagenet> I am still getting confident about our new set up
+[22:04:23] *** Joins: GitHub90 (~GitHub90@192.30.252.49)
+[22:04:23] <GitHub90> [ember.js] wagenet pushed 2 new commits to master: http://git.io/nEUd-A
+[22:04:23] <GitHub90> ember.js/master 0516a9e David J. Hamilton: [BUGFIX beta] ReduceComputedProperty ignore invalidated property observers....
+[22:04:23] <GitHub90> ember.js/master 0431d82 Peter Wagenet: Merge pull request #3364 from hjdivad/fix-3273...
+[22:04:23] *** Parts: GitHub90 (~GitHub90@192.30.252.49) ()
+[22:04:23] *** Joins: GitHub176 (~GitHub176@192.30.252.54)
+[22:04:23] <GitHub176> [ember.js] wagenet closed pull request #3364: ReduceComputedProperty ignore invalidated property observers. (master...fix-3273)  http://git.io/ehFqlg
+[22:04:23] *** Parts: GitHub176 (~GitHub176@192.30.252.54) ()
+[22:04:25] *** Joins: GitHub50 (~GitHub50@192.30.252.50)
+[22:04:25] <GitHub50> [ember.js] wagenet closed issue #3273: Array Computed: Exception and odd behavior when filtering a sorted array  http://git.io/1ppHCA
+[22:04:25] *** Parts: GitHub50 (~GitHub50@192.30.252.50) ()
+[22:04:33] <rakl> @peterwagenet, maybe ActionHandler mixin needs to go into components?
+[22:04:54] <peterwagenet> rakl: try to get a hold of wycats if you can
+[22:04:59] *** Joins: GitHub60 (~GitHub60@192.30.252.49)
+[22:04:59] <GitHub60> [ember.js] wagenet pushed 3 new commits to master: http://git.io/M9rH1g
+[22:04:59] <GitHub60> ember.js/master c1f09e2 David J. Hamilton: Fix silly !!!! boolean conversion.
+[22:04:59] <GitHub60> ember.js/master ee686f6 David J. Hamilton: [FEATURE reduceComputedSelf] reduceComputed dependent keys may refer to @self....
+[22:04:59] <GitHub60> ember.js/master 2f38f5d Peter Wagenet: Merge pull request #3365 from hjdivad/reduce-computed-self...
+[22:04:59] *** Parts: GitHub60 (~GitHub60@192.30.252.49) ()
+[22:04:59] *** Joins: GitHub180 (~GitHub180@192.30.252.49)
+[22:04:59] <GitHub180> [ember.js] wagenet closed pull request #3365: reduceComputed dependent keys may refer to @self. (master...reduce-computed-self)  http://git.io/9yHYTw
+[22:04:59] *** Parts: GitHub180 (~GitHub180@192.30.252.49) ()
+[22:05:40] <peterwagenet> hjdivad_: d'oh, I think one of your other changes just made this not merge cleanly: https://github.com/emberjs/ember.js/pull/3361
+[22:05:50] <rakl> will do
+[22:06:15] <rakl> just wanted to get sanity check on the fact that this *is* a good question for now. I'll file an issue
+[22:06:17] <rwjblue> twokul - I have a short todo list of things that I am working on.
+[22:06:27] <rwjblue> Not sure what the best way to handle is...
+[22:06:27] <twokul> rwjblue: this is great
+[22:06:38] <twokul> rwjblue: SHARE IT WITH ME
+[22:07:07] <rwjblue> As soon as I'm back to my laptop I will.
+[22:07:16] <twokul> rwjblue: sgb
+[22:07:41] <rwjblue> I think I should probably make issues for them though
+[22:08:06] *** Quits: dgeb (~dgeb@208.87.215.5) (Ping timeout: 248 seconds)
+[22:08:08] <twokul> rwjblue: let's quickly pair once you're back
+[22:08:20] <rwjblue> Ok, sounds good
+[22:09:08] *** Joins: GitHub112 (~GitHub112@192.30.252.49)
+[22:09:08] <GitHub112> [ember.js] mehulkar opened issue #3382: `send` and `sendAction` API  http://git.io/H63weQ
+[22:09:08] *** Parts: GitHub112 (~GitHub112@192.30.252.49) ()
+[22:10:08] <peterwagenet> rakl == mehulkar?
+[22:10:14] <rakl> yep
+[22:10:17] <rakl> mehulkar.reverse
+[22:10:21] <rakl> mehulkar.reverse[0..3
+[22:10:23] <rakl> mehulkar.reverse[0..3]
+[22:10:40] <twokul> rakl: howdy, didn't know that :D
+[22:10:44] <rakl> :)
+[22:10:51] <rakl> #stealthMode
+[22:11:01] <twokul> :)
+[22:11:10] *** Quits: jsteiner (~Adium@66.228.83.116) (Quit: Leaving.)
+[22:11:21] <Cyril-sf_> peterwagenet: does the convention for tagging PRs is for ED too?
+[22:11:39] <peterwagenet> Cyril-sf_: I don't think so yet
+[22:11:44] <peterwagenet> probably once it hits 1.0
+[22:11:51] <peterwagenet> but you can ask wycats to be sure
+[22:12:32] <Cyril-sf_> peterwagenet: will do, thanks
+[22:14:15] *** Joins: dgeb (~dgeb@c-24-91-111-240.hsd1.nh.comcast.net)
+[22:15:37] <peterwagenet> tboyt: without a features.json, is it correct that no features are included?
+[22:15:39] <peterwagenet> https://github.com/emberjs/ember.js/pull/3370#issuecomment-24199189
+[22:16:07] *** Quits: tehviking (~tehviking@rrcs-67-78-65-50.sw.biz.rr.com) (Remote host closed the connection)
+[22:16:43] *** Quits: dgeb_ (~dgeb@c-24-91-111-240.hsd1.nh.comcast.net) (Ping timeout: 264 seconds)
+[22:17:34] <tboyt> peterwagenet: responded w explanation
+[22:18:12] <rwjblue> tboyt: thank you for clarifying
+[22:18:36] <rwjblue> Does this need to be updated in the ember-dev test setup?
+[22:19:46] <tboyt> rwjblue: c
+[22:20:05] <tboyt> well
+[22:20:11] <tboyt> maybe not in ember-dev
+[22:20:28] <tboyt> i'm not really sure the best place to put it, but basically all that's needed is
+[22:20:37] <rwjblue> So just Ember.FEATURES.isEnabled= function(){ return true; };
+[22:20:38] <tboyt> Ember.FEATURES.isEnabled = function() { return true }
+[22:20:39] <tboyt> lol
+[22:20:42] <tboyt> yeah
+[22:20:42] <rwjblue> $-
+[22:20:44] <tboyt> exactly
+[22:20:56] <rwjblue> I remembered something you taught me!
+[22:21:14] <tboyt> doesn't matter if it's left in the code when doing release/beta tests because feature conditionals will be stripped out of those anyways
+[22:21:35] <rwjblue> So we could inject that in the index.html.erb
+[22:21:49] *** Quits: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com) (Quit: jonasi)
+[22:21:55] <tboyt> sure
+[22:22:29] <rwjblue> In ember-dev's https://github.com/emberjs/ember-dev/blob/master/support/tests/index.html.erb
+[22:23:02] <rwjblue> You have time to do a PR for that?
+[22:23:08] <tboyt> only worry about putting it in ember-dev is that if this feature gets extended out to ember data/etc, you'll want it to be "DS.FEATURES.isEnabled", etc
+[22:23:09] <rwjblue> If not I can do it...
+[22:23:20] <rwjblue> Oh, true
+[22:23:31] <tboyt> but it should be fine short-term (right now it's hardcoded to look at the Ember namespace when parsing anyways)
+[22:23:33] <rwjblue> So embers tests/configuration or whatever it's called
+[22:23:45] *** Quits: jschi (~textual@76.77.154.9) (Ping timeout: 245 seconds)
+[22:24:01] <tboyt> i can do it later tonight but if you want it asap you should probably go ahead
+[22:24:13] <rwjblue> Nah, I'm mobile now anyways.
+[22:25:27] <rwjblue> peterwagenet do you know an easy way to generate a static index.html for the tests?
+[22:25:53] <rwjblue> I could eval the erb template, but didnt know if you already knew of a simple way...
+[22:27:46] <peterwagenet> tboyt: could you specify a prefix in the config?
+[22:28:02] <peterwagenet> https://github.com/emberjs/ember.js/blob/master/tests/ember_configuration.js
+[22:28:16] <peterwagenet> i.e. EmberDev.featuresNamespace = 'DS'
+[22:28:18] <peterwagenet> or whatever
+[22:28:36] <peterwagenet> rwjblue: generate a static index?
+[22:28:57] <rwjblue> Yeah to be able to run the tests without ruby
+[22:29:09] *** Joins: KendrickVT1 (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[22:29:13] <rwjblue> Long story, but I think it would be simple ish
+[22:29:30] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 264 seconds)
+[22:29:31] <rwjblue> I wanna static site directory to run the tests.
+[22:29:31] <peterwagenet> ah
+[22:29:50] <rwjblue> So rake dist then ...
+[22:29:52] <peterwagenet> https://github.com/emberjs/ember-dev/blob/master/support/tests/index.html.erb
+[22:30:15] <rwjblue> Right, so just follow the rabbit hole and eval that erb in the right context
+[22:31:08] <rwjblue> Will toy around tonight...
+[22:31:25] <rwjblue> Also anyone have plans to fix the test output in ember-data?
+[22:32:03] <rwjblue> It kinda drives me nuts. All this times shouldn't be printed (should only print total time once for each package)
+[22:32:35] <peterwagenet> yeah, it's very odd
+[22:32:39] <peterwagenet> anyone know why it does that?
+[22:32:51] <rwjblue> Quint.done is where it's coming from
+[22:33:06] <rwjblue> That's in the qunit stuff in ember-dev
+[22:33:35] <rwjblue> But I couldn't figure out why it does that in data but not ember...
+[22:33:49] <rwjblue> Maybe twokul could take a look when he has a minute?
+[22:34:00] <rwjblue> My JS isn't as good as his...
+[22:34:34] <twokul> rwjblue: let's pair and talk it through
+[22:34:54] *** Quits: rafshar (~rafshar@72.34.113.210) (Quit: rafshar)
+[22:35:15] <rwjblue> Coolio. Will ping you when I'm back in the saddle.
+[22:35:23] <twokul> ok
+[22:35:26] *** Joins: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net)
+[22:36:28] *** Joins: jessicard (~textual@host86-140-63-97.range86-140.btcentralplus.com)
+[22:39:45] *** Joins: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com)
+[22:41:45] *** Quits: jessicard (~textual@host86-140-63-97.range86-140.btcentralplus.com) (Read error: Connection reset by peer)
+[22:42:04] *** Quits: coffeeofficer (~coffeeoff@rrcs-50-75-172-223.nys.biz.rr.com) (Remote host closed the connection)
+[22:51:11] *** Quits: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net) (Quit: Leaving.)
+[22:55:51] *** Joins: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net)
+[22:57:39] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Remote host closed the connection)
+[22:58:15] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[23:00:02] *** Joins: Gues_____ (~textual@207-237-194-183.c3-0.avec-ubr1.nyr-avec.ny.cable.rcn.com)
+[23:00:19] *** Joins: jonasi (~jonasi@cpe-24-55-60-206.austin.res.rr.com)
+[23:00:25] *** Joins: rafshar (~rafshar@72.34.113.210)
+[23:00:48] *** Joins: JordanFaust_ (~JordanFau@cpe-98-156-15-46.kc.res.rr.com)
+[23:02:31] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Ping timeout: 245 seconds)
+[23:02:41] *** Joins: robmonie (robmonie@nat/jetstar/x-haqmsfectuoyllng)
+[23:04:58] *** Parts: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net) ()
+[23:05:38] *** Quits: JordanFaust_ (~JordanFau@cpe-98-156-15-46.kc.res.rr.com) (Ping timeout: 256 seconds)
+[23:08:45] *** Quits: jergason (~jergason@65.181.53.2) (Quit: jergason)
+[23:09:19] *** Joins: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net)
+[23:11:41] *** Quits: isale-eko (~chatzilla@cpc4-benw11-2-0-cust664.16-2.cable.virginmedia.com) (Quit: ChatZilla 0.9.90.1 [Firefox 23.0.1/20130814063812])
+[23:12:36] *** Quits: robmonie (robmonie@nat/jetstar/x-haqmsfectuoyllng) (Read error: Connection reset by peer)
+[23:13:27] *** Joins: robmonie (robmonie@nat/jetstar/x-lsqcyojvpsdctvur)
+[23:16:49] *** Quits: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net) (Remote host closed the connection)
+[23:18:31] *** Quits: KendrickVT1 (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Quit: Leaving.)
+[23:18:45] *** Quits: dcherman (~dcherman@ool-4356093e.dyn.optonline.net) (Ping timeout: 245 seconds)
+[23:19:39] <tboyt> hmm, about to open a bug for this broken behavior: http://emberjs.jsbin.com/ijehixa/1/
+[23:19:44] <tboyt> anyone sanity check me real quick?
+[23:20:08] *** Joins: javascriptjedi (~javascrip@c-76-27-82-92.hsd1.ut.comcast.net)
+[23:20:14] <tboyt> seems like double-nesting {{each in}} and then using a helper with both of the nested items raises "Uncaught TypeError: Object.defineProperty called on non-object "
+[23:20:53] *** Quits: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) (Quit: Computer has gone to sleep.)
+[23:21:02] <tboyt> not an issue w/ the helper itself; even if you set it to return "foo" it still errors
+[23:23:35] *** Joins: GitHub17 (~GitHub17@192.30.252.55)
+[23:23:35] <GitHub17> [ember.js] alexspeller opened pull request #3383: Adjust query params param order (master...query-params-adjust-param-order)  http://git.io/pHJWdw
+[23:23:35] *** Parts: GitHub17 (~GitHub17@192.30.252.55) ()
+[23:29:02] *** Quits: sjkane (~steven@38.106.196.126) (Ping timeout: 240 seconds)
+[23:30:58] *** Joins: GitHub138 (~GitHub138@192.30.252.48)
+[23:30:58] <GitHub138> [ember.js] thomasboyt opened issue #3384: Binding the key in a doubly-nested {{#each key in val}} to a Handlebars helper raises an error  http://git.io/AxcD2g
+[23:30:58] *** Parts: GitHub138 (~GitHub138@192.30.252.48) ()
+[23:33:24] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[23:37:12] *** Quits: javascriptjedi (~javascrip@c-76-27-82-92.hsd1.ut.comcast.net) (Remote host closed the connection)
+[23:37:48] *** Joins: javascriptjedi (~javascrip@c-76-27-82-92.hsd1.ut.comcast.net)
+[23:40:15] *** Quits: rafshar (~rafshar@72.34.113.210) (Quit: rafshar)
+[23:40:23] *** Joins: twokul (~twokul@c-50-133-192-46.hsd1.ma.comcast.net)
+[23:42:05] *** Quits: javascriptjedi (~javascrip@c-76-27-82-92.hsd1.ut.comcast.net) (Ping timeout: 245 seconds)
+[23:48:49] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[23:53:04] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[23:53:30] *** Quits: Gues_____ (~textual@207-237-194-183.c3-0.avec-ubr1.nyr-avec.ny.cable.rcn.com) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[23:56:59] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 260 seconds)
+[23:57:42] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 264 seconds)
+[23:58:20] *** Quits: cloke (~cloke@66.159.97.90) (Ping timeout: 256 seconds)

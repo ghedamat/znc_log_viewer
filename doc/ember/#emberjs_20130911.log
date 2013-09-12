@@ -1,0 +1,2508 @@
+[00:00:06] *** Quits: mikepack (~mikepack@c-67-176-73-117.hsd1.co.comcast.net) (Remote host closed the connection)
+[00:00:34] <raytiley> anyone know if its possible to disable transitioning on a link-to helper  - I know its a weird request
+[00:00:36] *** Quits: gowlin (~rgolbeck@debian/developer/rmgolbeck) (Ping timeout: 256 seconds)
+[00:02:26] *** Joins: cloke (~cloke@66.159.97.90)
+[00:03:05] *** Joins: shinnya (~shinnya@224.179.210.220.dy.bbexcite.jp)
+[00:04:23] *** Joins: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net)
+[00:04:43] *** Quits: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net) (Client Quit)
+[00:04:45] <mmun> kdbuck: http://jsbin.com/oSiNayE/1/edit
+[00:05:55] <kdbuck> awesome
+[00:05:58] *** Joins: turngate (~turngate@198.84.240.195)
+[00:06:03] <mmun> I'm pretty happy with that
+[00:06:08] <kdbuck> looks good to me
+[00:06:30] <mmun> I might even want to stuff it into 'controllers.comments' instead
+[00:06:57] <kdbuck> I can see how that would make sense
+[00:07:44] <kdbuck> I just used this same idea to get rid of the view I was using.
+[00:07:59] *** Joins: jschi (~textual@76.77.154.9)
+[00:08:05] *** Joins: Guest____ (~textual@207-237-194-183.c3-0.avec-ubr1.nyr-avec.ny.cable.rcn.com)
+[00:08:11] <mmun> http://jsbin.com/oSiNayE/3/edit
+[00:08:14] <mmun> that's kinda beautiful
+[00:08:22] *** Joins: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net)
+[00:08:29] *** Quits: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net) (Client Quit)
+[00:08:56] <mmun> it still doesn't handle gaining access to the intermediate array controller
+[00:08:59] <mmun> but it works for my purposes
+[00:09:39] *** Quits: rootyb (~juross@169.237.113.67) (Quit: rootyb)
+[00:09:49] <kdbuck> you can bind to Ember.Checkbox in this case as well
+[00:09:58] <kdbuck> nvm, you are haha
+[00:10:13] <mmun> yeah, no actions in sight!
+[00:10:20] *** Joins: carlyle (~carlyle@10.sub-70-193-2.myvzw.com)
+[00:10:52] *** DanKnox is now known as DanKnox_away
+[00:11:22] <mmun> sweet, I'm glad we had this chat!
+[00:11:46] <kdbuck> me too, it worked out well.
+[00:13:16] *** Quits: kamalfariz (~viki@50-1-123-234.dsl.dynamic.sonic.net) (Quit: kamalfariz)
+[00:14:00] *** Quits: random (~kevin@109.77.118.207) (Ping timeout: 276 seconds)
+[00:14:33] <kdbuck> good work.
+[00:15:16] <mmun> http://imgur.com/CTWXoJp
+[00:15:48] *** Quits: mdi_ (~mdi_@c80-217-196-53.bredband.comhem.se) (Ping timeout: 260 seconds)
+[00:16:09] <kdbuck> haha
+[00:17:37] *** Quits: jefflab (~textual@ip-64-134-238-92.public.wayport.net) (Quit: Computer has gone to sleep.)
+[00:18:04] *** Joins: juggy (~juggy@modemcable005.57-83-70.mc.videotron.ca)
+[00:18:34] *** Joins: tealmage (~tealmage@ip70-160-31-87.hr.hr.cox.net)
+[00:19:07] *** jesterKing is now known as amino
+[00:19:33] *** Joins: WiktorS (~Miranda@d18-34.static.icpnet.pl)
+[00:19:49] *** Joins: jefflab (~textual@ip-64-134-238-92.public.wayport.net)
+[00:19:57] *** Quits: tealmage (~tealmage@ip70-160-31-87.hr.hr.cox.net) (Remote host closed the connection)
+[00:20:11] *** Joins: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com)
+[00:21:19] *** Quits: peterwagenet (~peterwagn@38.122.7.254) (Quit: Leaving.)
+[00:25:34] *** Joins: doubleemms (~doubleemm@c-174-51-250-8.hsd1.co.comcast.net)
+[00:26:06] *** Joins: sdeinum_ (~textual@CPE78cd8e66db20-CM78cd8e66db1d.cpe.net.cable.rogers.com)
+[00:26:14] *** Joins: pauldoerwald (~pauldoerw@hlfxns0169w-142176059045.dhcp-dynamic.FibreOp.ns.bellaliant.net)
+[00:27:03] *** Joins: jergason (~jergason@65.181.53.2)
+[00:27:07] *** Quits: T_T (~kw3st@c-24-23-132-165.hsd1.ca.comcast.net) (Remote host closed the connection)
+[00:27:27] *** Quits: tylergoza (~tylergoza@72.29.34.246) (Quit: Leaving)
+[00:27:37] *** Joins: aaronshaf (~aaronshaf@ip-64-134-234-93.public.wayport.net)
+[00:27:46] *** Quits: doubleemms (~doubleemm@c-174-51-250-8.hsd1.co.comcast.net) (Client Quit)
+[00:29:47] *** Joins: tealmage (~tealmage@ip70-160-31-87.hr.hr.cox.net)
+[00:30:30] <joefiorini> so rails without ember-rails is hard, eh?
+[00:30:43] *** Quits: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com) (Quit: Computer has gone to sleep.)
+[00:31:18] *** Quits: tealmage (~tealmage@ip70-160-31-87.hr.hr.cox.net) (Remote host closed the connection)
+[00:31:43] *** Quits: jefflab (~textual@ip-64-134-238-92.public.wayport.net) (Quit: Computer has gone to sleep.)
+[00:32:00] *** Joins: rafshar (~rafshar@72.34.113.210)
+[00:32:01] *** Quits: quartzmo_ (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Remote host closed the connection)
+[00:32:16] *** Joins: badem4o (~badem4o@ip68-104-74-232.lv.lv.cox.net)
+[00:32:43] *** Quits: jlevstein (~jlevstein@135.23.98.36) (Quit: ["Textual IRC Client: www.textualapp.com"])
+[00:34:15] *** Quits: WiktorS (~Miranda@d18-34.static.icpnet.pl) (Quit: WiktorS)
+[00:34:43] <joefiorini> specified ember-data-source 1.0.0.beta.2 in Gemfile but we're still getting beta.1! wtf?
+[00:35:27] *** Quits: badem4o (~badem4o@ip68-104-74-232.lv.lv.cox.net) (Remote host closed the connection)
+[00:35:48] *** Joins: tobobo (~tobobo@108-235-14-229.lightspeed.sntcca.sbcglobal.net)
+[00:36:57] *** Joins: mdi_ (~mdi_@c80-217-196-53.bredband.comhem.se)
+[00:37:51] *** Joins: badem4o (~badem4o@ip68-104-74-232.lv.lv.cox.net)
+[00:39:04] *** Quits: wmoxam (~wmoxam@pdpc/supporter/active/wmoxam) (Quit: leaving)
+[00:39:10] *** Quits: turngate (~turngate@198.84.240.195) (Quit: turngate)
+[00:39:19] *** Quits: sdeinum_ (~textual@CPE78cd8e66db20-CM78cd8e66db1d.cpe.net.cable.rogers.com) (Quit: ["Textual IRC Client: www.textualapp.com"])
+[00:42:05] *** Quits: timani (~timani@2001:5a8:4:9ee0:ac01:dd22:1b3:8120) (Ping timeout: 245 seconds)
+[00:43:01] *** Quits: kdbuck (~Adium@S0106002401dbdff8.cg.shawcable.net) (Quit: Leaving.)
+[00:45:48] *** Quits: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net) (Remote host closed the connection)
+[00:47:12] *** Quits: pairup (~otherpers@c-69-181-30-172.hsd1.ca.comcast.net) (Quit: I'm asleep.)
+[00:48:20] *** Joins: javascriptjedi (~javascrip@c-76-27-82-92.hsd1.ut.comcast.net)
+[00:49:33] *** Joins: jamesarosen (~jamesaros@192.161.159.18)
+[00:51:03] *** Quits: NivenHuH (~NivenWuss@sonic.mochaleaf.com) (Quit: Computer has gone to sleep.)
+[00:51:33] *** Joins: mixonic (~anonymous@ool-ae2c37d6.dyn.optonline.net)
+[00:52:19] *** Quits: s00pcan (~chris@108-208-64-149.lightspeed.livnmi.sbcglobal.net) (Quit: Lost terminal)
+[00:52:44] *** Quits: javascriptjedi (~javascrip@c-76-27-82-92.hsd1.ut.comcast.net) (Ping timeout: 256 seconds)
+[00:53:20] *** Quits: mdi_ (~mdi_@c80-217-196-53.bredband.comhem.se) (Ping timeout: 246 seconds)
+[00:53:34] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[00:55:47] *** Quits: jamesarosen (~jamesaros@192.161.159.18) (Remote host closed the connection)
+[00:56:00] *** Quits: carlyle (~carlyle@10.sub-70-193-2.myvzw.com) (Remote host closed the connection)
+[00:56:28] *** Joins: mdi_ (~mdi_@c80-217-196-53.bredband.comhem.se)
+[00:56:53] <rakl> joefiorini rm -rf tmp/ ?
+[00:57:39] <rakl> or if you precompiled assets, maybe remove public/assets/cached or wherever that is
+[00:57:57] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 245 seconds)
+[00:59:25] <joefiorini> rakl: problem is actually that ember-data-source has the wrong version of ember-data
+[00:59:28] <pzuraq> ok, I'm trying to add save for hasMany relationships and make a pull request, anyone from the ember-data team: should I be adding the function just to ManyArray or also to the RecordArrays?
+[00:59:36] <joefiorini> it says beta.2 but it's really beta.1
+[00:59:59] *** Quits: norviller (~norviller@17.202.38.248) (Quit: Textual IRC Client: www.textualapp.com)
+[01:00:22] *** Joins: T_T (~kw3st@ip-64-134-229-190.public.wayport.net)
+[01:00:52] *** Joins: sly7_7 (~sylvain.m@cha25-3-88-174-48-109.fbx.proxad.net)
+[01:00:57] *** Joins: jnh (~jnh@103.29.30.39)
+[01:01:20] <pzuraq> I'm not sure what the difference is between ManyArrays and RecordArrays
+[01:01:37] <pzuraq> in terms of usage
+[01:04:53] *** Quits: aaronshaf (~aaronshaf@ip-64-134-234-93.public.wayport.net) (Remote host closed the connection)
+[01:06:06] *** Quits: cha0ticz (~jcugno@173.196.193.218) (Ping timeout: 264 seconds)
+[01:06:08] <pzuraq> also not sure if Ishould write tests for it or not
+[01:07:08] *** Quits: cascalheira (~cascalhei@bl16-119-218.dsl.telepac.pt) (Quit: Linkinus - http://linkinus.com)
+[01:07:16] *** Quits: jergason (~jergason@65.181.53.2) (Quit: jergason)
+[01:07:23] <mmun> joefiorini: are you sure that you didn't pull ember-data into your /vendor?
+[01:08:07] *** Quits: rafshar (~rafshar@72.34.113.210) (Quit: rafshar)
+[01:08:22] <joefiorini> mmun: yep, I did bundle open ember-data-source and verified it was the wrong version
+[01:08:26] *** Joins: kanja (~bbeecher@192.12.88.32)
+[01:08:33] <joefiorini> er, wait, not wrong version, just looks weird
+[01:08:34] <mmun> verified how?
+[01:08:46] <mmun> did you dig into the gem source?
+[01:08:49] <joefiorini> it's reporting beta.1, but I think it's actually beta.2
+[01:09:00] <joefiorini> yes, I opened it and it pointed to commit d1158e2
+[01:09:18] *** Quits: cloke (~cloke@66.159.97.90) (Quit: cloke)
+[01:09:30] <mmun> can you humor me and check that there's nothing in /vendor/ember/?
+[01:09:35] <joefiorini> I looked it up and saw it said beta.1 and assumed there was a bad build; looks like it was a bad commit
+[01:09:43] <mmun> alright alright
+[01:09:53] *** Joins: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[01:10:39] <joefiorini> mmun: tldr I was very confused by confusing commits... looks like ember-data-source is okay, but DS.version reports beta.1 even though the commit is right :/
+[01:10:51] <mmun> ahhhh
+[01:11:10] <joefiorini> https://github.com/emberjs/data/commit/d1158e2
+[01:11:18] <joefiorini> that was the commit, understand my confusion? :)
+[01:11:23] <mmun> indeed
+[01:11:24] <mmun> :)
+[01:13:31] *** Joins: mikepack (~mikepack@c-67-176-73-117.hsd1.co.comcast.net)
+[01:14:14] *** Quits: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Ping timeout: 248 seconds)
+[01:14:30] <pzuraq> ah
+[01:14:46] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[01:14:48] <pzuraq> ManyArray extends RecordArray
+[01:15:54] *** Joins: isar-roger (~roger@p5DCBF0A0.dip0.t-ipconnect.de)
+[01:18:09] *** Quits: mixonic (~anonymous@ool-ae2c37d6.dyn.optonline.net) (Quit: mixonic)
+[01:18:40] *** Quits: jmonma (~jmonma@74.62.30.237) (Quit: jmonma)
+[01:20:53] *** Joins: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[01:21:05] *** Joins: sudobangbang (~chatzilla@c-24-19-53-250.hsd1.wa.comcast.net)
+[01:23:12] *** Joins: tehviking (~tehviking@cpe-70-112-61-154.austin.res.rr.com)
+[01:24:46] *** Joins: rafshar (~rafshar@72.34.113.210)
+[01:25:32] *** Quits: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Ping timeout: 258 seconds)
+[01:26:30] *** Quits: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com) (Ping timeout: 248 seconds)
+[01:26:56] *** Quits: davidlai (~Adium@74.62.30.237) (Quit: Leaving.)
+[01:31:24] *** Quits: T_T (~kw3st@ip-64-134-229-190.public.wayport.net) (Remote host closed the connection)
+[01:32:37] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[01:33:02] *** Quits: rakl (~rakl@sonic.mochaleaf.com) (Quit: sleeping)
+[01:35:06] *** Quits: kurko__ (~textual@177.4.12.235) (Quit: ["Textual IRC Client: www.textualapp.com"])
+[01:35:12] *** Joins: dcherman (~dcherman@ool-4356093e.dyn.optonline.net)
+[01:35:27] *** Joins: sjkane (~steven@c-98-213-85-132.hsd1.il.comcast.net)
+[01:36:41] *** Quits: travisstaton (~tstaton@70.127.254.161) (Ping timeout: 245 seconds)
+[01:36:50] *** Quits: dodosan (~icole@162.17.186.17) (Remote host closed the connection)
+[01:37:26] *** Joins: turngate (~turngate@198-84-240-195.cpe.teksavvy.com)
+[01:37:30] *** Quits: turngate (~turngate@198-84-240-195.cpe.teksavvy.com) (Client Quit)
+[01:38:07] *** Joins: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com)
+[01:40:18] *** Quits: kruppel (~kruppel@192.161.159.18) (Remote host closed the connection)
+[01:40:18] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[01:40:30] *** Quits: mikepack (~mikepack@c-67-176-73-117.hsd1.co.comcast.net) (Remote host closed the connection)
+[01:41:55] *** Joins: tealmage (~tealmage@ip70-160-31-87.hr.hr.cox.net)
+[01:42:08] *** Joins: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[01:42:17] <BryanHunt> When building a form, is it better practice to use data bindings, or pass the model along with the action (if I'm understanding all of the examples I've seen)?
+[01:42:28] *** Joins: quartzmo_ (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[01:42:30] *** Quits: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Read error: Connection reset by peer)
+[01:44:21] *** Quits: quartzmo_ (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Remote host closed the connection)
+[01:45:51] *** Joins: AlHafoudh (~textual@dsl-static-173.212-5-200.telecom.sk)
+[01:45:55] *** Quits: AlHafoudh (~textual@dsl-static-173.212-5-200.telecom.sk) (Max SendQ exceeded)
+[01:46:14] *** Quits: sly7_7 (~sylvain.m@cha25-3-88-174-48-109.fbx.proxad.net) (Ping timeout: 248 seconds)
+[01:46:31] *** Joins: AlHafoudh (~textual@dsl-static-173.212-5-200.telecom.sk)
+[01:47:17] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[01:47:19] *** Quits: tealmage (~tealmage@ip70-160-31-87.hr.hr.cox.net) (Ping timeout: 264 seconds)
+[01:47:20] *** Quits: AlHafoudh (~textual@dsl-static-173.212-5-200.telecom.sk) (Client Quit)
+[01:47:31] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Quit: mjijackson)
+[01:49:02] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[01:49:09] *** Quits: emocakes (~emocakes@110-174-10-23.static.tpgi.com.au) (Quit: emocakes)
+[01:49:56] *** Joins: vlad_starkov (~vlad_star@109.188.126.56)
+[01:50:56] *** Joins: T_T (~kw3st@199.87.84.206)
+[01:51:00] *** Joins: rakl (~rakl@208-90-212-125.PUBLIC.monkeybrains.net)
+[01:51:42] *** Quits: emberjs-hubot (~nodebot@ec2-50-16-78-56.compute-1.amazonaws.com) (Remote host closed the connection)
+[01:52:02] *** Joins: emberjs-hubot (~nodebot@ec2-54-227-189-159.compute-1.amazonaws.com)
+[01:52:06] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Quit: Leaving.)
+[01:52:17] *** Joins: landongn (~Adium@209.31.3.75)
+[01:52:32] *** Quits: rakl (~rakl@208-90-212-125.PUBLIC.monkeybrains.net) (Client Quit)
+[01:52:45] *** Quits: T_T (~kw3st@199.87.84.206) (Remote host closed the connection)
+[01:52:56] *** Quits: mjallday (~marshall@199-241-202-99.PUBLIC.monkeybrains.net) (Ping timeout: 245 seconds)
+[01:53:03] *** Quits: tonywok (~tonywok@cpe-184-57-31-30.columbus.res.rr.com) (Ping timeout: 264 seconds)
+[01:53:23] *** Joins: rakl (~rakl@208-90-212-125.PUBLIC.monkeybrains.net)
+[01:53:34] *** Joins: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[01:54:08] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[01:54:12] *** Quits: vlad_starkov (~vlad_star@109.188.126.56) (Ping timeout: 245 seconds)
+[01:54:13] *** Joins: KendrickVT1 (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[01:54:31] *** Quits: benv (~benv@38.104.194.126) (Quit: Computer has gone to sleep.)
+[01:56:40] *** Joins: NivenHuH (~NivenWuss@199-241-202-53.PUBLIC.monkeybrains.net)
+[01:56:48] *** Quits: NivenHuH (~NivenWuss@199-241-202-53.PUBLIC.monkeybrains.net) (Client Quit)
+[01:56:53] *** Joins: tonywok (~tonywok@cpe-184-57-31-30.columbus.res.rr.com)
+[01:57:05] *** Quits: erydo (~erydo@c-50-139-84-161.hsd1.or.comcast.net) (Quit: My computer has gone to sleep. ZZZzzz…)
+[01:57:17] *** Joins: NivenHuH (~NivenWuss@199-241-202-53.PUBLIC.monkeybrains.net)
+[01:58:22] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 245 seconds)
+[01:58:31] *** Quits: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Remote host closed the connection)
+[01:58:52] *** Joins: erydo (~erydo@c-50-139-84-161.hsd1.or.comcast.net)
+[01:58:57] *** Quits: erydo (~erydo@c-50-139-84-161.hsd1.or.comcast.net) (Max SendQ exceeded)
+[01:59:35] *** Joins: erydo (~erydo@c-50-139-84-161.hsd1.or.comcast.net)
+[01:59:53] *** Joins: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[02:00:15] *** Joins: dodosan (~icole@ip-216-36-77-101.sjc.megapath.net)
+[02:00:39] *** Quits: dodosan (~icole@ip-216-36-77-101.sjc.megapath.net) (Remote host closed the connection)
+[02:01:16] *** Joins: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com)
+[02:01:16] *** Joins: dodosan (~icole@198.7.62.246)
+[02:02:54] *** Quits: vanstee (~vanstee@c-98-192-35-156.hsd1.ga.comcast.net) (Quit: Computer has gone to sleep.)
+[02:03:15] *** Joins: travisstaton (~tstaton@70.127.254.161)
+[02:04:51] *** Quits: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Remote host closed the connection)
+[02:05:16] *** Quits: mVoid (~mVoid@0130400390.0.fullrate.dk) ()
+[02:05:31] *** Joins: vanstee (~vanstee@c-98-192-35-156.hsd1.ga.comcast.net)
+[02:07:21] <go1dfish_> does anyone know how ember data automatically injects model classes in the app container?
+[02:07:28] *** Joins: bittersweetryan (~Adium@c-50-152-186-191.hsd1.ca.comcast.net)
+[02:07:45] <go1dfish_> I've been looking all through the source of both ember and data and can't seem to figure it out
+[02:08:10] *** Joins: hool (~inconduit@CPEe0cb4ec00199-CM00111ae43f36.cpe.net.cable.rogers.com)
+[02:09:20] *** Quits: sudobangbang (~chatzilla@c-24-19-53-250.hsd1.wa.comcast.net) (Ping timeout: 268 seconds)
+[02:11:19] *** Quits: codepython777 (~codepytho@c-69-244-213-227.hsd1.fl.comcast.net) (Quit: Leaving.)
+[02:12:31] *** Quits: travisstaton (~tstaton@70.127.254.161) (Ping timeout: 264 seconds)
+[02:12:48] *** Quits: luke` (~luke`@117.202.106.69) (Quit: luke`)
+[02:13:47] <sjkane> my guess would be that there are custom injections
+[02:13:52] <sjkane> for Ember-data
+[02:14:43] <go1dfish_> yeah I've tried looking but can't find any that seem to do that
+[02:15:12] *** Quits: juggy (~juggy@modemcable005.57-83-70.mc.videotron.ca) (Quit: juggy)
+[02:16:38] <landongn> just did an introduction to ember at my office
+[02:16:54] <landongn> went decently well
+[02:17:02] <sjkane> congrats
+[02:17:13] <sjkane> noone called you a "peddler of monolithic software"?
+[02:17:16] <landongn> based it on this https://github.com/landongn/ember-reddit
+[02:17:28] <landongn> most of them were too floored by the radical difference
+[02:17:47] <landongn> they were super concerned with SEO, and integration with django views
+[02:18:05] <sjkane> damn old people
+[02:18:05] <landongn> tried to point them to the discourse post but they weren't that dissuaded
+[02:18:15] <sjkane> SEO is a strawman
+[02:18:20] <landongn> gonna do my next big project in ember
+[02:18:21] <landongn> finally
+[02:18:33] <sjkane> cool yo
+[02:18:34] <go1dfish_> landongn: nice is there a demo of that anywhere?
+[02:19:15] <landongn> go1dfish_: https://github.com/landongn/ember-reddit
+[02:19:15] <go1dfish_> I built something similar a while back to mess with build tools I think with enough work you could build an alien blue type reddit experience in the browser
+[02:19:21] <landongn> yeah for sure]
+[02:19:22] *** Quits: EGreg (~Qbix@ool-44c7d192.dyn.optonline.net) (Quit: This computer has gone to sleep)
+[02:19:26] <landongn> this was basic, visually
+[02:19:29] <landongn> more focused on the glue
+[02:19:38] <landongn> but i've toyed a bit with building a reddit client
+[02:19:39] <landongn> their API is gross
+[02:19:40] <landongn> heh
+[02:19:51] <sjkane> not sure if intro to reddit
+[02:19:53] <sjkane> is the cleanest example
+[02:19:56] <sjkane> of Ember
+[02:19:58] <landongn> well, yeah
+[02:20:02] <sjkane> I like the <enter key>
+[02:20:11] <mmun> that's funny. eviltrout presented https://github.com/eviltrout/emberreddit at ember to
+[02:20:15] <landongn> yep
+[02:20:18] <landongn> i based mine on her post
+[02:20:29] <sjkane> s/her/his
+[02:20:32] <landongn> this was the first example, sjkane https://github.com/landongn/simple-reddit
+[02:20:34] <landongn> oh snap
+[02:20:36] <landongn> my bad
+[02:20:46] *** Quits: rafshar (~rafshar@72.34.113.210) (Quit: rafshar)
+[02:20:55] *** Quits: mahmoudimus (~mahmoudim@199-241-202-99.PUBLIC.monkeybrains.net) (Quit: Computer has gone to sleep.)
+[02:21:01] *** Joins: travisstaton (~tstaton@70.127.254.161)
+[02:21:10] <landongn> first example everyone did the typing and got a feel for it
+[02:21:25] <sjkane> python guys
+[02:21:28] *** Joins: gowlin (~rgolbeck@debian/developer/rmgolbeck)
+[02:21:29] <sjkane> have a hard time
+[02:21:34] <sjkane> they <3 python too much
+[02:21:35] <landongn> this was the frontend group
+[02:21:37] <sjkane> o
+[02:21:38] <sjkane> hm
+[02:21:39] <landongn> yeah
+[02:21:45] *** Joins: alexd08 (~alexdin@222.127.174.82)
+[02:22:05] <landongn> is was the comparison https://github.com/ff0000/rosy
+[02:22:09] <go1dfish_> I <3 python and Django but Ember is totally the way of the future
+[02:22:10] <landongn> which is what we use at work currently
+[02:22:14] *** Quits: Guest____ (~textual@207-237-194-183.c3-0.avec-ubr1.nyr-avec.ny.cable.rcn.com) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[02:22:28] <landongn> i'm slowly picking up rails just for the easy integration with core data
+[02:22:34] <landongn> at this point the backend framework means less and less to me
+[02:22:36] *** Quits: NivenHuH (~NivenWuss@199-241-202-53.PUBLIC.monkeybrains.net) (Quit: ["Textual IRC Client: www.textualapp.com"])
+[02:22:50] <go1dfish_> traditional web apps are a dirty hack
+[02:23:00] <go1dfish_> compared to ember style development
+[02:23:04] <sjkane> yiss
+[02:23:08] <landongn> ++
+[02:23:16] <sjkane> I want to do something fun tonight
+[02:23:16] <BryanHunt> What's the difference between Controller and ObjectController - when would I use one vs the other?
+[02:23:16] <landongn> the biggest benefit of ember is it's architecture
+[02:23:19] <sjkane> ehh
+[02:23:20] <landongn> it's like i've got a compiler
+[02:23:22] <sjkane> I am not SURE I agree
+[02:23:26] <go1dfish_> BryanHunt: ObjectController is an ObjectProxy
+[02:23:28] <sjkane> I think Ember's architecture is great
+[02:23:30] *** Quits: JumpMast3r (~anonymous@c-24-19-72-30.hsd1.wa.comcast.net) (Quit: JumpMast3r)
+[02:23:37] <sjkane> but I think the primitives are also a big deal
+[02:23:40] <go1dfish_> it proxies all attributes to whatever is in content
+[02:23:43] <sjkane> lazy CP, 2way binding
+[02:23:45] <landongn> sjkane: say more?
+[02:23:46] <sjkane> observer
+[02:23:51] <landongn> whoa i just channeled wycats
+[02:24:07] <sjkane> I think Ember just has a tool drawer full of common use cases
+[02:24:11] <landongn> yep
+[02:24:14] *** Joins: timani (~timani@50-1-118-184.dsl.dynamic.sonic.net)
+[02:24:15] <sjkane> I LOVE that I never talk to the fucking dom
+[02:24:16] <landongn> i blew some minds today with computed properties
+[02:24:17] <sjkane> i hate the dom
+[02:24:18] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[02:24:32] <landongn> building a quick and easy cache timestamp based on the last change to a data structure
+[02:24:48] <sjkane> ya
+[02:24:53] <sjkane> on the other hand set/get
+[02:24:55] <sjkane> is kinda suck
+[02:24:57] <landongn> yeah
+[02:24:58] <sjkane> but they know that
+[02:25:01] <landongn> but i can appreciate the complexity
+[02:25:03] <landongn> yeah
+[02:25:11] <sjkane> in some ways I think it's more honest
+[02:25:17] <go1dfish_> sjkane: if you are a coffee script fan, look into ember-script
+[02:25:19] *** Joins: jsteiner (~Adium@209-6-49-69.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com)
+[02:25:21] <sjkane> if it was magical and based on a hack of internal set/get
+[02:25:22] <landongn> ew coffeescript
+[02:25:25] <landongn> get out you philistine
+[02:25:26] <landongn> :D
+[02:25:27] <sjkane> it might be worse
+[02:25:32] <sjkane> I write both
+[02:25:32] <go1dfish_> I don't use CS
+[02:25:35] <sjkane> coffeescript is superior
+[02:25:37] <sjkane> but
+[02:25:38] <go1dfish_> but I'm not against it
+[02:25:41] <sjkane> it's got a rough road
+[02:25:48] <sjkane> but coffeescript is superior
+[02:25:53] <landongn> it isn't though
+[02:25:56] <sjkane> ya but it is : /
+[02:26:00] <sjkane> way more expressive
+[02:26:03] <sjkane> way less noise
+[02:26:08] <landongn> there's nothing sufficiently difficult about writing javascript that coffeescript is just magically better at
+[02:26:08] <sjkane> way fewer lines
+[02:26:10] <landongn> …imo
+[02:26:11] <sjkane> ehh
+[02:26:15] <sjkane> you need to try it
+[02:26:17] <sjkane> for several weeks
+[02:26:22] <sjkane> you need to really adopt its semantics
+[02:26:26] <mmun> BryanHunt: you would use an ObjectController if there is a natural object that the controller should wrap (called the content or model, interchangeably). If this object were an array you would use an ArrayController. If there's no single main object you might consider using a plain Controller
+[02:27:01] <landongn> sj can you give me a simple, straightforward example where coffeescript is truely superior, or just more convenient
+[02:27:06] <sjkane> ah
+[02:27:09] <landongn> because i've struggled
+[02:27:14] <sjkane> concision is where it wins
+[02:27:14] <sjkane> imo
+[02:27:21] <landongn> i'm a python dev too
+[02:27:23] <sjkane> it's empty
+[02:27:25] <sjkane> like python
+[02:27:26] <sjkane> and ruby
+[02:27:26] <landongn> so i can appreciate the semantics of it
+[02:27:29] <sjkane> it feels much cleaner
+[02:27:36] <sjkane> and reads more easily when you write idiomatic cs
+[02:27:48] <sjkane> I'll see what Open source stuff I have I can point out
+[02:27:53] <sjkane> I also write a highly functional style
+[02:27:59] <BryanHunt> mmun: so if I were building a simple user registration form and using an ember-data model, I might use ObjectController whereas if I were using jQuery post, I would use Controller?
+[02:28:03] <sjkane> so I think I am perhaps more anal about appearance
+[02:28:03] *** Quits: jonasi (~jonasi@cpe-24-55-60-206.austin.res.rr.com) (Quit: jonasi)
+[02:28:08] <sjkane> than doing a lot of imperative stuff
+[02:28:13] <landongn> br
+[02:28:14] <landongn> b'
+[02:28:28] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 240 seconds)
+[02:28:29] <mmun> BryanHunt: I think you could use an ObjectController in both cases
+[02:28:42] <sjkane> One obvious example langongn
+[02:28:43] *** Joins: BobLauer (43ba79b1@gateway/web/freenode/ip.67.186.121.177)
+[02:28:44] <sjkane> is a Gruntfile
+[02:28:49] <sjkane> it is 1000% less noisy
+[02:28:51] <sjkane> in CS
+[02:29:59] <mmun> You should probably use an ObjectController unless you have a good reason not too. ObjectControllers provide a nice sugar that they proxy get and set calls onto their content when possible (because they are ObjectProxy's)
+[02:30:09] *** Joins: dm73 (~dm@217.23.5.63)
+[02:30:31] <mmun> it lets you hide the implementation details of whether a property is actually on the controller or on the model
+[02:30:43] <BryanHunt> mmun: Thanks … still much to learn :)
+[02:30:46] *** Joins: EmersonLackey (~EmersonLa@75.119.239.194)
+[02:30:57] <mmun> Have you looked at http://emberjs.com/guides/controllers/? Might help
+[02:31:24] <BobLauer> I found a bug that occurs when defining Handlebars on Ember.imports rather than having a global Handlebars instance.  Does anyone have a minute to help me figure out where & how I would write a failing unit test for this?
+[02:31:25] <landongn> i dunno man that seems kinda down to taste
+[02:31:28] <landongn> i can appreciate that though
+[02:31:37] <landongn> i 'enjoy' the c like syntax i suppose
+[02:32:08] *** Quits: tonywok (~tonywok@cpe-184-57-31-30.columbus.res.rr.com) (Ping timeout: 240 seconds)
+[02:33:01] <sjkane> ah
+[02:33:07] <sjkane> the whole thing is down to taste
+[02:33:11] <sjkane> and there is a minor case to be made
+[02:33:12] <alexd08> hi. the transition guide of ember data is not in sync with 1.0 beta2 .. well at least this part: https://github.com/emberjs/data/blob/master/TRANSITION.md#underscored-api-endpoints
+[02:33:13] <sjkane> wrt es6
+[02:33:19] <sjkane> but I think es6 is far away
+[02:33:26] <sjkane> from release AND from use
+[02:33:29] <sjkane> and altjs
+[02:33:30] <alexd08> pathForType is not yet the name of the function. it's rootForType
+[02:33:31] <sjkane> is the way of the future
+[02:33:33] <sjkane> for certain
+[02:33:43] <sjkane> JS is a compile target paving the way for a web binary
+[02:33:54] <sjkane> javascript is one of my fav languages tho
+[02:33:58] <sjkane> but CS is a cleaner form of it
+[02:34:00] <sjkane> (to me)
+[02:34:08] <abuiles> Guys, quick questions, I'm playing around with localStorage, I'm able to create new record, but fail updating I do a  store.find and then on the return object set some property and called save, but it doesn't work. I see it get's "updated" with the ember inspector, but then if I refresh, the field I updated goes back to the old value.
+[02:34:54] <abuiles> this is a gist  https://gist.github.com/abuiles/0393f1d09067fed52d31
+[02:35:06] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[02:35:06] *** Joins: T_T (~kw3st@199.87.84.206)
+[02:35:17] <sjkane> what adapter is it
+[02:36:07] <abuiles> LSAdapter
+[02:36:08] *** Quits: vanstee (~vanstee@c-98-192-35-156.hsd1.ga.comcast.net) (Quit: Computer has gone to sleep.)
+[02:36:14] <abuiles> sjkane: LSAdapter
+[02:36:14] *** Quits: KendrickVT1 (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Quit: Leaving.)
+[02:36:20] <sjkane> are you intending to have your .then set up that way?
+[02:36:29] <sjkane> atm you are passing your function that does nothing
+[02:36:36] <sjkane> and a reject function that isn't valid
+[02:36:50] *** Quits: robmonie (robmonie@nat/jetstar/x-lsqcyojvpsdctvur) (Remote host closed the connection)
+[02:36:52] <sjkane> .then(resolveFunction, rejectFunction)
+[02:37:22] *** Joins: tealmage (~tealmage@ip70-160-31-87.hr.hr.cox.net)
+[02:39:06] <abuiles> sjkane: ha sorry, actually, It was valid, but I broke when copying for pasting
+[02:39:25] <landongn> yeah man ES6 will solve a lot of problems, but it is quite a ways away still, i agree
+[02:39:28] *** boztek is now known as boztek|afk
+[02:39:35] <sjkane> tbh I have no problem w/ js
+[02:39:37] <sjkane> as it stands
+[02:39:41] <landongn> the thing with coffeescript is that compile step is irritating, and the conventions of CS make me feel like i'm not as productive
+[02:39:42] <sjkane> module system is obviously trash
+[02:39:44] <sjkane> but cS doesn't help that
+[02:39:57] <sjkane> tests are also way less noisy
+[02:39:58] <sjkane> for me
+[02:39:59] <sjkane> in CS
+[02:40:05] <sjkane> tests in mocha are like triple nested
+[02:40:07] <sjkane> and so noisy
+[02:40:22] <sjkane> that said, elegant JS is also not bad
+[02:40:30] <sjkane> and the more you drive things w/ functions the better
+[02:40:36] <landongn> link?
+[02:40:39] <sjkane> you can pull all the noise out to implementations
+[02:41:15] <abuiles> sjkane: ok, fixed :), so yeah, I'm basically passing resolve functions, they both get called.
+[02:41:46] <landongn> i'm very very in line with the single responsibility principal, and i feel like js and prototypes are 'good' at that, but in some regards i feel like my prototypes can get just huge and out of control
+[02:41:49] *** Quits: narkeeso (~narkeeso@pool-98-112-75-48.lsanca.fios.verizon.net) (Quit: Computer has gone to sleep.)
+[02:41:49] *** Joins: vanstee (~vanstee@c-98-192-35-156.hsd1.ga.comcast.net)
+[02:41:51] <sjkane> https://gist.github.com/stevekane/6518744
+[02:41:51] <landongn> ember keeps me grounded in that regard though
+[02:41:55] <sjkane> here is just a random class
+[02:41:57] <sjkane> from my app
+[02:42:06] <sjkane> some of the extracted functions are in utils
+[02:42:09] <sjkane> others in the header
+[02:42:48] <landongn> i have such trouble reading that
+[02:43:00] <landongn> it's just lack of exposure
+[02:43:04] <landongn> but that seems less readable to me
+[02:43:15] <BobLauer> Does anyone know how I would go about writing a failing test for this fix?: https://github.com/boblauer/ember.js/commit/55c825e8b86e5390da6d47c193b9be7dfd2e5082
+[02:43:19] <sjkane> ah
+[02:43:21] <sjkane> ya it's a style
+[02:43:22] <sjkane> like any other
+[02:43:29] *** boztek|afk is now known as boztek
+[02:43:50] <sjkane> this is also a tough file
+[02:43:51] <landongn> sure, yeah
+[02:43:51] <sjkane> to digest
+[02:43:58] <sjkane> it's doing some interesting stuff
+[02:44:09] <landongn> btw, every time i see moment() in the wild i grin a bit
+[02:44:16] <landongn> i work with the guy who created moment.js
+[02:44:18] <sjkane> moment.js
+[02:44:20] <sjkane> and bacon.js
+[02:44:20] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[02:44:21] <landongn> we give him shit about it constantly
+[02:44:24] <sjkane> are the best things evar
+[02:44:26] <sjkane> o ya?
+[02:44:31] <sjkane> moment is so gooood
+[02:44:32] *** Quits: tealmage (~tealmage@ip70-160-31-87.hr.hr.cox.net) (Remote host closed the connection)
+[02:44:58] <sjkane> w10b.com
+[02:45:03] <sjkane> this is a slideshow from a talk I gave
+[02:45:04] <sjkane> it's all js
+[02:45:15] <sjkane> (mostly half-baked js)
+[02:46:28] <mmun> yo sjkane
+[02:46:34] <sjkane> hiyo
+[02:46:38] *** Quits: thomaslangemann (~thomaslan@37-5-153-150-dynip.superkabel.de) (Quit: thomaslangemann)
+[02:46:38] <landongn> yeah i remember reading the early draft of this deck
+[02:46:40] *** Joins: kruppel (~kruppel@c-71-198-63-116.hsd1.ca.comcast.net)
+[02:46:40] <abuiles> sjkane: basically, after getting both, the object should have been save right? Or I'm missing something?
+[02:46:41] *** Joins: jergason (~jergason@65.181.53.2)
+[02:46:53] <sjkane> I have not used LSadapter
+[02:46:57] <sjkane> but my assumption is yes?
+[02:46:59] <mmun> j/w about your thoughts on http://discuss.emberjs.com/t/working-with-nested-controllers/2576
+[02:47:09] <mmun> if you have the time anyways
+[02:47:35] <sjkane> ya man reading it
+[02:47:56] <sjkane> in the meantime, check out the second half of that deck
+[02:48:02] <sjkane> I think it touches on how I tend to do these things
+[02:48:07] <sjkane> but I am reading that pos
+[02:48:07] <abuiles> sjkane: yeap mine too, I'll keep investigating. thanks :)
+[02:48:07] <sjkane> t
+[02:48:08] <mmun> ya thats why i asked ;)
+[02:49:09] *** Joins: sudobangbang (~chatzilla@c-24-19-53-250.hsd1.wa.comcast.net)
+[02:52:20] *** Quits: erydo (~erydo@c-50-139-84-161.hsd1.or.comcast.net) (Quit: My computer has gone to sleep. ZZZzzz…)
+[02:52:25] <sjkane> ok to be clear
+[02:52:37] <sjkane> you want to communicate "isSelected" between comments and posts?
+[02:52:45] <mmun> yeah
+[02:52:47] <sjkane> the comment object has an isSelected state
+[02:52:47] <sjkane> ok
+[02:52:50] <sjkane> I would do this a diff way
+[02:52:52] <sjkane> but similar
+[02:52:53] <sjkane> should I gist?
+[02:53:13] <mmun> the important part is that the post can take all the comments and apply whatever logic it wants
+[02:53:19] <mmun> through the magic of bindings
+[02:53:46] <mmun> there's no global "selectedComment" or whatever stored in any controller, except in the comment controllers themselves
+[02:53:57] <mmun> but please go ahead and gist away
+[02:54:17] <sjkane> the post needs to be aware of its comments yes?
+[02:54:27] <mmun> comments yes, but their item controllers
+[02:54:35] <mmun> the models are already accessible naturally
+[02:54:42] *** Joins: mjijackson_ (~michael@astound-69-42-2-25.ca.astound.net)
+[02:54:48] <sjkane> but the controller contains a sort of meta-data
+[02:54:49] <sjkane> yes?
+[02:54:51] <sjkane> about selectedness
+[02:54:53] <mmun> exactly
+[02:54:54] <sjkane> ya
+[02:54:56] <sjkane> components baby
+[02:54:59] <sjkane> gonna blow some minds up in here
+[02:55:03] <mmun> please do
+[02:55:04] <mmun> :)
+[02:55:11] <sjkane> but let me sneak peek you
+[02:55:14] <sjkane> since you are obv smart man
+[02:55:17] <sjkane> components are views
+[02:55:19] <mmun> wow ty vm
+[02:55:20] <sjkane> views are trees
+[02:55:27] <sjkane> ...already
+[02:55:33] <sjkane> so parent views know about child views
+[02:55:39] <sjkane> and vice versa
+[02:55:42] <mmun> here's the deal with that
+[02:55:54] <mmun> what if you want to use this application state in multiple places
+[02:56:01] <mmun> not so easy if you store it on the views
+[02:56:20] <sjkane> itemControllers aren't singletons anyway
+[02:56:23] <sjkane> so the diff is moot
+[02:56:39] <mmun> yes i see what you mean
+[02:56:58] <mmun> lemme think about it some more
+[02:57:13] <sjkane> if you need to communicate w/ your system at large
+[02:57:14] <sjkane> about this
+[02:57:14] <mmun> maybe components are the thing that makes doing it with views actually nice
+[02:57:19] <sjkane> ya
+[02:57:28] <sjkane> components are self contained and isolated view/controller mashups
+[02:57:37] <landongn> if I was going to build a backend with the intent to use ember data or ember model, what's a good decision for that?
+[02:57:44] <landongn> rails? django via tastypie? node?
+[02:57:47] *** Quits: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) (Quit: Computer has gone to sleep.)
+[02:57:50] <sjkane> landongn you have just asked the 8million dollar question
+[02:57:55] <sjkane> the answer was clear about 2 month ago
+[02:57:58] <sjkane> (to me)
+[02:58:04] <sjkane> now it's hopelessly ambiguous again
+[02:58:04] <mmun> erlang
+[02:58:13] <landongn> haha
+[02:58:13] <sjkane> o wait
+[02:58:14] *** Quits: mjijackson_ (~michael@astound-69-42-2-25.ca.astound.net) (Client Quit)
+[02:58:14] <sjkane> I'm an idiot
+[02:58:17] <sjkane> you didn't ask at all
+[02:58:19] <sjkane> what I answered
+[02:58:19] <sjkane> haha
+[02:58:23] <landongn> i mean rails via activeserializedrecord?
+[02:58:46] <landongn> i'm more of a python guy
+[02:58:50] <landongn> but i've also wanted to use go
+[02:58:51] <landongn> a lot
+[02:58:55] <sjkane> mmun, what else in your app needs to know about this?
+[02:59:22] <mmun> basically there are two completely separate views of the same tree
+[02:59:25] <mmun> of application state
+[02:59:45] <mmun> a minified view and the full view
+[03:00:33] <sjkane> ah
+[03:00:47] <sjkane> how seperate in space are they?
+[03:00:53] <mmun> same outlet
+[03:00:57] <sjkane> coo
+[03:01:02] <sjkane> create a common data set
+[03:01:04] <sjkane> that both share
+[03:01:11] <mmun> yeah it's provided by the route
+[03:01:15] *** Joins: narkeeso (~narkeeso@pool-98-112-75-48.lsanca.fios.verizon.net)
+[03:01:15] <mmun> ember data
+[03:01:16] <sjkane> ya i mean
+[03:01:22] <sjkane> create a proxy data type
+[03:01:24] <sjkane> that connects them
+[03:01:33] <sjkane> a bound property you inject into both view
+[03:01:36] <sjkane> (components)
+[03:01:45] <sjkane> so that changes in one are propagated to the other
+[03:01:52] <mmun> yeah
+[03:01:56] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Quit: mjijackson)
+[03:02:18] <mmun> alternatively, how do you feel about controllerName? :D
+[03:02:24] <mmun> there is some precedence with viewName
+[03:04:14] *** Joins: csprocket777 (~Adium@c-67-176-253-14.hsd1.in.comcast.net)
+[03:04:23] <sjkane> so
+[03:04:45] *** Quits: BobLauer (43ba79b1@gateway/web/freenode/ip.67.186.121.177) (Ping timeout: 250 seconds)
+[03:04:54] *** Parts: jedrek (~jedrek@89-75-132-250.dynamic.chello.pl) ()
+[03:05:00] <csprocket777> hey bittersweetryan: I found the solution to the issue from the other night. about hasMany posts being empty
+[03:05:01] <sjkane> you are looking for what is effectively a needs api
+[03:05:02] *** Quits: jergason (~jergason@65.181.53.2) (Ping timeout: 245 seconds)
+[03:05:06] <sjkane> for non-singleton controllers
+[03:05:09] <mmun> exactly!
+[03:05:11] <sjkane> some kind of scoped reference
+[03:05:32] <mmun> I had suggested something like needs: ['comments:model.comments']
+[03:05:41] <mmun> I didn't want to overcomplicate that post
+[03:05:49] *** Quits: hool (~inconduit@CPEe0cb4ec00199-CM00111ae43f36.cpe.net.cable.rogers.com) (Ping timeout: 240 seconds)
+[03:06:32] <csprocket777> QUESTION: How do I maintain scope in a "then" handler after a model resolves it's promise?
+[03:07:20] <landongn> ANSWER: var self = this;
+[03:07:21] <csprocket777> I've tried setting a reference outside the handler but it's always null when I get inside of it.
+[03:07:32] <csprocket777> tried that.
+[03:07:34] <landongn> hrm
+[03:07:36] <sjkane> .then(functionName.bind(self)
+[03:07:36] <csprocket777> well not "self"
+[03:07:37] <sjkane> )
+[03:07:43] <sjkane> or even functionName.bind(this)
+[03:07:44] <sjkane> or
+[03:07:47] <sjkane> anonymous function
+[03:08:00] <sjkane> function (result) {self.set('beep', 'boop')}
+[03:08:07] <csprocket777> I'm doing an annonymous function
+[03:08:13] <sjkane> the key
+[03:08:16] <sjkane> is that you cannot use this
+[03:08:19] <sjkane> this is special in js
+[03:08:22] <csprocket777> but my reference is null
+[03:08:25] <sjkane> special as in not the good kind
+[03:08:29] <sjkane> o
+[03:08:30] <sjkane> wut
+[03:08:30] <csprocket777> are there any other specials?
+[03:08:32] <sjkane> paste code
+[03:09:05] *** Joins: hool (~inconduit@CPEe0cb4ec00199-CM00111ae43f36.cpe.net.cable.rogers.com)
+[03:09:25] <csprocket777> 			var lc = this.controllerFor('login');
+[03:09:25] <csprocket777> 				this.get('store').find('user', {cecID:username}).then( function(response){
+[03:09:25] <csprocket777> 					console.log(lc); // <-- equals null
+[03:09:25] <csprocket777> 				});
+[03:09:48] <landongn> uh
+[03:10:01] <landongn> var self = this; var lc = self.controllerFor('login');?
+[03:10:08] <landongn> maybe this is being rebound within the block
+[03:10:37] <landongn> always be explicit with hoisting like that
+[03:11:05] <sjkane> i think the problem
+[03:11:07] <csprocket777> ok. wierd. doing var self = this; I can see self inside the handler
+[03:11:20] <sjkane> ya but you're logging some random thng anyway
+[03:11:24] <sjkane> not even related to this/self
+[03:11:24] <landongn> yeah your this.controllerFor was refereincing the scope withtin the response block
+[03:11:54] <csprocket777> ok
+[03:11:56] <sjkane> so mmun
+[03:11:59] <sjkane> my thoughts are this
+[03:12:06] <sjkane> views are trees, controllers are awkward
+[03:12:12] <sjkane> and arguably don't make much sense
+[03:12:24] <mmun> yeah i mostly agree
+[03:12:25] <sjkane> controllers I see as serving their purpose as singletons
+[03:12:26] <sjkane> to store state
+[03:12:31] <sjkane> at the root of each route
+[03:12:42] <sjkane> beyond that, if you need singleton memory persistence
+[03:12:46] <sjkane> you have a special case
+[03:13:01] *** Joins: peregrine81 (~textual@CPE-75-86-156-215.wi.res.rr.com)
+[03:13:05] <mmun> well i'm going to make that special case a bit less special damnit
+[03:13:06] <sjkane> otherwise, store the state down at a persisted layer (ie the root controller for your route) and pipe it up
+[03:13:11] <mmun> if its the last thing i do!
+[03:13:20] <sjkane> ya but I think you won't solve your issue
+[03:13:23] <sjkane> w/ this tactic
+[03:13:30] <sjkane> because these are still fleeting controllers
+[03:13:33] <mmun> porque?
+[03:13:42] <sjkane> itemControllers are just GCed
+[03:13:43] <sjkane> like views
+[03:13:47] *** Joins: tonywok (~tonywok@cpe-184-57-31-30.columbus.res.rr.com)
+[03:13:49] <sjkane> they aren't refs to a singleton
+[03:13:53] <mmun> using the needs api you would not need to define anything in the template at all
+[03:14:09] <sjkane> ya
+[03:14:11] <sjkane> but imo
+[03:14:14] <sjkane> nested = view tree
+[03:14:17] <sjkane> = already available
+[03:14:33] <mmun> mhm
+[03:14:35] <sjkane> I don't know, I feel this is a fundamental point of indecision in ember still
+[03:14:43] <sjkane> what exactly controllers "are for"
+[03:14:48] <sjkane> so I reject them
+[03:14:48] *** Joins: j_wright (~jwright@unaffiliated/j-wright/x-9145068)
+[03:14:50] <sjkane> completely
+[03:14:52] <sjkane> and find myself being happier
+[03:14:57] <landongn> controllers and views are kind of hard to grep
+[03:15:00] <mmun> yes, there is a basically case that still confuses the shit out of me
+[03:15:04] <mmun> basic case*
+[03:15:28] <mmun> if I createRecord a new model… which happens to be the content of some array controller, how do I get access to the newly generated item controller?
+[03:15:40] <mmun> ex. to initialize the state
+[03:15:44] *** grep_away is now known as grep_awesome
+[03:15:50] <mmun> .findBy('model', ...)?
+[03:15:51] <mmun> ew
+[03:16:10] <sjkane> pwut
+[03:16:15] <sjkane> if you create a new post
+[03:16:19] <sjkane> to set its initial state?
+[03:16:30] <mmun> yeah like isEditing: true or something
+[03:16:33] <sjkane> on the proxy object that you are wrapping it with
+[03:16:37] <sjkane> IE your itemcontroller
+[03:16:41] <mmun> yes.
+[03:16:43] <sjkane> ya
+[03:16:59] *** Quits: tobobo (~tobobo@108-235-14-229.lightspeed.sntcca.sbcglobal.net) (Remote host closed the connection)
+[03:17:11] <sjkane> that logic just goes in init
+[03:17:14] <sjkane> for your itemCon def
+[03:17:18] <mmun> not necessarily
+[03:17:18] <sjkane> or component
+[03:17:25] *** Quits: narkeeso (~narkeeso@pool-98-112-75-48.lsanca.fios.verizon.net) (Quit: Computer has gone to sleep.)
+[03:17:28] <mmun> it would run for every item added, not just newly created ones
+[03:17:30] *** Quits: shinnya (~shinnya@224.179.210.220.dy.bbexcite.jp) (Ping timeout: 245 seconds)
+[03:17:56] <mmun> or I could just suck it up and store it on the model and be done with it ;)
+[03:18:00] <sjkane> ah if a re-render is triggered you mean?
+[03:18:21] <mmun> I mean, initially I just want to add all the posts and display them regularly
+[03:18:21] <sjkane> here is what I do agree with
+[03:18:27] <sjkane> creating a proxy to wrap an array of data
+[03:18:30] <mmun> I don't want to have them all isEditing
+[03:18:30] <sjkane> is kind of awkward
+[03:19:08] <mmun> in conclusion, fml
+[03:19:08] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[03:19:11] <sjkane> ooooo
+[03:19:14] <sjkane> you want the newly created one
+[03:19:17] <sjkane> to be editable
+[03:19:23] <mmun> exactly
+[03:19:51] <sjkane> how many can be editable at a time?
+[03:19:52] <sjkane> n or 1?
+[03:20:07] <mmun> in theory n
+[03:20:16] <mmun> in practice always 1
+[03:21:18] <mmun> so I got it working this way http://jsbin.com/oSiNayE/5/edit
+[03:21:29] <mmun> manually registering the child controllers
+[03:21:36] <mmun> ain't so bad. not my favourite.
+[03:21:49] *** Joins: chadhietala (~Adium@c-50-136-226-79.hsd1.ca.comcast.net)
+[03:22:19] <sjkane> to me, all of it seems odd
+[03:22:22] <sjkane> if you need this state
+[03:22:25] <sjkane> it's application state
+[03:22:28] <sjkane> but not persistent state
+[03:22:36] <sjkane> so persist it on your root controller
+[03:22:47] <sjkane> or on the controller that underpins this portion of your app
+[03:23:04] <sjkane> if you do need it to persist (which is not likely given your use case) then it's model data
+[03:23:20] <sjkane> if it's truly fleeting and based on your CURRENT interaction w/ this view of your app
+[03:23:26] <chadhietala> I was wondering if someone could look at this issue I'm having with Ember Data. Seems like I'm just missing something. http://stackoverflow.com/questions/18730308/ember-data-beta-2-fixtureadapter-errors
+[03:23:31] <sjkane> then this behavior can all be hoisted to the view/component layer
+[03:23:39] <sjkane> w/ no need to even bind to persistent data at the controller layer
+[03:23:56] <mmun> yeah, I'm going to redo that jsbin with components
+[03:24:04] <mmun> see how it feels
+[03:24:31] *** Quits: peregrine81 (~textual@CPE-75-86-156-215.wi.res.rr.com) ()
+[03:24:46] *** Parts: dm73 (~dm@217.23.5.63) ()
+[03:24:56] <mmun> should the code involve looping through childViews?
+[03:24:57] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[03:25:02] *** Joins: KendrickVT1 (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[03:25:07] <sjkane> ya your same syntax
+[03:25:11] <sjkane> is essentially correct
+[03:25:13] <sjkane> childVIews.anyBy
+[03:25:13] <mmun> roger
+[03:25:16] *** Parts: csprocket777 (~Adium@c-67-176-253-14.hsd1.in.comcast.net) ()
+[03:25:45] <mmun> that seems a bit sketchy to me, if you're mixing views you'd have to do some filter. doesn't seem elegant heh
+[03:25:52] <sjkane> ah
+[03:25:59] <mmun> not the case in my situation
+[03:26:01] <mmun> tho
+[03:26:02] <sjkane> ya
+[03:26:03] *** Joins: narkeeso (~narkeeso@pool-98-112-75-48.lsanca.fios.verizon.net)
+[03:26:06] <sjkane> that actually occured to me
+[03:26:11] <sjkane> as a point of ugliness
+[03:26:19] <sjkane> I used this pattern for form validation
+[03:26:28] <sjkane> iterated over the fieldviews in my form wrapper
+[03:26:33] <sjkane> and checked their "isValid" status
+[03:26:38] <sjkane> but I had the same displeasure
+[03:28:07] <mmun> well it's still the case that the relevant child views can automatically register themselves in an array in the parent view
+[03:28:19] <abuiles> chadhietala: you can find some of the changes here https://github.com/emberjs/data/blob/master/TRANSITION.md
+[03:28:25] <mmun> ie. relevantChildViews
+[03:28:45] <sjkane> hmm
+[03:28:52] <mmun> not sure how you feel about a child view knowing it has a parent
+[03:29:01] <sjkane> I think it's fair
+[03:29:09] <sjkane> i mean, in truth
+[03:29:13] <sjkane> you should use a communication
+[03:29:16] <sjkane> other than DI
+[03:29:26] <sjkane> IE,  a commonly shared Bound prop
+[03:29:29] <sjkane> or a communication system
+[03:29:33] <sjkane> queue, bus, etc
+[03:29:38] <mmun> that's true, from the bottom up, actions are the key
+[03:29:40] <sjkane> DI is a convenience
+[03:29:45] *** Joins: robmonie (robmonie@nat/jetstar/x-cptjnsplrinkacar)
+[03:29:55] <sjkane> ya
+[03:29:55] *** Quits: KendrickVT1 (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 264 seconds)
+[03:29:56] <sjkane> I mean
+[03:30:05] <sjkane> I would consdier how state is affected on a per-comment basis
+[03:30:11] <sjkane> and use sendAction
+[03:30:14] <sjkane> to broadcast
+[03:30:22] <sjkane> then you just need to decide how to "listen"
+[03:30:36] <sjkane> didInsert might broadcast
+[03:30:42] <sjkane> willRemove might broadcast
+[03:30:50] <sjkane> makeEditable might broadcast
+[03:30:51] <sjkane> etc
+[03:30:54] <mmun> ya
+[03:31:07] <sjkane> then iut's generalizeable
+[03:31:37] <mmun> I will have to think more about what you were saying re: sharing the state between different sub trees
+[03:31:51] <mmun> maybe artificially add a common ancestor
+[03:31:58] <sjkane> that's not artificial
+[03:32:00] <sjkane> it's fundamental
+[03:32:10] <sjkane> you can do it through your already available controller base
+[03:32:14] <sjkane> or lift it higher in the tree
+[03:32:19] <sjkane> to a shared layer
+[03:32:27] <sjkane> i have some slides discussing that
+[03:32:32] *** Joins: tobobo (~tobobo@108-235-14-229.lightspeed.sntcca.sbcglobal.net)
+[03:32:39] <mmun> k, i mostly cruised through them
+[03:32:46] <mmun> i'm gonna chill out and check them again
+[03:32:51] <mmun> thanks for the chatz
+[03:33:12] <sjkane> ya np
+[03:33:57] *** Quits: tobobo (~tobobo@108-235-14-229.lightspeed.sntcca.sbcglobal.net) (Remote host closed the connection)
+[03:34:12] *** Quits: hool (~inconduit@CPEe0cb4ec00199-CM00111ae43f36.cpe.net.cable.rogers.com) (Ping timeout: 245 seconds)
+[03:34:19] *** Joins: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net)
+[03:34:30] *** Joins: tobobo (~tobobo@2602:306:ceb0:ee50:5d4:822e:40f9:2412)
+[03:34:31] *** Joins: hool (~inconduit@CPEe0cb4ec00199-CM00111ae43f36.cpe.net.cable.rogers.com)
+[03:34:53] <pzuraq> anyone know what testing system ember-data is using?
+[03:34:59] <mmun> I see now why you rarely uses render
+[03:35:05] <mmun> it would totally break this pattern
+[03:35:33] *** Quits: hool (~inconduit@CPEe0cb4ec00199-CM00111ae43f36.cpe.net.cable.rogers.com) (Client Quit)
+[03:35:42] <mmun> mostly anyways
+[03:35:51] <sjkane> render is possibly occasionally useful
+[03:35:56] <pzuraq> Need to figure out how to run my tests...
+[03:36:05] *** Joins: rxgx (~rxgx@64.38.203.218)
+[03:36:09] <sjkane> when you desire to have two memory-persistent sources or "roots" of data
+[03:36:11] <sjkane> in a given route
+[03:36:18] <sjkane> I can certainly imagine that
+[03:36:25] <sjkane> though in those cases, I personally do this pattern
+[03:36:32] <sjkane> needs: ['user']
+[03:36:36] <mmun> yeah but right now i have {{render minified-post-list}} and {{render full-post-list}}
+[03:36:43] <sjkane> user: Ember.computed.alias("controllers.user")
+[03:37:17] *** Quits: jsteiner (~Adium@209-6-49-69.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com) (Quit: Leaving.)
+[03:37:46] *** Quits: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net) (Remote host closed the connection)
+[03:38:22] <sjkane> render w/o a model I should say
+[03:38:25] <sjkane> render has strange behavior tbh
+[03:38:36] <sjkane> render w/ model spins up a new controller instance
+[03:38:41] <sjkane> w/o it uses the singleton
+[03:38:45] <mmun> yeah
+[03:38:45] <sjkane> I feel like that's just weird as balls
+[03:38:57] <sjkane> I feel like yoiu have to "know that"
+[03:39:11] <sjkane> whereas w/ components you can understand that it's an object w/ an interface
+[03:39:16] *** Quits: tobobo (~tobobo@2602:306:ceb0:ee50:5d4:822e:40f9:2412) (Ping timeout: 260 seconds)
+[03:39:20] <sjkane> and a defined set of behaviors/events blah blah
+[03:40:34] *** Joins: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net)
+[03:42:15] *** Quits: jsoverson (~textual@209.133.52.233) (Ping timeout: 264 seconds)
+[03:45:34] <rxgx> How does one add a model property of Array or Object to an ember-model? I've only seen Ember.attr()
+[03:48:36] *** Joins: isar-roger1 (~roger@p5DCBF0A0.dip0.t-ipconnect.de)
+[03:48:52] *** Quits: isar-roger (~roger@p5DCBF0A0.dip0.t-ipconnect.de) (Read error: Connection reset by peer)
+[03:53:40] *** Joins: juggy (~juggy@modemcable005.57-83-70.mc.videotron.ca)
+[03:53:59] *** Quits: skurfuerst1 (~Adium@pD95F8B8A.dip0.t-ipconnect.de) (Quit: Leaving.)
+[03:54:35] *** Joins: skurfuerst (~Adium@pD95F8B8A.dip0.t-ipconnect.de)
+[03:54:41] <mmun> alternative sugar for you sjkane: along with viewName there would be viewGroup="whatever" that would group views into an array accessible by 'whatever' in the parentView
+[03:55:31] *** Quits: dodosan (~icole@198.7.62.246) (Remote host closed the connection)
+[03:57:29] *** Quits: alexd08 (~alexdin@222.127.174.82) (Ping timeout: 256 seconds)
+[03:57:45] <mmun> er I guess that would actually be trivial to implement now, especially with the computed array properties
+[03:58:04] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Remote host closed the connection)
+[03:58:22] *** Quits: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com) (Quit: Leaving.)
+[03:58:30] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[04:00:09] *** Joins: cha0ticz (~jcugno@76-219-181-7.lightspeed.irvnca.sbcglobal.net)
+[04:00:29] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Remote host closed the connection)
+[04:00:36] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[04:01:47] *** Quits: skurfuerst (~Adium@pD95F8B8A.dip0.t-ipconnect.de) (Quit: Leaving.)
+[04:02:49] *** Joins: alexd08 (~alexdin@222.127.174.82)
+[04:02:57] *** Joins: luke` (~luke`@123.201.131.246)
+[04:05:06] *** Joins: mikepack (~mikepack@c-67-176-73-117.hsd1.co.comcast.net)
+[04:05:47] *** boztek is now known as boztek|afk
+[04:07:45] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[04:08:27] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Client Quit)
+[04:08:40] *** Quits: mikepack (~mikepack@c-67-176-73-117.hsd1.co.comcast.net) (Remote host closed the connection)
+[04:08:42] *** Joins: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net)
+[04:09:17] *** Joins: JumpMast3r (~anonymous@c-24-19-72-30.hsd1.wa.comcast.net)
+[04:09:55] *** Quits: JumpMast3r (~anonymous@c-24-19-72-30.hsd1.wa.comcast.net) (Client Quit)
+[04:13:20] *** Quits: juggy (~juggy@modemcable005.57-83-70.mc.videotron.ca) (Quit: juggy)
+[04:15:24] *** Joins: rodyhaddad (~rodyhadda@206.248.136.218)
+[04:15:36] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Quit: BryanHunt)
+[04:16:16] *** boztek|afk is now known as boztek
+[04:19:20] *** Joins: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za)
+[04:19:39] *** Joins: emocakes (~emocakes@110-174-10-23.static.tpgi.com.au)
+[04:20:42] *** Quits: bittersweetryan (~Adium@c-50-152-186-191.hsd1.ca.comcast.net) (Quit: Leaving.)
+[04:21:51] *** Quits: sudobangbang (~chatzilla@c-24-19-53-250.hsd1.wa.comcast.net) (Ping timeout: 264 seconds)
+[04:22:16] *** Joins: dhilipsiva (~dhilipsiv@106.51.112.75)
+[04:24:11] *** Quits: dhilipsiva (~dhilipsiv@106.51.112.75) (Remote host closed the connection)
+[04:25:36] *** Joins: KendrickVT1 (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[04:25:48] *** Quits: alexd08 (~alexdin@222.127.174.82) (Ping timeout: 256 seconds)
+[04:25:51] *** Quits: tonywok (~tonywok@cpe-184-57-31-30.columbus.res.rr.com) (Ping timeout: 240 seconds)
+[04:28:22] *** Quits: EmersonLackey (~EmersonLa@75.119.239.194) (Quit: Computer has gone to sleep.)
+[04:28:27] *** grep_awesome is now known as grep_away
+[04:29:59] *** Quits: petejkim (~petejkim@61.80.11.30) (Quit: petejkim)
+[04:30:03] *** Quits: tehviking (~tehviking@cpe-70-112-61-154.austin.res.rr.com) (Remote host closed the connection)
+[04:30:06] *** Quits: KendrickVT1 (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 264 seconds)
+[04:30:15] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[04:30:22] *** DanKnox_away is now known as DanKnox
+[04:31:24] *** Joins: Cheos (~nico@a91-154-26-199.elisa-laajakaista.fi)
+[04:31:34] *** Quits: rodyhaddad (~rodyhadda@206.248.136.218) (Ping timeout: 248 seconds)
+[04:32:03] *** Joins: peterwagenet (~peterwagn@cpe-98-154-63-183.socal.res.rr.com)
+[04:32:04] *** ChanServ sets mode: +o peterwagenet
+[04:33:23] *** Quits: bradfol (~bradfol@rrcs-69-63-87-74.west.biz.rr.com) (Quit: bradfol)
+[04:33:35] *** Joins: tonywok (~tonywok@cpe-184-57-31-30.columbus.res.rr.com)
+[04:34:10] *** Quits: T_T (~kw3st@199.87.84.206) (Remote host closed the connection)
+[04:35:22] *** Quits: tarasm (~taras@bas1-toronto05-1176311105.dsl.bell.ca) (Quit: tarasm)
+[04:35:25] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:35:31] *** Joins: alexd08 (~alexdin@222.127.174.4)
+[04:35:35] *** Quits: tboyt (~textual@ool-457e9abe.dyn.optonline.net) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[04:35:36] <narkeeso> what's the advantage of using ''.w() vs just a plain array? besides saving a few characters on quotes and commas, seems like more overhead to parse the string
+[04:36:18] *** Joins: tarasm (~taras@bas1-toronto05-1176311105.dsl.bell.ca)
+[04:36:44] *** Quits: tarasm (~taras@bas1-toronto05-1176311105.dsl.bell.ca) (Client Quit)
+[04:36:44] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:37:02] *** Quits: raila1 (~dad@p5DC0EBD2.dip0.t-ipconnect.de) (Quit: Leaving.)
+[04:37:13] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:37:47] *** Joins: tarasm (~taras@bas1-toronto05-1176311105.dsl.bell.ca)
+[04:39:06] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:39:15] *** Quits: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net) (Remote host closed the connection)
+[04:40:41] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:40:52] *** Joins: kruppel_ (~kruppel@c-71-198-63-116.hsd1.ca.comcast.net)
+[04:41:53] *** Quits: kruppel (~kruppel@c-71-198-63-116.hsd1.ca.comcast.net) (Ping timeout: 246 seconds)
+[04:41:53] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:42:30] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:43:46] *** Quits: Cheos (~nico@a91-154-26-199.elisa-laajakaista.fi) (Quit: Leaving...)
+[04:43:46] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:44:18] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:44:27] *** Joins: g1ra (~g1ra@unaffiliated/g1ra)
+[04:45:29] *** Joins: geekboy88 (~dev@46.173.3.73)
+[04:45:29] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:45:51] *** Quits: timani (~timani@50-1-118-184.dsl.dynamic.sonic.net) (Ping timeout: 264 seconds)
+[04:45:59] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:46:24] *** Joins: brrrr (~brrrr@S0106002500fe2cec.vn.shawcable.net)
+[04:47:11] *** Joins: davidlai (~Adium@cpe-172-250-243-180.socal.res.rr.com)
+[04:47:13] *** Joins: rue (~rue-freen@a91-154-29-187.elisa-laajakaista.fi)
+[04:47:22] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:47:32] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Quit: Leaving.)
+[04:47:53] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:48:09] *** Joins: dodosan (~icole@c.24.143.124.70.static.broadstripe.net)
+[04:49:16] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:50:14] <alexd08> hi. I'm trying to upgrade my app to ember data 1.0 beta2 but i find the transition guid not in sync with beta2. it's more advance. should i just use ember data's latest build?
+[04:50:21] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:51:13] *** Joins: Cheos (~nico@a91-154-26-199.elisa-laajakaista.fi)
+[04:51:45] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:52:21] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:52:45] *** Quits: jnh (~jnh@103.29.30.39) (Remote host closed the connection)
+[04:52:54] *** Joins: cabraham (~cabraham@8.25.197.24)
+[04:53:28] *** Joins: EmersonLackey (~EmersonLa@75.119.239.194)
+[04:53:29] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:53:33] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Remote host closed the connection)
+[04:54:00] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[04:54:25] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[04:55:18] *** Quits: dcherman (~dcherman@ool-4356093e.dyn.optonline.net) (Ping timeout: 264 seconds)
+[04:56:05] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[04:56:12] <cabraham> In Ember Data 1.0, how can I access the store instance from a 3rd party library. I have access to Ember and App globals.
+[04:56:33] <cabraham> I know it's in here somewhere
+[04:58:21] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 245 seconds)
+[05:01:09] *** Joins: tamird_ (~tamird@199.227.49.90)
+[05:01:31] *** Joins: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr)
+[05:01:49] *** Quits: narkeeso (~narkeeso@pool-98-112-75-48.lsanca.fios.verizon.net) (Quit: Computer has gone to sleep.)
+[05:02:02] <alexd08> cabraham, in my console, i use: App.__container__.lookup('store:main')
+[05:02:55] *** Quits: tamird (~tamird@199.227.49.90) (Ping timeout: 264 seconds)
+[05:02:55] *** tamird_ is now known as tamird
+[05:03:16] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:03:55] *** Joins: McNugit (~McNugit@ip68-111-163-8.sd.sd.cox.net)
+[05:04:56] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:05:36] <wycats> components are definitely better in most cases than render
+[05:05:41] <wycats> remember render predates components
+[05:06:46] <cabraham> @alexd08 thanks! I think that's a hint maybe I'm going about this wrong.
+[05:07:20] <cabraham> I'm trying to upgrade a small piece of the ember-auth library to work with the new data.
+[05:07:21] <cabraham> https://github.com/heartsentwined/ember-auth/blob/master/lib/session.em#L22
+[05:07:45] *** Quits: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr) (Ping timeout: 256 seconds)
+[05:07:55] <cabraham> they used to do Ember.get(modelKey) where model key was 'App.User'
+[05:07:55] *** Quits: mven (~mven@ip68-224-15-53.lv.lv.cox.net) (Remote host closed the connection)
+[05:08:14] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:08:23] <cabraham> @wycats any tips on this?
+[05:08:30] <cabraham> they are using a .find so that has to go
+[05:09:05] *** Joins: T_T (~kw3st@c-24-23-132-165.hsd1.ca.comcast.net)
+[05:10:05] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:10:23] *** Joins: wmoxam (~wmoxam@pdpc/supporter/active/wmoxam)
+[05:10:36] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:11:14] *** Quits: McNugit (~McNugit@ip68-111-163-8.sd.sd.cox.net) (Read error: Connection reset by peer)
+[05:12:48] *** Joins: tboyt (~textual@ool-457e9abe.dyn.optonline.net)
+[05:13:29] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:14:01] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:14:38] *** Joins: whitedawg (~whitedawg@122.179.27.35)
+[05:15:38] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:16:16] <cabraham> specifically they are doing:   model = Ember.get('App.MyModel'); model.find();
+[05:16:23] <cabraham> the transition guide says it should now be: store.find('myModel);
+[05:16:35] <cabraham> but there's no store easily accessible
+[05:16:36] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:17:16] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:17:47] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:18:54] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:19:11] <wycats> cabraham: Ember.get(modelKey) is bad news
+[05:19:17] <wycats> cabraham: what object are you in?
+[05:19:25] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:19:26] *** Joins: marceldegraaf (~marceldeg@178-84-12-14.dynamic.upc.nl)
+[05:20:32] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:20:41] *** Quits: pr0cy0n (~pr0cy0n@176-123.196-178.cust.bluewin.ch) (Quit: Computer has gone to sleep.)
+[05:21:04] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:22:11] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:22:14] *** Quits: robmonie (robmonie@nat/jetstar/x-cptjnsplrinkacar) (Remote host closed the connection)
+[05:22:38] <cabraham> @wycats https://github.com/heartsentwined/ember-auth/blob/master/lib/session.em#L22 it's part of ember-auth
+[05:22:42] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:23:49] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:24:13] *** Quits: fayimora (~fayimora@host86-183-66-125.range86-183.btcentralplus.com) (Quit: zzzzz...)
+[05:24:21] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:24:51] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Quit: mjijackson)
+[05:24:54] *** Quits: peterwagenet (~peterwagn@cpe-98-154-63-183.socal.res.rr.com) (Quit: Leaving.)
+[05:24:59] <cabraham> in a method for finding the logged in user in your app
+[05:25:39] *** Quits: marceldegraaf (~marceldeg@178-84-12-14.dynamic.upc.nl) (Quit: marceldegraaf)
+[05:26:11] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[05:26:23] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:26:54] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:27:21] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[05:28:13] *** Quits: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net) (Remote host closed the connection)
+[05:28:14] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:28:45] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:29:04] <chadhietala>  
+[05:29:14] *** Quits: chadhietala (~Adium@c-50-136-226-79.hsd1.ca.comcast.net) (Quit: Leaving.)
+[05:29:44] <cabraham> I don't know what you mean by object exactly
+[05:29:49] *** Joins: eskimoblood (~eskimoblo@dslb-088-075-176-239.pools.arcor-ip.net)
+[05:30:49] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:30:58] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 256 seconds)
+[05:31:20] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:32:09] *** Quits: kruppel_ (~kruppel@c-71-198-63-116.hsd1.ca.comcast.net) (Remote host closed the connection)
+[05:32:42] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:33:14] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:33:59] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[05:34:43] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:34:47] *** Joins: snb__ (~snb@192.117.147.3)
+[05:35:15] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:35:27] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 245 seconds)
+[05:35:30] *** Quits: eskimoblood (~eskimoblo@dslb-088-075-176-239.pools.arcor-ip.net) (Remote host closed the connection)
+[05:35:35] *** Joins: chrishough (~chrishoug@c-71-237-193-222.hsd1.or.comcast.net)
+[05:36:45] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:37:17] *** Joins: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net)
+[05:38:46] *** Quits: BryanHunt (~bhunt@99-39-116-236.lightspeed.austtx.sbcglobal.net) (Client Quit)
+[05:40:16] *** Quits: T_T (~kw3st@c-24-23-132-165.hsd1.ca.comcast.net) (Remote host closed the connection)
+[05:40:52] *** Joins: dhilipsiva (~dhilipsiv@106.51.190.242)
+[05:41:06] *** Joins: thomaslangemann (~thomaslan@37-5-155-210-dynip.superkabel.de)
+[05:42:31] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 245 seconds)
+[05:44:18] *** Joins: kruppel (~kruppel@c-71-198-63-116.hsd1.ca.comcast.net)
+[05:44:51] *** Quits: trombom (~trombom@64.187.175.91) (Quit: trombom)
+[05:45:41] *** Joins: mahmoudimus (~mahmoudim@173-228-85-152.dsl.dynamic.sonic.net)
+[05:45:50] *** Quits: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com) (Ping timeout: 245 seconds)
+[05:47:07] *** Quits: pauldoerwald (~pauldoerw@hlfxns0169w-142176059045.dhcp-dynamic.FibreOp.ns.bellaliant.net) (Remote host closed the connection)
+[05:50:17] *** Joins: trombom (~trombom@64.187.175.91)
+[05:54:57] *** Joins: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[05:55:21] *** Joins: T_T (~kw3st@c-24-23-132-165.hsd1.ca.comcast.net)
+[05:55:31] *** Joins: mixonic (~anonymous@static-71-245-157-174.alb.east.verizon.net)
+[05:56:14] *** Joins: robmonie (robmonie@nat/jetstar/x-cacchtfiruzbymml)
+[05:57:18] *** Joins: quartzmo_ (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[05:57:19] *** Quits: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Read error: Connection reset by peer)
+[05:58:46] *** Quits: mixonic (~anonymous@static-71-245-157-174.alb.east.verizon.net) (Client Quit)
+[06:04:57] *** Joins: mkoppel2_ (~mkoppel20@pool-98-112-187-124.lsanca.fios.verizon.net)
+[06:06:35] *** Quits: sandstrom (~sandstrom@unaffiliated/sandstrom) (Remote host closed the connection)
+[06:06:38] *** Quits: sjkane (~steven@c-98-213-85-132.hsd1.il.comcast.net) (Ping timeout: 240 seconds)
+[06:06:49] *** Joins: sandstrom (~sandstrom@c-75a5e355.02-25-73746f15.cust.bredbandsbolaget.se)
+[06:06:49] *** Quits: sandstrom (~sandstrom@c-75a5e355.02-25-73746f15.cust.bredbandsbolaget.se) (Changing host)
+[06:06:49] *** Joins: sandstrom (~sandstrom@unaffiliated/sandstrom)
+[06:07:43] *** Quits: rxgx (~rxgx@64.38.203.218) (Quit: timeout)
+[06:08:29] *** Quits: tamird (~tamird@199.227.49.90) (Quit: tamird)
+[06:10:58] *** Quits: EmersonLackey (~EmersonLa@75.119.239.194) (Quit: Computer has gone to sleep.)
+[06:13:37] *** Joins: awestroke (~quassel@213-21-92-165.customer.t3.se)
+[06:14:27] <awestroke> I have a model, use REST datastore, and setup my model in my route, but Ember Inspector says the model has 0 records, and I can't loop through the model in my template
+[06:14:39] <awestroke> I see that a request is made to the API though
+[06:14:46] *** Quits: T_T (~kw3st@c-24-23-132-165.hsd1.ca.comcast.net) (Remote host closed the connection)
+[06:14:47] <awestroke> and I get no error from Ember
+[06:15:12] *** Joins: nivoc (~nivoc@p579542DA.dip0.t-ipconnect.de)
+[06:15:26] *** Quits: kruppel (~kruppel@c-71-198-63-116.hsd1.ca.comcast.net) (Remote host closed the connection)
+[06:16:33] <awestroke> how do I debug this?
+[06:16:57] *** Joins: eskimoblood (~eskimoblo@178.19.212.138)
+[06:17:22] *** Quits: rue (~rue-freen@a91-154-29-187.elisa-laajakaista.fi) (Remote host closed the connection)
+[06:18:26] *** Quits: eskimoblood (~eskimoblo@178.19.212.138) (Remote host closed the connection)
+[06:19:26] *** Joins: dhilipsi_ (~dhilipsiv@106.51.168.244)
+[06:19:52] *** Joins: eskimoblood (~eskimoblo@178.19.212.138)
+[06:20:22] *** Joins: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com)
+[06:20:38] <levelboss_mike> you can debug the model hook and the setupController hook in your route
+[06:20:56] *** Quits: dhilipsiva (~dhilipsiv@106.51.190.242) (Ping timeout: 246 seconds)
+[06:21:16] <levelboss_mike> maybe it's a problem with your rest datastore not returning a promise.
+[06:21:35] <levelboss_mike> you could wrap your data fetching into an Ember RSPV promise if that's the case.
+[06:24:26] *** Joins: apieum (~gregory@jue81-1-78-221-169-24.fbx.proxad.net)
+[06:24:38] *** Joins: stefan_17 (~stefan@host46-42-static.243-95-b.business.telecomitalia.it)
+[06:25:23] *** Quits: mkoppel2_ (~mkoppel20@pool-98-112-187-124.lsanca.fios.verizon.net) (Remote host closed the connection)
+[06:25:44] <awestroke> levelboss_mike: https://gist.github.com/awestroke/0435e3a2cb5aa5cd182a
+[06:26:53] *** Joins: skurfuerst (~Adium@e179112090.adsl.alicedsl.de)
+[06:26:54] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[06:27:00] *** Joins: andrei1089 (~andrei@86.122.11.220)
+[06:27:09] *** Quits: dhilipsi_ (~dhilipsiv@106.51.168.244) (Remote host closed the connection)
+[06:27:20] *** amino is now known as jesterKing
+[06:27:21] <awestroke> I see the request fire off, but ember inspector shows 0 records, nothing renders, and I get no warning or error in console
+[06:27:39] <awestroke> do I need to define a controller? Or something similar?
+[06:30:16] *** Joins: tamird (~tamird@c-67-180-9-18.hsd1.ca.comcast.net)
+[06:31:14] <awestroke> levelboss_mike: any idea?
+[06:31:28] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 260 seconds)
+[06:32:12] *** Quits: pzuraq (~pzuraq@c-24-6-92-69.hsd1.ca.comcast.net) (Remote host closed the connection)
+[06:32:45] *** Quits: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com) (Ping timeout: 256 seconds)
+[06:34:21] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[06:34:22] *** Joins: rue (~rue-freen@a91-154-29-187.elisa-laajakaista.fi)
+[06:34:32] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[06:35:29] *** Joins: somebody32 (~som32@81.222.88.154)
+[06:36:51] *** Joins: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com)
+[06:37:27] *** Quits: tamird (~tamird@c-67-180-9-18.hsd1.ca.comcast.net) (Ping timeout: 264 seconds)
+[06:37:28] *** Joins: tobobo (~tobobo@2602:306:ceb0:ee50:71da:9bab:b7d6:5843)
+[06:38:46] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 245 seconds)
+[06:38:49] *** Joins: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net)
+[06:40:21] *** Joins: tamird (~tamird@c-67-180-9-18.hsd1.ca.comcast.net)
+[06:41:03] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 264 seconds)
+[06:43:27] *** Quits: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net) (Ping timeout: 264 seconds)
+[06:43:28] *** Joins: tobobo_ (~tobobo@108-235-14-229.lightspeed.sntcca.sbcglobal.net)
+[06:43:57] *** Quits: tobobo_ (~tobobo@108-235-14-229.lightspeed.sntcca.sbcglobal.net) (Remote host closed the connection)
+[06:44:34] *** Joins: tobobo_ (~tobobo@2602:306:ceb0:ee50:fdf5:f8b8:b8a6:c677)
+[06:46:40] *** Quits: tobobo (~tobobo@2602:306:ceb0:ee50:71da:9bab:b7d6:5843) (Ping timeout: 245 seconds)
+[06:47:11] *** Quits: tamird (~tamird@c-67-180-9-18.hsd1.ca.comcast.net) (Ping timeout: 260 seconds)
+[06:48:52] *** Quits: endash (~chris@c-68-55-177-69.hsd1.va.comcast.net) (Quit: endash)
+[06:48:59] *** Quits: sandstrom (~sandstrom@unaffiliated/sandstrom) (Remote host closed the connection)
+[06:49:12] *** Quits: tobobo_ (~tobobo@2602:306:ceb0:ee50:fdf5:f8b8:b8a6:c677) (Ping timeout: 260 seconds)
+[06:49:26] *** Joins: sandstrom (~sandstrom@unaffiliated/sandstrom)
+[06:50:41] *** Quits: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com) (Ping timeout: 246 seconds)
+[06:51:21] *** boztek is now known as boztek|afk
+[06:51:49] *** Joins: luke`_ (~luke`@123.201.131.246)
+[06:52:56] *** Quits: luke` (~luke`@123.201.131.246) (Ping timeout: 260 seconds)
+[06:52:56] *** luke`_ is now known as luke`
+[06:54:04] *** Joins: munumnu (~munumnunu@54.54.204.212.ediscom.de)
+[06:54:54] *** Quits: badem4o (~badem4o@ip68-104-74-232.lv.lv.cox.net) (Quit: Leaving.)
+[06:55:10] *** boztek|afk is now known as boztek
+[06:58:44] *** Joins: tamird (~tamird@c-67-180-9-18.hsd1.ca.comcast.net)
+[06:59:30] *** Joins: pr0cy0n (~pr0cy0n@mail.geniusinside.com)
+[07:00:55] *** boztek is now known as boztek|afk
+[07:02:19] *** Quits: luke` (~luke`@123.201.131.246) (Ping timeout: 264 seconds)
+[07:03:38] *** Joins: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com)
+[07:04:42] *** Joins: MrHus (~MrHus@a83-163-107-39.adsl.xs4all.nl)
+[07:04:42] *** Quits: MrHus (~MrHus@a83-163-107-39.adsl.xs4all.nl) (Client Quit)
+[07:04:58] *** Joins: elemoine (~elemoine@AGrenoble-152-1-49-220.w82-122.abo.wanadoo.fr)
+[07:05:00] *** Joins: MrHus (~MrHus@a83-163-107-39.adsl.xs4all.nl)
+[07:06:40] *** Quits: quartzmo_ (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Remote host closed the connection)
+[07:07:20] *** Quits: sandstrom (~sandstrom@unaffiliated/sandstrom) (Remote host closed the connection)
+[07:07:26] *** Joins: sandstrom (~sandstrom@unaffiliated/sandstrom)
+[07:08:44] *** Quits: elemoine (~elemoine@AGrenoble-152-1-49-220.w82-122.abo.wanadoo.fr) (Read error: Operation timed out)
+[07:08:54] *** Joins: vlad_starkov (~vlad_star@109.188.127.140)
+[07:09:24] *** Joins: marceldegraaf (~marceldeg@88.128.80.6)
+[07:10:07] *** Quits: davidlai (~Adium@cpe-172-250-243-180.socal.res.rr.com) (Quit: Leaving.)
+[07:10:47] *** Joins: januschh (~januschh@212.98.75.91)
+[07:10:47] *** boztek|afk is now known as boztek
+[07:13:16] *** Joins: nicedexter (~manu@cust.static.212-41-201-185.swisscomdata.ch)
+[07:13:22] *** Joins: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr)
+[07:13:45] *** boztek is now known as boztek|afk
+[07:14:18] *** Joins: ^hp_ (~hp@195-240-205-20.ip.telfort.nl)
+[07:20:27] *** Quits: sandstrom (~sandstrom@unaffiliated/sandstrom) (Remote host closed the connection)
+[07:20:54] *** Joins: sandstrom (~sandstrom@c-75a5e355.02-25-73746f15.cust.bredbandsbolaget.se)
+[07:20:54] *** Quits: sandstrom (~sandstrom@c-75a5e355.02-25-73746f15.cust.bredbandsbolaget.se) (Changing host)
+[07:20:54] *** Joins: sandstrom (~sandstrom@unaffiliated/sandstrom)
+[07:21:33] *** Quits: alexd08 (~alexdin@222.127.174.4) (Quit: This computer has gone to sleep)
+[07:22:23] *** boztek|afk is now known as boztek
+[07:22:24] *** Joins: elemoine (~elemoine@c2cpc3.camptocamp.com)
+[07:22:48] *** Quits: tamird (~tamird@c-67-180-9-18.hsd1.ca.comcast.net) (Ping timeout: 259 seconds)
+[07:24:09] *** Quits: gowlin (~rgolbeck@debian/developer/rmgolbeck) (Remote host closed the connection)
+[07:25:24] *** Joins: mahmoudi_ (~mahmoudim@173-228-85-152.dsl.dynamic.sonic.net)
+[07:25:26] *** Quits: sandstrom (~sandstrom@unaffiliated/sandstrom) (Ping timeout: 248 seconds)
+[07:25:58] *** Quits: mahmoudimus (~mahmoudim@173-228-85-152.dsl.dynamic.sonic.net) (Ping timeout: 248 seconds)
+[07:25:59] *** Joins: kruppel (~kruppel@c-71-198-63-116.hsd1.ca.comcast.net)
+[07:26:38] *** boztek is now known as boztek|afk
+[07:28:28] *** Quits: ChristianM (~Christian@server0910.typo3-freelancer.net) (Quit: ZNC - http://znc.sourceforge.net)
+[07:28:40] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[07:28:41] *** Joins: tamird (~tamird@c-67-180-9-18.hsd1.ca.comcast.net)
+[07:29:00] *** Joins: Christia- (~Christian@server0910.typo3-freelancer.net)
+[07:29:11] *** Christia- is now known as ChristianM
+[07:30:01] *** Joins: sandstrom (~sandstrom@81-225-222-113-no16.business.telia.com)
+[07:30:01] *** Quits: sandstrom (~sandstrom@81-225-222-113-no16.business.telia.com) (Changing host)
+[07:30:01] *** Joins: sandstrom (~sandstrom@unaffiliated/sandstrom)
+[07:30:33] *** Quits: kruppel (~kruppel@c-71-198-63-116.hsd1.ca.comcast.net) (Ping timeout: 256 seconds)
+[07:32:48] *** Quits: robmonie (robmonie@nat/jetstar/x-cacchtfiruzbymml) (Remote host closed the connection)
+[07:33:22] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 256 seconds)
+[07:35:08] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[07:35:41] *** Quits: cabraham (~cabraham@8.25.197.24) (Remote host closed the connection)
+[07:37:19] <stefan_17> did you changed the error handling of invalid data (Status 422)? If i receive a 422 with data: {"errors":{"name":"Dieser Wert sollte nicht leer sein.","email":"Dieser Wert sollte nicht leer sein.","website":"Dieser Wert sollte nicht leer sein."}}. For Ember Data it's an error and not invalid?!
+[07:39:09] *** Joins: matttt (c389c240@gateway/web/freenode/ip.195.137.194.64)
+[07:39:24] *** Quits: marceldegraaf (~marceldeg@88.128.80.6) (Quit: marceldegraaf)
+[07:39:32] *** Quits: mahmoudi_ (~mahmoudim@173-228-85-152.dsl.dynamic.sonic.net) (Quit: Computer has gone to sleep.)
+[07:40:07] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 264 seconds)
+[07:41:42] *** Quits: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com) (Ping timeout: 245 seconds)
+[07:42:01] *** Quits: vlad_starkov (~vlad_star@109.188.127.140) (Remote host closed the connection)
+[07:43:00] *** Quits: tamird (~tamird@c-67-180-9-18.hsd1.ca.comcast.net) (Ping timeout: 256 seconds)
+[07:46:10] *** Joins: vlad_starkov (~vlad_star@109.188.127.140)
+[07:48:32] *** Joins: erydo (~erydo@c-50-139-84-161.hsd1.or.comcast.net)
+[07:49:40] *** Joins: bogdanbalc (~bogdanbal@85.9.25.150)
+[07:49:44] *** Joins: markprovan (~textual@host-135-196-33-208.lines.viateldsl.com)
+[07:50:13] *** Joins: mavilein (~mavilein@adsl.artnology.com)
+[07:53:02] *** Joins: cabraham (~cabraham@c-50-131-58-190.hsd1.ca.comcast.net)
+[07:53:39] *** Quits: nivoc (~nivoc@p579542DA.dip0.t-ipconnect.de) (Quit: nivoc)
+[07:55:04] *** Joins: thealanwattsriot (~brianchen@c-24-125-40-241.hsd1.va.comcast.net)
+[07:55:29] *** Joins: ncfcmark (~ncfcmark@212.58.54.198)
+[07:58:14] *** Quits: levelboss_mike (~rtmik@cm146-136.liwest.at) (Quit: leaving)
+[07:58:33] *** Joins: bowlingx (~Adium@port-217-113-42-177.static.iacd-dsl.de)
+[07:58:52] *** Joins: shaunbak_ (~shaunbake@brick-lane.lbi.co.uk)
+[07:59:40] *** Quits: thealanwattsriot (~brianchen@c-24-125-40-241.hsd1.va.comcast.net) (Ping timeout: 260 seconds)
+[08:01:50] *** Quits: awestroke (~quassel@213-21-92-165.customer.t3.se) (Remote host closed the connection)
+[08:03:23] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[08:06:35] *** jesterKing is now known as amino
+[08:07:16] *** Joins: tehviking (~tehviking@cpe-70-112-61-154.austin.res.rr.com)
+[08:08:18] *** Quits: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za) (Quit: ianpetzer)
+[08:09:05] *** Joins: dhilipsiva (~dhilipsiv@106.51.168.244)
+[08:09:07] *** Joins: nayena (~nayena@193.200.225.93)
+[08:09:46] *** Joins: bartocc (~julien@46.182.215.106)
+[08:09:53] *** Joins: kanongil (~kanongil@h200.natout.aau.dk)
+[08:11:28] *** Quits: ShawnMcCool (~shawn@546923D4.cm-12-2a.dynamic.ziggo.nl) (Quit: Konversation terminated!)
+[08:11:48] *** Quits: tehviking (~tehviking@cpe-70-112-61-154.austin.res.rr.com) (Ping timeout: 260 seconds)
+[08:13:35] *** Joins: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za)
+[08:16:38] *** Joins: slarti42uk (~slarti42u@212.58.54.198)
+[08:16:48] *** Quits: brrrr (~brrrr@S0106002500fe2cec.vn.shawcable.net) (Quit: brrrr)
+[08:17:07] *** Joins: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net)
+[08:17:35] *** Quits: vlad_starkov (~vlad_star@109.188.127.140) (Ping timeout: 256 seconds)
+[08:18:12] *** Joins: listochkin (~listochki@46.232.239.246)
+[08:18:42] *** Quits: ^hp_ (~hp@195-240-205-20.ip.telfort.nl) (Quit: Sleeping. ZZZzzz…)
+[08:19:43] *** Joins: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com)
+[08:20:17] *** Joins: adambeynon (~adambeyno@62.232.29.69)
+[08:21:41] *** Quits: quartzmo (~quartzmo@c-67-182-229-160.hsd1.ut.comcast.net) (Ping timeout: 245 seconds)
+[08:23:46] *** Joins: ^hp_ (~hp@195-240-205-20.ip.telfort.nl)
+[08:24:30] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[08:27:49] *** Quits: nayena (~nayena@193.200.225.93) (Quit: nayena)
+[08:28:02] *** Quits: cha0ticz (~jcugno@76-219-181-7.lightspeed.irvnca.sbcglobal.net) (Read error: Connection reset by peer)
+[08:28:30] *** Joins: cha0ticz (~jcugno@76-219-181-7.lightspeed.irvnca.sbcglobal.net)
+[08:29:20] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[08:29:24] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[08:29:36] *** Joins: nayena (~nayena@193.200.225.93)
+[08:30:13] *** Quits: cabraham (~cabraham@c-50-131-58-190.hsd1.ca.comcast.net) (Remote host closed the connection)
+[08:31:07] *** Joins: levelboss_mike (~rtmik@cm146-136.liwest.at)
+[08:32:17] *** levelboss_mike is now known as levelbossMike
+[08:33:19] *** Quits: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com) (Quit: Computer has gone to sleep.)
+[08:34:12] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 260 seconds)
+[08:35:36] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[08:37:17] <sandstrom> Using Ember 1.0 and ED 1.0b, it feels like many exceptions are swallowed by the RSVP-library, which makes debugging a pain. Is there any remedy?
+[08:37:54] *** Quits: ^hp_ (~hp@195-240-205-20.ip.telfort.nl) (Ping timeout: 264 seconds)
+[08:37:57] *** svparijs_afk is now known as svparijs
+[08:39:36] *** Quits: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za) (Quit: ianpetzer)
+[08:40:14] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 256 seconds)
+[08:41:43] *** Joins: ^hp_ (~hp@195-240-205-20.ip.telfort.nl)
+[08:42:05] *** Joins: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za)
+[08:42:44] *** Quits: shaunbak_ (~shaunbake@brick-lane.lbi.co.uk) (Remote host closed the connection)
+[08:44:39] *** Quits: adambeynon (~adambeyno@62.232.29.69) (Quit: Textual IRC Client: www.textualapp.com)
+[08:45:17] *** Quits: ^hp_ (~hp@195-240-205-20.ip.telfort.nl) (Client Quit)
+[08:48:31] *** Quits: bogdanbalc (~bogdanbal@85.9.25.150) (Quit: bogdanbalc)
+[08:49:18] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[08:53:19] *** Joins: ^hp_ (~hp@195-240-205-20.ip.telfort.nl)
+[08:55:12] *** Joins: apod (~apod@athedsl-4506890.home.otenet.gr)
+[08:55:30] <mavilein> @sandstrom: Yeah there is. Have a look at: http://stackoverflow.com/questions/17983946/how-to-use-ember-rsvp-onerror-to-report-exceptions-from-rejected-promises-withou/17990289#17990289
+[08:59:08] <sandstrom> mavilein: Awesome! Thanks! :)
+[08:59:31] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Remote host closed the connection)
+[08:59:57] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[09:00:53] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[09:01:02] *** Joins: bogdanbalc (~bogdanbal@85.9.25.150)
+[09:01:19] *** Joins: adambeynon (~adambeyno@82-69-1-211.dsl.in-addr.zen.co.uk)
+[09:02:01] *** Joins: shaunbaker (~shaunbake@2001:67c:90:7ff:b416:4c4f:3dd:6314)
+[09:02:54] *** Joins: losco (~losco@209.130.141.79)
+[09:03:30] *** Quits: rakl (~rakl@208-90-212-125.PUBLIC.monkeybrains.net) (Quit: sleeping)
+[09:03:31] <mavilein> :-) Glad it helped. That caused some frustrations for many people :-)
+[09:05:04] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 276 seconds)
+[09:06:08] *** Joins: shaunbak_ (~shaunbake@brick-lane.lbi.co.uk)
+[09:08:26] *** Joins: thealanwattsriot (~brianchen@c-24-125-40-241.hsd1.va.comcast.net)
+[09:09:10] *** Quits: shaunbaker (~shaunbake@2001:67c:90:7ff:b416:4c4f:3dd:6314) (Ping timeout: 245 seconds)
+[09:12:57] *** Quits: thealanwattsriot (~brianchen@c-24-125-40-241.hsd1.va.comcast.net) (Ping timeout: 245 seconds)
+[09:14:34] *** Joins: ShawnMcCool (~shawn@77-173-109-206.ip.telfort.nl)
+[09:17:58] *** Quits: erydo (~erydo@c-50-139-84-161.hsd1.or.comcast.net) (Quit: My computer has gone to sleep. ZZZzzz…)
+[09:18:23] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[09:20:22] *** Joins: rlivsey (~rlivsey@93-96-145-160.zone4.bethere.co.uk)
+[09:23:25] *** Quits: bogdanbalc (~bogdanbal@85.9.25.150) (Quit: bogdanbalc)
+[09:28:45] *** Quits: ^hp_ (~hp@195-240-205-20.ip.telfort.nl) (Ping timeout: 245 seconds)
+[09:29:57] *** Joins: ^hp_ (~hp@195-240-205-20.ip.telfort.nl)
+[09:30:00] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[09:34:29] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 246 seconds)
+[09:34:31] *** Parts: geekboy88 (~dev@46.173.3.73) ()
+[09:35:02] *** Quits: jcazevedo (~jcazevedo@bl18-99-87.dsl.telepac.pt) (Quit: Leaving.)
+[09:35:47] *** svparijs is now known as svparijs_afk
+[09:36:08] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[09:37:20] *** Joins: hipertracker (~hipertrac@95.83.249.80)
+[09:39:15] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[09:41:02] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 264 seconds)
+[09:41:52] *** Quits: nayena (~nayena@193.200.225.93) (Quit: nayena)
+[09:42:55] *** Joins: theodorton (~theodorto@office.skalar.no)
+[09:46:44] <ShawnMcCool> hello, i am having some issues thinking about promise objects. i'm using the local storage adapterand i want to seed some data if there is none of that type. but, in the application route, when i try to pull this.store.find('project') , it always returns a length of zero, i assume because the promise hasn't resolved yet.
+[09:48:43] <theodorton> could you try the following: this.store.find('project').then(function(results){ console.log(results.get('content.length')); })
+[09:49:19] *** Quits: ^hp_ (~hp@195-240-205-20.ip.telfort.nl) (Quit: Goodbye!)
+[09:52:04] <emocakes> ShawnMcCool have you read the manual
+[09:52:06] *** Joins: random (~kevin@109.76.151.181)
+[09:52:43] <ShawnMcCool> a number of times, finally starting to adjust to the concepts
+[09:54:11] *** Quits: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr) (Remote host closed the connection)
+[09:54:23] *** Quits: random (~kevin@109.76.151.181) (Remote host closed the connection)
+[09:56:45] *** Joins: vmx (~vmx@dslb-084-056-022-004.pools.arcor-ip.net)
+[09:57:45] *** Joins: cascalheira (~cascalhei@195.54.168.46)
+[10:00:16] <ShawnMcCool> theodorton: thanks, btw
+[10:00:17] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[10:01:57] *** Quits: bartocc (~julien@46.182.215.106) (Quit: bartocc)
+[10:02:45] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[10:02:55] *** Joins: nayena (~nayena@193.200.225.93)
+[10:03:24] *** svparijs_afk is now known as svparijs
+[10:03:43] *** Quits: chrishough (~chrishoug@c-71-237-193-222.hsd1.or.comcast.net) (Quit: chrishough)
+[10:04:13] *** Joins: jcazevedo (~jcazevedo@193.137.28.184)
+[10:04:39] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[10:07:04] *** Joins: vlad_starkov (~vlad_star@83.220.236.54)
+[10:09:12] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 245 seconds)
+[10:12:49] *** Quits: apod (~apod@athedsl-4506890.home.otenet.gr) ()
+[10:13:38] *** Quits: ShawnMcCool (~shawn@77-173-109-206.ip.telfort.nl) (Read error: Connection reset by peer)
+[10:15:26] *** Quits: vlad_starkov (~vlad_star@83.220.236.54) (Ping timeout: 246 seconds)
+[10:15:48] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[10:15:56] *** Joins: bengillies (~bengillie@195.138.194.116)
+[10:16:13] *** Joins: vlad_starkov (~vlad_star@83.220.236.54)
+[10:16:23] *** Quits: vlad_starkov (~vlad_star@83.220.236.54) (Read error: Connection reset by peer)
+[10:16:36] *** Joins: ShawnMcCool (~shawn@77-173-109-206.ip.telfort.nl)
+[10:18:58] *** Quits: Cheos (~nico@a91-154-26-199.elisa-laajakaista.fi) (Quit: Leaving...)
+[10:20:28] *** Quits: shaunbak_ (~shaunbake@brick-lane.lbi.co.uk) (Remote host closed the connection)
+[10:21:51] *** Quits: dodosan (~icole@c.24.143.124.70.static.broadstripe.net) (Remote host closed the connection)
+[10:22:21] *** Joins: dinualex08 (~alexdin@222.127.174.4)
+[10:23:55] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[10:24:39] *** Joins: fayimora (~fayimora@host86-183-66-125.range86-183.btcentralplus.com)
+[10:27:50] *** Joins: shaunbaker (~shaunbake@brick-lane.lbi.co.uk)
+[10:27:58] *** Quits: whitedawg (~whitedawg@122.179.27.35) (Quit: Leaving.)
+[10:29:41] *** Quits: pr0cy0n (~pr0cy0n@mail.geniusinside.com) (Quit: Computer has gone to sleep.)
+[10:30:39] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[10:31:00] <dinualex08> hi. in ember data beta2, how can i set the headers of an adapter?
+[10:31:18] *** Joins: ShawnMcCoo1 (~shawn@77-173-109-206.ip.telfort.nl)
+[10:31:22] <dinualex08> reading ember-data's ajax function code:  if (adapter.headers !== undefined) { ...
+[10:31:36] <dinualex08> shouldn't it be adapter.get('headers') ?
+[10:31:53] <dinualex08> nv,
+[10:31:55] <dinualex08> nvm
+[10:31:56] <dinualex08> :)
+[10:32:29] *** Joins: levelbos1Mike (~rtmik@cm146-136.liwest.at)
+[10:33:01] *** Quits: ShawnMcCool (~shawn@77-173-109-206.ip.telfort.nl) (Ping timeout: 256 seconds)
+[10:34:03] *** Quits: levelbossMike (~rtmik@cm146-136.liwest.at) (Ping timeout: 240 seconds)
+[10:35:02] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 245 seconds)
+[10:36:36] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[10:38:06] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[10:38:19] *** Quits: levelbos1Mike (~rtmik@cm146-136.liwest.at) (Ping timeout: 264 seconds)
+[10:40:46] *** Joins: bartocc (~julien@mbt82-1-78-221-177-82.fbx.proxad.net)
+[10:41:15] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Ping timeout: 276 seconds)
+[10:42:38] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 256 seconds)
+[10:43:00] *** Joins: levelbossMike (~rtmik@cm146-136.liwest.at)
+[10:43:51] *** Quits: ShawnMcCoo1 (~shawn@77-173-109-206.ip.telfort.nl) (Quit: Konversation terminated!)
+[10:54:07] *** Joins: bogdanbalc (~bogdanbal@89.121.222.106)
+[10:54:23] *** Joins: mahmoudimus (~mahmoudim@173-228-85-152.dsl.dynamic.sonic.net)
+[11:00:30] *** Joins: turngate (~turngate@198-84-240-195.cpe.teksavvy.com)
+[11:01:34] *** Joins: dastagg (~dastagg@c-68-62-66-106.hsd1.mi.comcast.net)
+[11:06:27] *** Quits: bogdanbalc (~bogdanbal@89.121.222.106) (Quit: bogdanbalc)
+[11:06:29] *** Quits: shaunbaker (~shaunbake@brick-lane.lbi.co.uk) (Remote host closed the connection)
+[11:07:24] *** Quits: bartocc (~julien@mbt82-1-78-221-177-82.fbx.proxad.net) (Quit: bartocc)
+[11:08:35] *** Joins: shaunbaker (~shaunbake@2001:67c:90:7ff:ddfe:b9cd:f317:7ed2)
+[11:09:52] *** Joins: shaunbak_ (~shaunbake@brick-lane.lbi.co.uk)
+[11:11:58] *** Quits: bengillies (~bengillie@195.138.194.116) (Quit: bengillies)
+[11:13:45] *** Quits: shaunbaker (~shaunbake@2001:67c:90:7ff:ddfe:b9cd:f317:7ed2) (Ping timeout: 245 seconds)
+[11:14:40] *** Quits: mahmoudimus (~mahmoudim@173-228-85-152.dsl.dynamic.sonic.net) (Quit: Computer has gone to sleep.)
+[11:16:20] *** Quits: turngate (~turngate@198-84-240-195.cpe.teksavvy.com) (Quit: turngate)
+[11:20:58] <MiracleBlue> hey everyone!
+[11:21:48] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[11:22:38] *** Joins: bogdanbalc (~bogdanbal@89.121.222.106)
+[11:23:21] *** Joins: luke` (~luke`@123.201.131.246)
+[11:29:09] *** Joins: pr0cy0n (~pr0cy0n@mail.geniusinside.com)
+[11:30:23] *** Joins: ShawnMcCool (~shawn@546927B5.cm-12-2a.dynamic.ziggo.nl)
+[11:30:23] *** Joins: Gues_____ (~textual@38.104.0.154)
+[11:30:31] *** Quits: jschi (~textual@76.77.154.9) (Ping timeout: 264 seconds)
+[11:31:17] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[11:32:13] *** Quits: listochkin (~listochki@46.232.239.246) (Remote host closed the connection)
+[11:32:27] *** Joins: dodosan (~icole@c.24.143.124.70.static.broadstripe.net)
+[11:32:48] *** Joins: listochkin (~listochki@46.182.82.146)
+[11:35:50] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 245 seconds)
+[11:35:55] *** Joins: trombom_ (~textual@64.187.175.91)
+[11:36:23] *** Quits: trombom_ (~textual@64.187.175.91) (Client Quit)
+[11:36:40] *** Quits: dodosan (~icole@c.24.143.124.70.static.broadstripe.net) (Ping timeout: 245 seconds)
+[11:36:49] *** Joins: trombom_ (~textual@64.187.175.91)
+[11:36:54] *** Joins: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com)
+[11:37:05] *** Quits: listochkin (~listochki@46.182.82.146) (Ping timeout: 240 seconds)
+[11:37:23] <locks> any idea why I'm getting "Uncaught ReferenceError: DS is not defined" in production? using ember-rails
+[11:38:24] *** Quits: trombom_ (~textual@64.187.175.91) (Client Quit)
+[11:38:25] *** Joins: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com)
+[11:38:56] <MiracleBlue> locks: perhaps the DS library isn't being included somehow?
+[11:42:01] <MiracleBlue> Try a console.log on the object?
+[11:42:11] *** Joins: whitedawg (~whitedawg@122.167.166.147)
+[11:42:57] *** Quits: coffeeofficer (~coffeeoff@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 245 seconds)
+[11:43:01] *** Quits: thomaslangemann (~thomaslan@37-5-155-210-dynip.superkabel.de) (Quit: thomaslangemann)
+[11:43:10] *** Quits: emocakes (~emocakes@110-174-10-23.static.tpgi.com.au) (Quit: emocakes)
+[11:43:14] <rwjblue> G'morning all!
+[11:43:51] *** Quits: shaunbak_ (~shaunbake@brick-lane.lbi.co.uk) (Remote host closed the connection)
+[11:43:58] *** Quits: januschh (~januschh@212.98.75.91) (Quit: januschh)
+[11:44:37] <MiracleBlue> Morning rwjblue
+[11:44:41] <whitedawg> Sup rwjblue
+[11:44:59] *** Joins: januschh (~januschh@212.98.75.91)
+[11:45:05] *** Quits: markprovan (~textual@host-135-196-33-208.lines.viateldsl.com) (Ping timeout: 240 seconds)
+[11:48:52] <matttt> G'afternoon!
+[11:49:06] <rwjblue> matttt: Good point!
+[11:49:18] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Remote host closed the connection)
+[11:49:39] <rwjblue> Wonder what the least timezone specific greeting is...
+[11:49:45] <rwjblue> Also, I love IRC
+[11:50:25] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[11:50:35] *** Joins: jschi (~textual@76.77.154.9)
+[11:51:02] <matttt> me2
+[11:51:34] <ShawnMcCool> rwjblue: universal greeting time
+[11:51:55] <rwjblue> HA! Exactly
+[11:51:59] <matttt> just 5 years, and IRC has been used for 20yrs
+[11:52:28] <ShawnMcCool> yea, i've been on irc for about... 17 years
+[11:52:50] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[11:54:14] *** Joins: turngate (~turngate@198-84-240-195.cpe.teksavvy.com)
+[11:54:19] <rwjblue> ShawnMcCool: Got me beat. I've only been at it for ~15...
+[11:54:21] <ShawnMcCool> what's the right way to think about emberjs relations? Like, if i want to add a todo to a project. should i do new todo. then newTodo.set('project', project); and should it auto update in the project?
+[11:54:33] *** Joins: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr)
+[11:54:37] *** Quits: januschh (~januschh@212.98.75.91) (Quit: januschh)
+[11:55:04] <rwjblue> ShawnMcCool: Not an expert here (there are many around though), but what is your persistence framework?
+[11:55:07] *** Quits: cha0ticz (~jcugno@76-219-181-7.lightspeed.irvnca.sbcglobal.net) (Ping timeout: 264 seconds)
+[11:55:10] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Ping timeout: 256 seconds)
+[11:55:14] <rwjblue> ember-data, EPF, ember-model...
+[11:55:20] <ShawnMcCool> i'm using ember data and local storage adapter
+[11:55:28] <ShawnMcCool> i don't really know much about any of the other options
+[11:55:33] *** Joins: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com)
+[11:55:35] <rwjblue> Me neither :)
+[11:55:47] <rwjblue> I only know they exist, and that makes me happy
+[11:56:49] *** Joins: pauldoerwald (~pauldoerw@hlfxns0169w-099192118098.dhcp-dynamic.FibreOp.ns.bellaliant.net)
+[11:56:56] *** amino is now known as jesterKing
+[11:57:57] *** Quits: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com) (Ping timeout: 276 seconds)
+[11:58:45] *** Quits: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr) (Ping timeout: 245 seconds)
+[11:58:55] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[11:59:33] *** Joins: listochkin (~listochki@46.182.82.146)
+[12:00:06] *** Quits: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com) (Ping timeout: 248 seconds)
+[12:00:12] <trombom> How about "top of the hour to ya'll"
+[12:00:53] *** Joins: januschh (~januschh@212.98.75.91)
+[12:02:22] <ShawnMcCool> http://www.total-knowledge.com/~ilya/mips/ugt.html
+[12:05:09] *** Joins: shaunbaker (~shaunbake@brick-lane.lbi.co.uk)
+[12:06:45] *** Quits: ncfcmark (~ncfcmark@212.58.54.198) (Quit: Leaving.)
+[12:07:02] *** Joins: ncfcmark (~ncfcmark@212.58.54.198)
+[12:09:12] *** Joins: bengillies (~bengillie@195.138.194.116)
+[12:10:37] *** Quits: rlivsey (~rlivsey@93-96-145-160.zone4.bethere.co.uk) (Quit: Computer has gone to sleep.)
+[12:10:50] *** Quits: turngate (~turngate@198-84-240-195.cpe.teksavvy.com) (Quit: turngate)
+[12:11:03] <locks> MiracleBlue: but why isn't it
+[12:11:10] <domme__> hey
+[12:11:11] <locks> MiracleBlue: I have teh asset pipeline directive
+[12:11:16] <locks> and Ember is being included
+[12:11:25] <domme__> do i really always need an id with ember data?
+[12:11:32] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[12:11:54] <domme__> i have chart items and for them it doesnt really make sense to have an id
+[12:12:18] *** Joins: veader (~veader@173.221.210.138.nw.nuvox.net)
+[12:12:24] <domme__> to be more specific: e.g. there are artist charts.. there are global and personal plays for users
+[12:12:27] <locks> hm, I pre-compiled locally and am also getting the error now MiracleBlue
+[12:12:53] <domme__> so i cant store the play count with the artist itself but need to store them separately .. that's what the chart item is basically for
+[12:13:10] <domme__> but it's nothing with an id in the db
+[12:16:23] *** Joins: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr)
+[12:16:56] *** Joins: thealanwattsriot (~brianchen@75-146-23-33-Richmond.hfc.comcastbusiness.net)
+[12:17:00] *** Joins: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com)
+[12:18:52] <locks> MiracleBlue: seems like there's something wrong with production/ember-data
+[12:18:58] <locks> because I can't find a DS in there…
+[12:19:19] *** Joins: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr)
+[12:19:42] *** Quits: pskrz (~Laptop1@66.230.74.242) (Quit: pskrz)
+[12:19:49] <domme__> okay, i'm going to create ids for every chart type like $charttype_$user_$artist
+[12:19:58] <domme__> that even has some benefits
+[12:20:26] *** Quits: Zdilvoyt (~steve@offend.me.uk) (Ping timeout: 240 seconds)
+[12:21:11] *** Joins: notmessenger (~notmessen@2607:f0d0:1100:8024:dc6c:78cd:40db:b530)
+[12:22:05] <locks> MiracleBlue: doy, the production/ember-data file was busted
+[12:22:09] <locks> had to install --head
+[12:22:10] *** Joins: dm73 (~dm@217.23.5.63)
+[12:24:48] *** Joins: turngate (~turngate@198-84-240-195.cpe.teksavvy.com)
+[12:25:00] *** Joins: Maerten (~maarten@ip89-219-208-87.adsl2.static.versatel.nl)
+[12:25:44] *** Joins: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com)
+[12:27:21] *** Joins: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net)
+[12:28:56] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[12:31:58] *** Joins: KendrickVT1 (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[12:34:03] *** Quits: KendrickVT (~Adium@cpe-075-176-064-223.carolina.res.rr.com) (Quit: Leaving.)
+[12:34:09] *** Joins: sly7_7 (~sylvain.m@cha25-3-88-174-48-109.fbx.proxad.net)
+[12:34:25] *** Joins: jonasi (~jonasi@24.227.168.226)
+[12:34:33] *** Quits: adambeynon (~adambeyno@82-69-1-211.dsl.in-addr.zen.co.uk) (Quit: ["Textual IRC Client: www.textualapp.com"])
+[12:34:54] *** Quits: whitedawg (~whitedawg@122.167.166.147) (Ping timeout: 264 seconds)
+[12:35:03] *** Quits: Gues_____ (~textual@38.104.0.154) (Quit: Computer has gone to sleep.)
+[12:35:15] *** Joins: DoniRS (~DaRamirez@53556879.cm-6-6b.dynamic.ziggo.nl)
+[12:36:31] *** Quits: KendrickVT1 (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Ping timeout: 264 seconds)
+[12:39:00] *** Quits: duggiefresh (~duggiefre@c-66-30-11-90.hsd1.ma.comcast.net) (Remote host closed the connection)
+[12:39:11] *** Quits: losco (~losco@209.130.141.79) (Quit: Leaving...)
+[12:39:26] *** Joins: adambeynon (~adambeyno@62.232.29.69)
+[12:41:28] <domme__> mhDS.RESTAdapter.configure('plurals', { chartItem: 'charts'
+[12:41:29] <domme__> });
+[12:41:33] <domme__> something not valid about that?
+[12:41:55] *** Quits: bmac (~textual@209-6-195-164.c3-0.smr-ubr2.sbo-smr.ma.cable.rcn.com) (Quit: Computer has gone to sleep.)
+[12:41:58] *** Joins: losco (~losco@209.130.141.79)
+[12:42:05] <nayena> What is the proper way of sorting child elements (that are referenced by a hasMany relationship) by a date?
+[12:42:32] *** Quits: turngate (~turngate@198-84-240-195.cpe.teksavvy.com) (Quit: turngate)
+[12:42:41] *** Joins: JumpMast3r (~anonymous@c-24-19-72-30.hsd1.wa.comcast.net)
+[12:43:21] <Dafe> domme__: You can just use regular AJAX requests to your API if you're doing like read only stuff like grabbing chart data.
+[12:44:59] <krupnik> Dafe: if I'm using ajax calls in ember how do I pass the returned data to models - so if I have a list of people (each person has sub attributes) in a json response how would they be passed to a model/controller?
+[12:45:15] *** Joins: bartocc (~julien@46.182.215.106)
+[12:45:39] *** Quits: jonasi (~jonasi@24.227.168.226) (Quit: jonasi)
+[12:45:48] *** Quits: Deli (8a0b0099@gateway/web/freenode/ip.138.11.0.153) (Quit: Page closed)
+[12:46:03] *** Quits: veader (~veader@173.221.210.138.nw.nuvox.net) (Ping timeout: 276 seconds)
+[12:46:21] *** Quits: knownasilya (~knownasil@50-199-248-46-static.hfc.comcastbusiness.net) (Read error: Connection reset by peer)
+[12:46:43] <Dafe> I mean, whenever you create Ember objects, you're passing in a JSON object to initialize it.
+[12:47:10] *** Joins: levelbos1Mike (~rtmik@cm146-136.liwest.at)
+[12:47:24] <Dafe> Doesn't really matter where it comes from.
+[12:47:27] *** Quits: levelbossMike (~rtmik@cm146-136.liwest.at) (Ping timeout: 260 seconds)
+[12:48:02] *** Joins: rlivsey (~rlivsey@93-96-145-160.zone4.bethere.co.uk)
+[12:48:51] *** Joins: veader (~veader@173.221.210.138.nw.nuvox.net)
+[12:50:51] <domme__> Dafe: it's okay, it makes sense.. makes it easier to update charts in a page.. but i'd still like to set a plural which i fail to do right now
+[12:50:52] <Dafe> You can make the call in your route.
+[12:51:11] *** Quits: axsuul (~Axsuul@pool-108-38-11-179.lsanca.fios.verizon.net) (Ping timeout: 260 seconds)
+[12:51:16] <Dafe> model hook
+[12:51:28] <krupnik> so the ajax call goes in the route and is passed to the model hook
+[12:52:11] *** Quits: sly7_7 (~sylvain.m@cha25-3-88-174-48-109.fbx.proxad.net) (Read error: Operation timed out)
+[12:52:52] <Dafe> SomethingRoute = Ember.Route.extend({ model: function(){ return $.ajax("yourendpoint.json"); } });
+[12:53:04] *** Joins: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com)
+[12:53:16] <krupnik> Dafe: You're a star
+[12:53:29] *** Joins: Deli (8a0b0099@gateway/web/freenode/ip.138.11.0.153)
+[12:54:02] <Dafe> It's pretty easy.
+[12:54:14] *** Quits: pauldoerwald (~pauldoerw@hlfxns0169w-099192118098.dhcp-dynamic.FibreOp.ns.bellaliant.net) (Remote host closed the connection)
+[12:54:23] <Dafe> Which is why Ember Data haters never really made sense to me.
+[12:54:26] <krupnik> i'm v new to js/ember so not so easy for me
+[12:54:35] *** Joins: whitedawg (~whitedawg@122.179.99.206)
+[12:54:42] *** Joins: markprovan (~textual@host-135-196-33-208.lines.viateldsl.com)
+[12:54:44] <krupnik> been watching tom dale's vids + peepcode embercast
+[12:54:48] <Dafe> It'll take some time to warm up.
+[12:54:57] <Dafe> There's a lot to absorb.
+[12:55:16] <Dafe> But the Tom Dale blog client intro is very good.
+[12:55:17] <krupnik> i've looked at angular and backbone/marionette but keep coming back to ember
+[12:55:24] <Dafe> The basic pattern is there.
+[12:55:41] <Dafe> You've got your model/view/controller/template sets.
+[12:55:48] <alexspeller> krupnik: also http://eviltrout.com/2013/03/23/ember-without-data.html
+[12:55:48] <krupnik> yes TD's video is good but as you say a fair bit to absorb esp for a noob like me
+[12:55:58] <Dafe> And you just keep adding a set at a time, and you grow pretty organically.
+[12:56:06] <krupnik> thanks alexspeller
+[12:56:59] <krupnik> essentially i have a bunch of people and want to have a master view listing all the peeps and then a detail veiw for each person linked to via their name
+[12:57:31] <Dafe> That's a good use case for Ember Data.
+[12:57:39] <krupnik> my complicating factor is the data is in xml so having to parse that to json first and then work out how to send that json to the views etc
+[12:58:28] <krupnik> i'll take a look at the docs on EmberData
+[12:58:28] <Dafe> You should just be able to write a deserializer to do the conversion.
+[12:58:41] <Dafe> But it's probably easier generally to do that work on the server.
+[12:58:47] *** Quits: snb__ (~snb@192.117.147.3) (Remote host closed the connection)
+[12:59:05] *** Joins: Zdilvoyt (~steve@offend.me.uk)
+[12:59:17] <Dafe> Where it might be a tweak like toJSON() instead of toXML()
+[12:59:33] *** Quits: ncfcmark (~ncfcmark@212.58.54.198) (Quit: Leaving.)
+[12:59:50] <krupnik> Dafe: thx - I'm learning as I go - all my exp is with design/html etc :)
+[12:59:50] *** Joins: ncfcmark (~ncfcmark@212.58.54.198)
+[12:59:58] <krupnik> fun tho
+[13:00:14] <Dafe> Where's your data coming from?
+[13:00:35] <krupnik> originally? a COBOL db!
+[13:00:36] *** Quits: brbr (~Adium@207-38-138-149.c3-0.avec-ubr2.nyr-avec.ny.cable.rcn.com) (Quit: Leaving.)
+[13:00:56] *** Quits: listochkin (~listochki@46.182.82.146) (Remote host closed the connection)
+[13:01:00] *** jack-away is now known as jackinloadup
+[13:01:02] <krupnik> there is json outputable from it but bosses r hooked on xml
+[13:01:31] *** Joins: cha0ticz (~jcugno@76-219-181-7.lightspeed.irvnca.sbcglobal.net)
+[13:01:32] *** Joins: listochkin (~listochki@46.232.239.246)
+[13:01:49] <krupnik> am trying to put together a mini app as an example use case to pitch a change in dev practices
+[13:02:20] *** Quits: Deli (8a0b0099@gateway/web/freenode/ip.138.11.0.153) (Ping timeout: 250 seconds)
+[13:02:21] <domme__> mh.. is DS.RESTAdapter.configure('plurals', {...}) still the right way to do it?
+[13:02:22] *** Joins: Brayniverse (~textual@195.50.79.250)
+[13:02:50] <domme__> i'm seeing an no method configure error in console
+[13:02:51] <Dafe> wtf, do you work at Bloomberg or something?
+[13:02:56] *** Joins: Deli (8a0b0099@gateway/web/freenode/ip.138.11.0.153)
+[13:03:05] <krupnik> Dafe: nope :)
+[13:03:21] <krupnik> I'd never even heard of COBOl before I got here
+[13:03:25] <krupnik> it's insane
+[13:03:29] *** Quits: tboyt (~textual@ool-457e9abe.dyn.optonline.net) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[13:03:29] <Dafe> It's old.
+[13:03:34] <krupnik> so I gather
+[13:03:40] <Dafe> My mom did COBOL for a while at Nynex.
+[13:03:47] <krupnik> Yikes
+[13:04:02] <Dafe> Except I don't think she really did.
+[13:04:11] <Dafe> I think that was straight up nepotism, and they fudged it.
+[13:04:15] <Dafe> Economy was really good then.
+[13:04:19] *** Quits: tonywok (~tonywok@cpe-184-57-31-30.columbus.res.rr.com) (Ping timeout: 256 seconds)
+[13:04:26] *** Joins: hool (~inconduit@CPEe0cb4ec00199-CM00111ae43f36.cpe.net.cable.rogers.com)
+[13:04:28] <Dafe> She can barely turn on a computer.
+[13:04:35] <krupnik> we have a COBOL dude here but the general practice is a little bit hair raising - lots of js spaghetti callbacks and from what I read some BAAAD dev practices
+[13:04:44] <krupnik> trying to show them "the light"
+[13:05:07] <Dafe> Displaying XML is easy enough.
+[13:05:18] <krupnik> in ember?
+[13:05:25] <Dafe> If you want to work on it with JS, it definitely doesn't make any sense.
+[13:05:28] *** Quits: rsol (~rsol@c-67-180-34-2.hsd1.ca.comcast.net) (Read error: Connection reset by peer)
+[13:05:40] <Dafe> I mean, it was good in the static web page days.
+[13:05:43] *** Joins: rsol (~rsol@c-67-180-34-2.hsd1.ca.comcast.net)
+[13:05:47] <krupnik> i got it working w jquery
+[13:05:49] <Dafe> Sort of.
+[13:06:12] *** Quits: cha0ticz (~jcugno@76-219-181-7.lightspeed.irvnca.sbcglobal.net) (Ping timeout: 276 seconds)
+[13:06:47] *** Quits: Deli (8a0b0099@gateway/web/freenode/ip.138.11.0.153) (Client Quit)
+[13:06:48] <krupnik> i think the COBOL system can spit out json, just gotta pursuade the backend guy to set me up a little feed of my own to play with :)
+[13:07:09] <Dafe> I think basically Douglass Crockford was like, "You can use JavaScript objects for this."
+[13:07:19] <Dafe> And overnight, everyone was like, Screw XSLT, I'm out.
+[13:07:28] <Dafe> Do that.
+[13:07:33] <Dafe> It'll make your demo more elegant.
+[13:07:48] *** Joins: vlad_sta_ (~vlad_star@109.188.125.244)
+[13:07:54] <Dafe> If you need help, let me know.
+[13:07:59] <Dafe> I hate complacency.
+[13:08:09] *** Joins: Gues_____ (~textual@38.104.0.154)
+[13:08:20] <krupnik> Cheers Dafe owe you a beer.coffee()
+[13:08:23] <krupnik> so do i
+[13:08:40] <krupnik> also really can't stand peeps who don't wanna learn new stuff
+[13:08:53] <Dafe> Yeah.  Hurry up and die, then.
+[13:09:02] <krupnik> exactly.
+[13:09:48] <krupnik> it's crazy cause they could be increasing the value of their company x10 just by doing a little planning rather than taking a "if it ain't broke don't fix it line"
+[13:10:00] <krupnik> cause when it does finally break, they're screwed :)
+[13:10:13] <Dafe> Dealing with legacy code is always a debacle.
+[13:10:25] <krupnik> so i'm discovering
+[13:10:43] <Dafe> The code itself, and the people around it.
+[13:11:12] <Dafe> That said, sometimes it doesn't need a rewrite.
+[13:11:54] <Dafe> And you can just focus on having JSON output so you can streamline the interface dev.
+[13:11:58] *** Joins: Deli (8a0b0099@gateway/web/freenode/ip.138.11.0.153)
+[13:12:03] <krupnik> so I've set myself the silly task of learning js, building an app etc and perhaps showing the way
+[13:12:03] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Ping timeout: 276 seconds)
+[13:12:30] <krupnik> DON'T even get started on their UI - it's Windows 95 all the way.
+[13:12:34] *** Joins: geekboy88 (~dev@46.173.3.73)
+[13:13:05] <Dafe> I feel for you, but I'd caution you about getting your hopes really high.
+[13:13:22] <krupnik> i know
+[13:13:30] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[13:13:34] <krupnik> either way I'll come out with more exp so it's all good
+[13:13:36] <Dafe> It's a tall order, even for an experienced JS dev to turn around a whole thing like that.
+[13:13:43] *** Parts: geekboy88 (~dev@46.173.3.73) ()
+[13:13:57] <Dafe> But yeah.  You'll learn a lot.
+[13:14:02] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[13:14:10] <krupnik> yeah, I'm sure it is. Just going to try to keep it small and manageable
+[13:14:25] *** Joins: jasocox (~jasocox@173-12-5-74-Philadelphia.hfc.comcastbusiness.net)
+[13:14:30] *** Joins: egblu3 (~egblu3@unaffiliated/egblu3)
+[13:14:40] <Dafe> Adding JS to your resume never hurts, anyhow.
+[13:14:40] <krupnik> love it :)
+[13:15:07] <Deli> Have you checked emberwatch.com?
+[13:15:29] <krupnik> yeah been lookin over emberW
+[13:15:29] <Deli> I learned a lot from the material on there
+[13:15:39] <krupnik> and ember101
+[13:16:09] <Dafe> It's less fun than a lot of other sources, but I'd just read all the guides on the website.
+[13:16:12] *** Quits: vlad_sta_ (~vlad_star@109.188.125.244) (Ping timeout: 256 seconds)
+[13:16:14] *** Joins: gavinjoyce (~gavinjoyc@109.255.128.64)
+[13:17:03] <krupnik> is it foolish trying to grok js alongside a framework? In my head I thought learning the theory would be best done with practical and up to date techniques...
+[13:17:06] <Deli> Some of the stuff you can only find in the API reference, like the computed macros I just discovered
+[13:17:06] <Dafe> You'll get the canonical Ember way to do stuff.
+[13:17:17] <Dafe> And it's most up to date.
+[13:17:21] *** egblu3 is now known as egb3
+[13:17:26] <krupnik> slowly working my way thru the docs
+[13:18:48] *** Quits: fayimora (~fayimora@host86-183-66-125.range86-183.btcentralplus.com) (Quit: zzzzz...)
+[13:18:48] *** Quits: munumnu (~munumnunu@54.54.204.212.ediscom.de) (Quit: Leaving)
+[13:19:14] <Deli> I got a question for you all. I decided I would split the different ember components in my project in different files to clean things up. It's an ASP.NET back-end so I bundled all the files together. In the release build, it merges the files together, but in debug mode each file is inside its own <script> tag. In debug mode, one of my computed properties doesn't update anymore. Do you guys see any reason for that behavior?
+[13:19:22] <Deli> I mean, I tried looking for typos
+[13:19:51] *** Quits: adambeynon (~adambeyno@62.232.29.69) (Ping timeout: 276 seconds)
+[13:19:56] <Deli> it's as if the controller doesn't know that the view is hooked to that property anymore
+[13:20:14] <Dafe> Probably bashed your templates or something.
+[13:20:34] *** Joins: jsteiner (~Adium@66.228.83.116)
+[13:20:45] <Dafe> Well, I don't know how you did that.
+[13:20:45] *** Joins: adambeynon (~adambeyno@77.107.172.10)
+[13:21:11] <Dafe> Are your templates just in script tags in your HTML?
+[13:21:14] *** Joins: elux (~peter@96.45.198.150)
+[13:21:32] <Deli> right now they are yes, I just split the javascript side of things
+[13:21:42] *** Joins: listochk_ (~listochki@46.232.239.246)
+[13:21:53] *** Quits: tarasm (~taras@bas1-toronto05-1176311105.dsl.bell.ca) (Quit: tarasm)
+[13:22:26] <Dafe> Okay.  Maybe a naming collision.  Nothing useful in console errors?
+[13:22:38] *** Joins: bmac (~bmac@75-150-66-249-NewEngland.hfc.comcastbusiness.net)
+[13:22:52] *** Joins: tarasm (~taras@bas1-toronto05-1176311105.dsl.bell.ca)
+[13:23:27] <Deli> no errors, the view is displayed when I transition to its route, and it clearly enumerates over the controller's computed property, but when I modify it, it doesn't get updated anymore, so the view stays the same.
+[13:24:35] *** Quits: listochkin (~listochki@46.232.239.246) (Ping timeout: 245 seconds)
+[13:24:49] <Deli> It's a computed property hooked to an array with .property('someArray.@each'). I notice that if I change to 'someArray.length', it gets updated correctly again.
+[13:25:34] <Dafe> Try .property("someArray[]")
+[13:25:38] <Dafe> I think that's preferred.
+[13:26:04] <Deli> Oh yeah? I'll try that
+[13:26:18] <Dafe> http://emberjs.com/api/classes/Ember.ArrayController.html#property__
+[13:26:47] *** Joins: mandrakus (~Adium@74.11.160.130)
+[13:27:54] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[13:28:07] *** Quits: jivebot (~textual@or-71-53-77-54.dhcp.embarqhsd.net) (Ping timeout: 264 seconds)
+[13:28:38] *** Joins: teddyZ (~teddy@193.227.167.83)
+[13:28:46] <Dafe> And this note
+[13:28:46] *** Joins: Cheos (~nico@a91-154-26-199.elisa-laajakaista.fi)
+[13:28:46] <Dafe> http://emberjs.com/api/classes/Ember.ArrayController.html#property__each
+[13:29:04] *** Joins: halogenandtoast (~halogenan@66.228.83.116)
+[13:29:10] *** Quits: microfed (~microfed@188.123.231.15) (Ping timeout: 245 seconds)
+[13:29:12] *** Joins: bradgignac (~bradgigna@74.205.24.232)
+[13:29:23] <Deli> Great, it's pretty clear =)
+[13:30:02] *** Joins: tonywok (~tonywok@rrcs-96-11-137-30.central.biz.rr.com)
+[13:30:10] <Deli> I'll give it a try when I'm in front of my personal comp
+[13:30:15] <halogenandtoast> It seems like hitting an html reset button <button type="reset">Reset</button> Will reset a form, but Ember will not internally update any values. Is there already a solution to this problem?
+[13:31:13] <Dafe> Using input helpers?
+[13:31:43] <Deli> And thanks Dafe
+[13:31:50] <Dafe> No problem, Deli.
+[13:32:08] *** Joins: pauldoerwald (~pauldoerw@blk-222-218-4.eastlink.ca)
+[13:33:25] *** Joins: jivebot (~textual@or-71-53-77-54.dhcp.embarqhsd.net)
+[13:34:00] *** Joins: otakurzo (~otakurzo@200.60.106.6)
+[13:34:03] <halogenandtoast> Dafe: Can you shed a little more light on that?
+[13:34:29] <Dafe> On the reset button?
+[13:35:03] <halogenandtoast> Yes. The button updates all of the input's values but doesn't trigger any changes in Ember, how would an input helper notify the object of the changes to the fields?
+[13:35:51] <Dafe> The input helpers are just convenient ways to bind the values.
+[13:36:15] <Dafe> It shouldn't make a difference, if you do the binding yourself, but I just wanted to know, to set up a bin or fiddle or something.
+[13:36:18] <Dafe> To see the issue.
+[13:36:52] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Remote host closed the connection)
+[13:36:58] <teddyZ> input bindings don't work unless the following events are triggered on the input: focusOut, change, paste, cut, input, keyup
+[13:38:12] *** Quits: egb3 (~egblu3@unaffiliated/egblu3) (Quit: egb3)
+[13:38:36] <Dafe> Do reset buttons not trigger change events?
+[13:38:52] *** Joins: benediktdeicke (~benediktd@87.139.219.99)
+[13:38:55] *** Joins: earthquake (~earthquak@static-72-89-161-80.nycmny.fios.verizon.net)
+[13:39:41] *** Joins: Deli_ (8a0b0099@gateway/web/freenode/ip.138.11.0.153)
+[13:40:08] *** Quits: luke` (~luke`@123.201.131.246) (Quit: luke`)
+[13:40:27] *** Quits: Deli (8a0b0099@gateway/web/freenode/ip.138.11.0.153) (Ping timeout: 250 seconds)
+[13:40:28] <teddyZ> Dafe: doesn't look like it does: http://jsbin.com/UfoqAHi/2/edit
+[13:40:39] *** Joins: urbany (~jdev@bl5-16-236.dsl.telepac.pt)
+[13:40:42] *** Quits: Gues_____ (~textual@38.104.0.154) (Quit: Computer has gone to sleep.)
+[13:40:54] <Dafe> Well, that's stupid.
+[13:41:53] *** Joins: juggy (~juggy@modemcable005.57-83-70.mc.videotron.ca)
+[13:42:08] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[13:42:35] <Dafe> halogenandtoast: As a stopgap, you can just write a reset method like reset: function(){ this.setProperties({name: "", password: "" }); }
+[13:42:51] <Dafe> Which is useful to call on the route and whatever anyway.
+[13:43:18] <halogenandtoast> Dafe: I wouldn't want to blank out the values thought.
+[13:43:19] <halogenandtoast> *though
+[13:43:44] <Dafe> Well, you can make it do whatever you want.
+[13:43:59] <halogenandtoast> Right it's getting the old attributes which I'd imagine is painful
+[13:44:11] <teddyZ> halogenandtoast: are u using ED ?
+[13:44:26] <halogenandtoast> Yes
+[13:44:35] <teddyZ> halogenandtoast: record.rollback()
+[13:44:36] *** Joins: duggiefresh (~duggiefre@64.119.141.126)
+[13:45:04] <Dafe> Doing it manually isn't that painful, either.
+[13:45:19] <halogenandtoast> teddyZ: Thanks, I'll implement it using that. Ideally though it would be great if a reset button just worked.
+[13:45:36] <teddyZ> halogenandtoast: isn't reset supposed to empty the fields?
+[13:46:05] <halogenandtoast> teddyZ: Nope resets them to the initial state, so if they had values it will reset them to those values.
+[13:46:15] <halogenandtoast> Or at least that's what it's doing for me.
+[13:46:29] <Dafe> Oh.  So like if you have <input value="something">
+[13:46:35] <Dafe> Resets to that.
+[13:46:55] <halogenandtoast> Yes.
+[13:47:34] <teddyZ> halogenandtoast: even if the input fields are created using javascript?
+[13:47:35] *** Joins: carlyle (~carlyle@99-127-240-24.lightspeed.rlghnc.sbcglobal.net)
+[13:47:41] <halogenandtoast> teddyZ: Yes
+[13:47:44] *** jackinloadup is now known as jack-away
+[13:48:08] <Dafe> So long as the prop is defined on the node, I guess.
+[13:48:25] *** Quits: huafu (~huafu@cpe-70-95-105-36.hawaii.res.rr.com) (Remote host closed the connection)
+[13:48:48] <Dafe> I guess that's kind of annoying to do with Handlebars.
+[13:48:51] *** Joins: huafu (~huafu@zeus.mistergoodtrip.com)
+[13:49:08] *** Quits: skurfuerst (~Adium@e179112090.adsl.alicedsl.de) (Quit: Leaving.)
+[13:49:30] <halogenandtoast> I'll mess around and see if I can code a solution into Ember itself, if it works well I'll make a PR.
+[13:49:36] <Dafe> But probably easy enough to throw on the input helpers.
+[13:50:10] <halogenandtoast> For now though the rollback method will do what I want.
+[13:51:06] *** Joins: peregrine81 (~textual@108-231-125-143.lightspeed.milwwi.sbcglobal.net)
+[13:51:11] *** Quits: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[13:51:26] <teddyZ> halogenandtoast: given both options, i would choose the rollback either way
+[13:51:53] <halogenandtoast> teddyZ: Sure, but it would be nice to have it working for non-ED objects.
+[13:52:15] <halogenandtoast> If you want the rollback you can just create an untyped button
+[13:52:20] *** Parts: katratxo (~katratxo@ec2-79-125-6-47.eu-west-1.compute.amazonaws.com) ()
+[13:52:24] <halogenandtoast> and use an action
+[13:52:39] *** Joins: dcherman (~dcherman@164.55.254.106)
+[13:54:22] *** Quits: JumpMast3r (~anonymous@c-24-19-72-30.hsd1.wa.comcast.net) (Quit: JumpMast3r)
+[13:54:35] *** Joins: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr)
+[13:54:39] <Cheos> hi
+[13:55:44] *** Joins: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com)
+[13:56:07] *** Joins: Guest____ (~textual@38.104.0.154)
+[13:57:32] <Dafe> If you guys didn't know about it, this is a thing: http://emberjs.jsbin.com/
+[13:59:36] *** Joins: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net)
+[13:59:58] <locks> jsbin <3
+[14:00:22] *** Joins: tehviking (~tehviking@cpe-70-112-61-154.austin.res.rr.com)
+[14:02:31] *** Quits: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com) (Quit: Leaving.)
+[14:04:07] *** Joins: tamird (~tamird@199.227.49.90)
+[14:04:52] *** Quits: Guest____ (~textual@38.104.0.154) (Quit: Computer has gone to sleep.)
+[14:08:17] *** Joins: Guest____ (~textual@38.104.0.154)
+[14:09:10] *** Joins: decasia (~adium@sunfish.uchicago.edu)
+[14:10:40] *** Quits: Guest____ (~textual@38.104.0.154) (Client Quit)
+[14:11:42] *** Joins: Guest____ (~textual@rrcs-50-75-200-22.nyc.biz.rr.com)
+[14:11:49] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[14:12:00] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Remote host closed the connection)
+[14:12:09] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[14:13:07] *** Joins: graup (~graup@2001:1a50:11:0:5f:8f:ac86:1)
+[14:13:15] *** Joins: raila (~dad@p5DC0EBD2.dip0.t-ipconnect.de)
+[14:13:39] *** Quits: shaunbaker (~shaunbake@brick-lane.lbi.co.uk) (Remote host closed the connection)
+[14:14:05] *** Joins: shaunbaker (~shaunbake@brick-lane.lbi.co.uk)
+[14:14:25] *** Quits: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com) (Quit: jonasi)
+[14:14:36] *** Quits: dhilipsiva (~dhilipsiv@106.51.168.244) (Remote host closed the connection)
+[14:15:34] *** jesterKing is now known as amino
+[14:15:35] *** Quits: peregrine81 (~textual@108-231-125-143.lightspeed.milwwi.sbcglobal.net) ()
+[14:16:03] *** Joins: huafu_ (~huafu@cpe-70-95-105-36.hawaii.res.rr.com)
+[14:17:55] *** Quits: huafu (~huafu@zeus.mistergoodtrip.com) (Ping timeout: 245 seconds)
+[14:18:45] *** Quits: yaymukund (~yaymukund@cpe-24-90-210-18.nyc.res.rr.com) (Ping timeout: 245 seconds)
+[14:19:41] *** Joins: FilmKnurd (~textual@rrcs-108-178-97-230.sw.biz.rr.com)
+[14:21:27] *** Joins: mixonic (~anonymous@modemcable223.184-179-173.mc.videotron.ca)
+[14:21:59] <FilmKnurd> I'm trying to get the hang of the loadingRoute. Using ember-model, my resource route's model hook returns a jQuery promise, but when transitioning to the resource, the loadingRoute template is never displayed, even though it takes a while for all the data to load.
+[14:22:50] *** Joins: mkoppel2_ (~mkoppel20@pool-98-112-187-124.lsanca.fios.verizon.net)
+[14:24:23] <ShawnMcCool> could someone please look at this paste and see if anything seems off? http://paste.laravel.com/Q7Q I'm simply trying to save a model and getting "Uncaught TypeError: Cannot call method 'serialize' of undefined" It's driving me NUTS.
+[14:24:54] <FilmKnurd> Ok, if I put the $.get request directly on the model, then it pauses the transition. But apparently, the ember-model is returning a resolved promise.
+[14:27:34] *** Quits: nayena (~nayena@193.200.225.93) (Quit: nayena)
+[14:28:01] *** Quits: awc737 (~awc737@2604:180:1::e9e7:263f) (Max SendQ exceeded)
+[14:28:40] *** Joins: alxscms (~alxscms@208.71.36.3)
+[14:31:09] *** Joins: HarryVZ_ (~harry@194-166-155-67.adsl.highway.telekom.at)
+[14:32:56] *** Quits: HarryVZ (~harry@194.166.157.15) (Ping timeout: 245 seconds)
+[14:32:57] *** HarryVZ_ is now known as HarryVZ
+[14:33:23] *** Quits: kanja (~bbeecher@192.12.88.32) (Ping timeout: 260 seconds)
+[14:33:24] <alexspeller> FilmKnurd: why are you returning a jquery promise?
+[14:33:26] *** svparijs is now known as svparijs_afk
+[14:33:39] <alexspeller> If you're using ember model you should not be anywhere near jquery promises
+[14:33:45] *** Quits: Deli_ (8a0b0099@gateway/web/freenode/ip.138.11.0.153) (Ping timeout: 250 seconds)
+[14:33:58] <FilmKnurd> If using the RESTAdapter
+[14:34:22] *** Joins: EGreg (~Qbix@ool-44c7d192.dyn.optonline.net)
+[14:34:48] <Cheos> If anyone's feeling a bit under the weather, this should cheer you up: http://www.youtube.com/watch?v=MEEHqT6WaZU
+[14:34:54] *** Joins: awc737 (~awc737@2604:180:1::e9e7:263f)
+[14:35:00] <alexspeller> FilmKnurd: what does "If using the RESTAdapter" mean?
+[14:35:21] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[14:35:47] <FilmKnurd> If I were using the RESTAdapter, then the jQuery promise is encapsulated in the ember-model adapter API
+[14:36:11] <FilmKnurd> but if you are implementing a custom adapter, then it's bring your own AJAX
+[14:36:51] <alexspeller> Right, that makes sense. Make sure you use fetch* methods instead of find* methods in your model hook
+[14:36:56] <alexspeller> Those return promises
+[14:37:04] <alexspeller> the find* methods don't return promises
+[14:37:28] *** Joins: steve9001 (~steve9001@pool-108-20-242-190.bstnma.east.verizon.net)
+[14:37:39] <wycats> alexspeller: the find methods definitely do return promises
+[14:37:56] <wycats> the fetch methods aren't public
+[14:38:06] <wycats> https://github.com/emberjs/data/blob/master/packages/ember-data/lib/system/store.js#L334
+[14:38:12] <alexspeller> we're talking ember-model ;)
+[14:38:19] <wycats> ahhhhhh
+[14:38:20] <wycats> ok
+[14:38:25] <wycats> gooooood luck!
+[14:38:37] <locks> hahaha
+[14:38:50] <wycats> :D
+[14:38:55] <wycats> walk-time for me
+[14:38:59] *** Quits: matttt (c389c240@gateway/web/freenode/ip.195.137.194.64) (Quit: Page closed)
+[14:39:34] *** jack-away is now known as jackinloadup
+[14:39:57] <FilmKnurd> alexspeller, I'm using https://github.com/ebryn/ember-model
+[14:40:56] <FilmKnurd> Oh, I mean wycats… sorry catching up
+[14:41:35] <alexspeller> FilmKnurd: I thought so, I am a maintainer of that project although I've been quite busy with other stuff recently
+[14:41:46] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[14:41:49] *** Quits: tamird (~tamird@199.227.49.90) (Quit: tamird)
+[14:42:07] <FilmKnurd> Oh cool, thanks for helping
+[14:42:28] *** Joins: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com)
+[14:43:03] <bcardarella> I'm updating an app from rc6 to 1.0 and I'm getting errors about the loading route not being defined
+[14:43:25] *** Joins: davydotcom (~davydotco@c-98-220-132-56.hsd1.in.comcast.net)
+[14:43:50] <bcardarella> Anybody else see this?
+[14:44:09] *** Joins: tamird (~tamird@199.227.49.90)
+[14:48:30] *** Joins: pskrz (~Laptop1@66.230.74.242)
+[14:49:40] <machty> bcardarella: loading route or loading controller? alex n's talking to me about that now...
+[14:49:42] *** Quits: pskrz (~Laptop1@66.230.74.242) (Remote host closed the connection)
+[14:49:58] <bcardarella> machty: yeah, I just saw the conversation you had with twokul. Thanks
+[14:50:00] <ShawnMcCool> alexspeller: hey man, if you don't have time, I understand. I've been battling this issue for like.. all day, now. could you look at this paste and see if anything seems off? http://paste.laravel.com/Q7Q I'm simply trying to save a model and getting "Uncaught TypeError: Cannot call method 'serialize' of undefined" It's driving me NUTS.
+[14:51:10] *** Quits: carlyle (~carlyle@99-127-240-24.lightspeed.rlghnc.sbcglobal.net) (Remote host closed the connection)
+[14:51:36] <alexspeller> ShawnMcCool: I don't know why, why don't you use the Chrome debugger to pause execution on that error and inspect what's going wrong?
+[14:52:12] <alexspeller> Or failing that, provide a working jsfiddle that shows the error for people to look at?
+[14:52:23] <teddyZ> ShawnMcCool: are you using ember data?
+[14:52:28] *** Joins: peregrine81 (~textual@108-231-125-143.lightspeed.milwwi.sbcglobal.net)
+[14:52:34] <alexspeller> His code is ;)
+[14:52:46] <ShawnMcCool> yea, ember data and localstorage adapter
+[14:53:11] <hoopy> is there any way to force the DOM to re-calculate layout?
+[14:54:29] <ShawnMcCool> brb, i'll work up a jsfiddle when i return
+[14:55:06] *** Joins: mjallday (~marshall@199-241-202-99.PUBLIC.monkeybrains.net)
+[14:56:22] <teddyZ> ShawnMcCool: DS.attr('belongs')
+[14:56:27] *** Quits: ShawnMcCool (~shawn@546927B5.cm-12-2a.dynamic.ziggo.nl) (Read error: Operation timed out)
+[14:56:51] <teddyZ> should be DS.belongsTo('project')
+[14:56:55] <teddyZ> and he's gone :)
+[14:57:24] <ericberry> I'm using ember-data (latest) and I am running into an issue where it is chomping the first character off of the findQuery request (of the url).. for example
+[14:57:33] <ericberry> http://localhost:3000/api/v1/ti_apps?category=223&education_level=235
+[14:57:41] *** Joins: ShawnMcCool (~shawn@546923D4.cm-12-2a.dynamic.ziggo.nl)
+[14:57:45] <ericberry> but the model is 'LtiApp'
+[14:57:54] <ericberry> has anyone run into this before?
+[14:59:06] <ianpetzer> ericberry.. someone reported the same issue yesterday
+[14:59:09] <decasia> ericberry: I know I saw this when I had problems getting the correct js assets included.
+[14:59:10] *** Quits: techthumb (~techthumb@2604:180:1::f30a:4bec) (Ping timeout: 245 seconds)
+[14:59:43] <teddyZ> ShawnMcCool: you need to change project: DS.attr('belongsTo') to project: DS.belongsTo('project')
+[14:59:52] *** Quits: mjijackson (~michael@astound-69-42-2-25.ca.astound.net) (Quit: mjijackson)
+[15:00:03] <decasia> (ianpetzer: my sole purpose in the world is going to become helping people with this one bug…)
+[15:00:38] *** Joins: G________ (~textual@38.104.0.154)
+[15:00:41] <FilmKnurd> alexspeller, I get the same behavior when I use the RESETAdapter: the loadingRoute is never activated even though it takes time for the models to load.
+[15:00:44] <ianpetzer> decasia…haha!
+[15:00:49] <ericberry> ianpetzer/decasia any solutions to this yet? seems a pretty big bug
+[15:00:57] *** Joins: yaymukund (~yaymukund@rrcs-198-179-88-67.nyc.biz.rr.com)
+[15:01:08] <ShawnMcCool> teddyZ: you're absolutely right, thank you for that. now i'm getting the error that i ORIGINALLY was.. Cannot call method 'lookup' of undefined  which i'll try to dive into
+[15:01:13] <alexspeller> FilmKnurd: what does your model hook look like?
+[15:01:15] *** Quits: tehviking (~tehviking@cpe-70-112-61-154.austin.res.rr.com) (Remote host closed the connection)
+[15:01:20] <decasia> ericberry: are you using rails? how are you getting the ember assets included?
+[15:01:35] <FilmKnurd> alexspeller, return App.Grade.find();
+[15:01:45] <alexspeller> FilmKnurd: I said you need to use the fetch method
+[15:01:48] *** Joins: rodyhaddad (~rodyhadda@206.167.24.248)
+[15:01:53] *** Joins: techthumb (~techthumb@2604:180:1::f30a:4bec)
+[15:01:55] <alexspeller> Otherwise a promise is not returned
+[15:01:59] <FilmKnurd> alexspeller, you are right you did :-) sorry
+[15:02:06] *** Joins: tamird_ (~tamird@199.227.49.90)
+[15:02:16] *** Quits: Brayniverse (~textual@195.50.79.250) (Quit: Textual IRC Client: www.textualapp.com)
+[15:02:17] <ericberry> decasia I'm using rails, but the ember js is being built into the app via ember-tools
+[15:02:32] <ericberry> my setup is messed up though so if that's the reason, I can clean it up
+[15:02:38] <FilmKnurd> alexspeller, that fixed the problem :-)
+[15:02:46] <alexspeller> awesome
+[15:02:48] *** Quits: listochk_ (~listochki@46.232.239.246) (Remote host closed the connection)
+[15:02:52] <ianpetzer> ericberry… I'm using EAK.. pointed at ember-data-latest… rather than the beta release and I'm not seeing that
+[15:03:06] *** Quits: tamird (~tamird@199.227.49.90) (Ping timeout: 264 seconds)
+[15:03:06] *** tamird_ is now known as tamird
+[15:03:12] <ianpetzer> ericberry.. although I'm still trying to write the back-end to deal with the json.
+[15:03:20] *** Joins: listochkin (~listochki@46.232.239.246)
+[15:03:21] <wycats> ShawnMcCool: looks like the transforms aren't registered somehow
+[15:03:41] <wycats> ShawnMcCool: you can get rid of all of the types in your attr()s
+[15:03:44] <ericberry> ianpetzer i'll try that out. thanks!
+[15:03:44] <ianpetzer> ericberry.. maybe try http://builds.emberjs.com/canary/ember-data.js
+[15:03:52] <wycats> DS.attr() is a pass-thru if the types are correct from the server
+[15:03:53] <decasia> ericberry: if I were you, I would inspect the ember assets in the web inspector and verify that the client is getting the latest versions of ember and ember-data. when I had this problem, it turned out that although I thought I had installed ember-latest in rails, the client wasn't seeing it.
+[15:04:21] <ericberry> i'm certain it's loading properly
+[15:04:28] <ericberry> it wouldn't compile down if it weren't
+[15:04:32] <wycats> ShawnMcCool: also, I'd try stepping into this.transformFor and see what's going wrong
+[15:04:49] <ShawnMcCool> umm, i think you fixed it, wycats. i think it was the boolean that i had...
+[15:05:00] <wycats> ShawnMcCool: can you point me to the localStorage adapter you're using?
+[15:05:11] <ShawnMcCool> https://github.com/rpflorence/ember-localstorage-adapter
+[15:05:43] <decasia> ericberry: I don't mean "loading" in the sense of getting sent over http. I mean: loading in the sense of actually getting the latest version of the code, and not some older cached version.
+[15:05:48] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[15:06:11] <ericberry> i see
+[15:06:17] <wycats> ShawnMcCool: it should probably be calling record.toJSON() not record.serialize()
+[15:06:21] <ericberry> i switched the ember-data to use the canary build and it is now working
+[15:06:37] <wycats> over here: https://github.com/rpflorence/ember-localstorage-adapter/blob/master/localstorage_adapter.js#L125
+[15:06:37] *** Joins: JumpMast3r (~anonymous@c-24-19-72-30.hsd1.wa.comcast.net)
+[15:06:39] *** Joins: knownasilya (~knownasil@50-199-248-46-static.hfc.comcastbusiness.net)
+[15:06:42] *** Quits: eskimoblood (~eskimoblo@178.19.212.138) (Remote host closed the connection)
+[15:06:42] *** Joins: fayimora (~fayimora@host81-155-50-149.range81-155.btcentralplus.com)
+[15:06:48] *** Quits: shaunbaker (~shaunbake@brick-lane.lbi.co.uk) (Read error: Connection reset by peer)
+[15:06:49] *** Joins: carlyle (~carlyle@rrcs-24-199-207-171.midsouth.biz.rr.com)
+[15:07:07] <wycats> although serialize should work too
+[15:07:14] <wycats> I have no idea how the transforms aren't being found
+[15:07:16] <wycats> seems crazy
+[15:07:32] <wycats> which version of Ember Data are you using?
+[15:07:54] *** Quits: listochkin (~listochki@46.232.239.246) (Ping timeout: 264 seconds)
+[15:08:01] <decasia> ericberry: cool. glad it's fixed.
+[15:08:14] *** Joins: dhilipsiva (~dhilipsiv@106.51.112.75)
+[15:08:15] <ericberry> decasia: thanks for your help!
+[15:08:18] <ShawnMcCool> 1.0 beta 2
+[15:08:44] <wycats> this is tranformFor: https://github.com/amarpalsapure/data/blob/d5dab109337eaddbac507afa00a574cbde9fad01/packages/ember-data/lib/serializers/json_serializer.js#L147
+[15:08:49] *** Joins: egblu3 (~egblu3@acss175.neoplus.adsl.tpnet.pl)
+[15:08:49] *** Quits: egblu3 (~egblu3@acss175.neoplus.adsl.tpnet.pl) (Changing host)
+[15:08:49] *** Joins: egblu3 (~egblu3@unaffiliated/egblu3)
+[15:08:53] <decasia> ericberry: no prob! btw, were you previously using an older version of ember-data? or is your project starting from scratch?
+[15:09:02] <wycats> and here is the registration: https://github.com/amarpalsapure/data/blob/d5dab109337eaddbac507afa00a574cbde9fad01/packages/ember-data/lib/initializers.js#L61
+[15:09:05] *** Joins: listochkin (~listochki@46.232.239.246)
+[15:09:07] <wycats> ShawnMcCool: can you try updating to latest
+[15:09:11] <ericberry> decasia: scratch
+[15:09:13] <wycats> what you're seeing doesn't make sense to me
+[15:09:26] *** Quits: januschh (~januschh@212.98.75.91) (Ping timeout: 248 seconds)
+[15:09:32] <wycats> I'll try to do a beta3 in the next couple of days fwiw
+[15:10:07] <teddyZ> wycats: he had DS.attr('belongsTo'), it was looking for a transform for 'belongsTo'
+[15:11:23] <ericberry> one more question re: ED.. i am now getting an error saying that my response needs to be an array.. does ED no longer look for a key/value pair as responses from the server?
+[15:11:40] <ShawnMcCool> sorry, i thought you saw my update, wycats
+[15:12:06] <ShawnMcCool> hold, i'll clarify
+[15:13:21] <wycats> teddyZ: ahhhhhh
+[15:13:24] <decasia> ericberry: about the loading problem, more context might be useful here.
+[15:13:29] <wycats> teddyZ: we should have an assert there
+[15:13:37] <wycats> "no transform found for string" or whatnot
+[15:13:48] <wycats> ericberry: it does for find
+[15:13:48] *** Joins: sjkane (~steven@38.106.196.126)
+[15:13:58] <wycats> but not for requests that should return arrays
+[15:14:00] <ericberry> but not for findQuery?
+[15:14:03] <wycats> right
+[15:14:06] <ericberry> how does it handle side loading then>
+[15:14:07] <ericberry> ?
+[15:14:07] <wycats> findQuery expects an array
+[15:14:13] <wycats> ericberry: I'm confused
+[15:14:25] <ericberry> before you can side load data by key
+[15:14:25] <wycats> ericberry: if your server insists on returning a hash, normalize it
+[15:14:34] <ericberry> i see
+[15:14:37] <wycats> ericberry: yeah, it's saying that inner payload must be an array
+[15:14:40] <wycats> not the outer payload
+[15:14:44] *** Quits: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[15:14:55] <ericberry> inner payload is an array
+[15:15:01] <wycats> it would seem not ;)
+[15:15:04] <teddyZ> wycats: seems good, I'll PR it later
+[15:15:06] *** Quits: hipertracker (~hipertrac@95.83.249.80) (Ping timeout: 264 seconds)
+[15:15:08] <ericberry> here's my resp: { items: [ { foo: 'bar' }] }
+[15:15:24] <wycats> and your model name is item
+[15:15:28] <ericberry> but i think it just wants [ { foo: 'bar' } \
+[15:15:31] *** Quits: gavinjoyce (~gavinjoyc@109.255.128.64) (Quit: Leaving.)
+[15:15:31] <ericberry> well, in this example
+[15:15:31] <wycats> deny
+[15:15:40] <wycats> it wants { items: [...] }
+[15:15:59] *** Quits: bogdanbalc (~bogdanbal@89.121.222.106) (Read error: Operation timed out)
+[15:16:37] <ericberry> here's my output: http://cl.ly/image/0K0c2T3T2C02
+[15:17:07] <ericberry> here's the server response: https://gist.github.com/cavneb/abc40d38940e1f764d31
+[15:17:22] <wycats> https://github.com/emberjs/data/blob/master/packages/ember-data/lib/serializers/rest_serializer.js#L444-L462
+[15:17:46] <wycats> yeah you need to normalize that lti_apps into the model name
+[15:17:50] <wycats> what is the model name?
+[15:18:02] <wycats> this is going to be another underscore vs. camelize issue isn't it
+[15:18:19] <wycats> if your server uses underscores, you need to normalize it
+[15:18:23] <wycats> the transition guide explains how
+[15:18:41] <ericberry> wycats: here's the model: https://gist.github.com/cavneb/28da83bf0a17ee33a36a
+[15:18:54] <ericberry> heh
+[15:18:57] *** Quits: pr0cy0n (~pr0cy0n@mail.geniusinside.com) (Quit: Computer has gone to sleep.)
+[15:19:00] <wycats> yeah so Ember Data is expecting ltiApps
+[15:19:04] <ericberry> i see
+[15:19:06] *** Quits: kanongil (~kanongil@h200.natout.aau.dk) (Quit: Leaving.)
+[15:19:07] <wycats> you can fix it in normalizePayload
+[15:19:16] <ericberry> that makes sense
+[15:19:34] <ericberry> I'm sorry for being annoying on this.. it's an unexpected change
+[15:19:36] *** Quits: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za) (Quit: ianpetzer)
+[15:19:44] <ericberry> thanks for your help!
+[15:19:45] *** egblu3 is now known as egb3
+[15:19:45] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[15:19:50] <wycats> ericberry: yeah, we switched to normalized everything in ED 1.0
+[15:19:56] *** Quits: egb3 (~egblu3@unaffiliated/egblu3) (Quit: egb3)
+[15:19:59] <ericberry> cool
+[15:20:01] *** Joins: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com)
+[15:20:02] <wycats> which gave people confusion who were relying on magic normalization
+[15:20:14] <wycats> bradleypriest is working on an adapter that has the old behavior, more or less
+[15:20:22] *** Quits: aaronshaf (~aaronshaf@c-67-161-243-106.hsd1.ut.comcast.net) (Remote host closed the connection)
+[15:20:23] *** Joins: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za)
+[15:20:29] <wycats> App.ApplicationSerializer = DS.RESTSerializer.extend({ normalizePayload: function(type, hash) { /* change all the hash keys to camelize */ return hash; } })
+[15:20:31] <ericberry> sounds good
+[15:20:35] <wycats> ^^ that's roughly what you need to do
+[15:20:50] <ericberry> cool.. i'll do that now and post my results
+[15:21:00] *** Quits: listochkin (~listochki@46.232.239.246) (Remote host closed the connection)
+[15:21:12] <locks> normalization changed again?
+[15:21:15] <wycats> we need to flesh out http://emberjs.com/guides/models/connecting-to-an-http-server/ in terms of the expected JSON
+[15:21:17] <wycats> locks: no
+[15:21:22] <wycats> locks: not since 1.0
+[15:21:32] <locks> hm ok
+[15:21:34] *** Quits: dhilipsiva (~dhilipsiv@106.51.112.75) (Remote host closed the connection)
+[15:21:35] *** Joins: listochkin (~listochki@46.232.239.246)
+[15:21:50] *** Joins: tylergoza (~tylergoza@user-24-96-98-239.knology.net)
+[15:21:50] *** Quits: tylergoza (~tylergoza@user-24-96-98-239.knology.net) (Client Quit)
+[15:21:57] *** Joins: tylergoza (~tylergoza@user-24-96-98-239.knology.net)
+[15:22:19] <wycats> ericberry: these normalization hooks are really useful for app-wide normalization rules
+[15:22:32] <wycats> you can get more granular if you want to hack just a single payload
+[15:22:35] <somebody32> Hey, maybe anyone knows is there is any complete ember component/view that wraps select2 plugin?
+[15:22:38] <wycats> gotta take a walk... brb
+[15:23:38] *** Quits: bartocc (~julien@46.182.215.106) (Quit: bartocc)
+[15:23:58] *** Joins: kruppel (~kruppel@192.161.159.18)
+[15:24:06] *** Joins: bartocc (~julien@46.182.215.106)
+[15:24:25] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[15:25:00] *** Joins: goshakkk (~goshakkk@nat3-minsk-pool-46-53-195-12.telecom.by)
+[15:25:16] *** Quits: davydotcom (~davydotco@c-98-220-132-56.hsd1.in.comcast.net) (Remote host closed the connection)
+[15:25:24] *** Joins: dhilipsi_ (~dhilipsiv@106.51.112.75)
+[15:25:50] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Remote host closed the connection)
+[15:26:07] *** Quits: listochkin (~listochki@46.232.239.246) (Ping timeout: 260 seconds)
+[15:26:10] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Remote host closed the connection)
+[15:26:21] *** Quits: mixonic (~anonymous@modemcable223.184-179-173.mc.videotron.ca) (Quit: mixonic)
+[15:26:26] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[15:26:30] *** Quits: benediktdeicke (~benediktd@87.139.219.99) (Ping timeout: 248 seconds)
+[15:26:51] *** Quits: theodorton (~theodorto@office.skalar.no) (Ping timeout: 240 seconds)
+[15:27:20] *** Joins: shinnya (~shinnya@224.179.210.220.dy.bbexcite.jp)
+[15:27:23] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Read error: Connection reset by peer)
+[15:27:31] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[15:27:38] *** Quits: JumpMast3r (~anonymous@c-24-19-72-30.hsd1.wa.comcast.net) (Quit: JumpMast3r)
+[15:27:43] *** Quits: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za) (Quit: ianpetzer)
+[15:27:52] *** Quits: carlyle (~carlyle@rrcs-24-199-207-171.midsouth.biz.rr.com) (Remote host closed the connection)
+[15:28:09] *** Quits: mkoppel2_ (~mkoppel20@pool-98-112-187-124.lsanca.fios.verizon.net) (Remote host closed the connection)
+[15:28:50] *** Quits: losco (~losco@209.130.141.79) (Quit: Leaving...)
+[15:29:43] *** Quits: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr) (Remote host closed the connection)
+[15:30:58] *** Quits: MrHus (~MrHus@a83-163-107-39.adsl.xs4all.nl) (Quit: MrHus)
+[15:31:29] *** Quits: dhilipsi_ (~dhilipsiv@106.51.112.75) (Remote host closed the connection)
+[15:31:47] *** Joins: davydotcom (~davydotco@c-98-220-132-56.hsd1.in.comcast.net)
+[15:31:48] *** Joins: losco (~losco@209.130.141.79)
+[15:32:00] *** Quits: losco (~losco@209.130.141.79) (Client Quit)
+[15:33:35] *** Quits: somebody32 (~som32@81.222.88.154) (Quit: somebody32)
+[15:33:36] *** Quits: landongn (~Adium@209.31.3.75) (Quit: Leaving.)
+[15:34:11] *** Joins: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr)
+[15:34:12] *** Quits: huafu_ (~huafu@cpe-70-95-105-36.hawaii.res.rr.com) (Remote host closed the connection)
+[15:34:15] <ShawnMcCool> do i need to create an ID for recordrs or can i just let ember create one when using a local storage adapter?
+[15:35:36] <urbany> guys how the hell can I access the routes model inside a custom helper? {{#each controller.model}} works but {{#customHelper controller.model}} + Ember.get(this, model); returns undefined
+[15:36:03] *** Joins: rootyb (~juross@169.237.113.67)
+[15:36:25] *** Joins: trombom_ (~textual@64.187.175.91)
+[15:36:54] <graup> I wrote a very ugly handlebars helper. It works sort of, but I'd be happy if any Ember.Handlebars specialist could improve that. http://stackoverflow.com/a/18745357/700283
+[15:37:07] *** Joins: T_T (~kw3st@108.60.97.93)
+[15:37:39] <Dafe> urbany: http://emberjs.com/guides/templates/writing-helpers/
+[15:37:47] <Dafe> You use the helper parameters.
+[15:37:55] <Dafe> It doesn't have the regular template context.
+[15:38:45] *** Joins: luke` (~luke`@117.202.106.69)
+[15:38:53] *** Joins: Jason_ (~jcoene@67-198-71-111.dyn.grandenetworks.net)
+[15:39:06] <urbany> Dafe for what I understood you can use Ember.get(this, 'PATH GOES HERE') go access template context
+[15:39:37] <wycats> You want to use Ember
+[15:39:47] <wycats> Ember.Handlebars.get
+[15:40:00] <wycats> To make sure it handles things like the special 'view' name
+[15:40:03] *** Joins: devinus (~devinus@65.107.181.222.ptr.us.xo.net)
+[15:40:15] <urbany> hey wycats, you mean I should use Ember.Handlebars.get(this, 'PATH HERE') ?
+[15:40:28] <wycats> May make sense to have an options.data.context.get
+[15:40:37] <wycats> You need to pass options too
+[15:40:55] <wycats> That's where things like view and controller live
+[15:41:11] <urbany> hmmm thanks mate didn't know about that, going to have a look
+[15:41:21] <wycats> Realizing this is a somewhat leaky abstraction that we should try to encapsulate
+[15:41:26] *** Joins: Bakura (~textual@85-168-84-230.rev.numericable.fr)
+[15:41:33] <wycats> You can look at the internal helpers
+[15:41:45] <wycats> Bound helpers do this for you fwiw
+[15:42:28] *** DanKnox is now known as DanKnox_away
+[15:42:41] <urbany> Ok I'll take a look, thank you very much
+[15:42:51] *** Joins: peterwagenet (~peterwagn@cpe-98-154-63-183.socal.res.rr.com)
+[15:42:51] *** ChanServ sets mode: +o peterwagenet
+[15:42:53] <wycats> Ah but I'm unsure if they take blocks
+[15:43:08] <wycats> We should fix them to take blocks
+[15:43:09] <wycats> Any takers?
+[15:44:43] <graup> I just worked on a very similar thing ten minutes ago ^^ see the link I just posted
+[15:44:53] <graup> would also be interested in having boundHelpers work with blocks
+[15:45:10] <graup> I wonder if I could implement that...
+[15:45:24] <FilmKnurd> Anybody have problems with the browser NOT displaying images in the loadingRoute while a transition is loading?
+[15:45:47] *** Joins: hipertracker (~hipertrac@95.83.249.73)
+[15:46:34] *** Joins: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net)
+[15:47:14] *** Quits: andrei1089 (~andrei@86.122.11.220) (Ping timeout: 246 seconds)
+[15:47:28] *** Quits: rodyhaddad (~rodyhadda@206.167.24.248) (Remote host closed the connection)
+[15:47:34] <Dafe> Says blocks not supported in the API docs.
+[15:49:05] *** Joins: codeofficer (~codeoffic@cpe-67-255-213-61.maine.res.rr.com)
+[15:49:57] <knownasilya> is it possible to do this? myArray.filterBy('iternalArray.@each', 1000000);
+[15:50:40] <ryanrt> knownasilya: elaborate more?
+[15:51:12] <knownasilya> i'm trying to filter an array, where each entry is an object and that entry has an array of numbers
+[15:51:35] *** Joins: sudobangbang (~chatzilla@c-24-19-53-250.hsd1.wa.comcast.net)
+[15:52:09] <graup> so [{foo:[1,2,3,4]}, {foo:[1,2,3,4]}, ...]?
+[15:52:18] <knownasilya> [{ buildings: [1, 2, 3]}, {..}], so I need to return the object with the building id of 2
+[15:52:32] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[15:52:35] <knownasilya> graup: yup
+[15:52:42] <alexspeller> you should filter with a function
+[15:52:52] *** Quits: markprovan (~textual@host-135-196-33-208.lines.viateldsl.com) (Quit: Textual IRC Client: www.textualapp.com)
+[15:52:53] <knownasilya> alexspeller: that's what I thought
+[15:52:54] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[15:53:04] <knownasilya> just making sure :)
+[15:53:10] *** Joins: mahmoudimus (~mahmoudim@173-228-85-152.dsl.dynamic.sonic.net)
+[15:53:10] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[15:53:31] *** Joins: mixonic (~anonymous@bas1-montreal42-1177927958.dsl.bell.ca)
+[15:55:26] *** Joins: mjijackson (~michael@astound-69-42-2-25.ca.astound.net)
+[15:55:38] *** Quits: bartocc (~julien@46.182.215.106) (Quit: bartocc)
+[15:55:43] <decasia> anyone know what happened to the model lifecycle page in the ember guides?
+[15:56:11] *** Joins: pairup (~otherpers@c-69-181-30-172.hsd1.ca.comcast.net)
+[15:56:48] <knownasilya> decasia: it's dissapeared.. i filed an issue already for stale search data. I think it was renamed/revamped
+[15:57:11] *** Joins: timani (~timani@2001:5a8:4:9ee0:ac01:dd22:1b3:8120)
+[15:57:30] *** Joins: bartocc (~julien@46.182.215.106)
+[15:59:11] <decasia> knownasilya: yeah, I saw the broken search result too.
+[16:00:33] *** Quits: dinualex08 (~alexdin@222.127.174.4) (Quit: This computer has gone to sleep)
+[16:01:24] *** Quits: T_T (~kw3st@108.60.97.93) (Remote host closed the connection)
+[16:01:45] *** Joins: gowlin (~rgolbeck@debian/developer/rmgolbeck)
+[16:02:26] <decasia> knownasilya: it disappeared in this commit, but I don't see anything new that documents the same topics: https://github.com/emberjs/website/commit/6b4102ac382086d305ba4ec4da31324aada257b1
+[16:04:12] *** Quits: halogenandtoast (~halogenan@66.228.83.116) (Quit: halogenandtoast)
+[16:04:33] *** Joins: listochkin (~listochki@46.232.239.246)
+[16:04:41] <Dafe> How would a bound block helper work?
+[16:05:21] *** Joins: T_T (~kw3st@108.60.97.93)
+[16:06:46] *** Joins: narkeeso (~narkeeso@108.60.34.124)
+[16:06:46] *** Quits: listochkin (~listochki@46.232.239.246) (Remote host closed the connection)
+[16:07:23] *** Joins: listochkin (~listochki@46.182.82.146)
+[16:08:39] *** Quits: nicedexter (~manu@cust.static.212-41-201-185.swisscomdata.ch) (Quit: nicedexter)
+[16:09:52] *** Quits: stefan_17 (~stefan@host46-42-static.243-95-b.business.telecomitalia.it) (Remote host closed the connection)
+[16:10:17] <Dafe> Like, I'm not clear on the intended behavior.  Don't know what the tests would be like.
+[16:10:23] *** Quits: krupnik (~krupnik@host217-37-34-6.in-addr.btopenworld.com) (Remote host closed the connection)
+[16:10:55] <graup> Dafe: hm... change a property, have the rendered block update?
+[16:11:13] *** Joins: davidlai (~Adium@74.62.30.237)
+[16:12:06] *** Quits: listochkin (~listochki@46.182.82.146) (Ping timeout: 276 seconds)
+[16:12:56] <Dafe> Could you maybe throw together a bin with what you'd want it to do that it doesn't do?
+[16:13:07] *** Joins: eskimoblood (~eskimoblo@dslb-088-075-176-239.pools.arcor-ip.net)
+[16:13:20] <graup> basically precisely what this forbids https://github.com/emberjs/ember.js/blob/v1.0.0/packages/ember-handlebars/lib/ext.js#L268
+[16:13:39] *** Quits: jsteiner (~Adium@66.228.83.116) (Quit: Leaving.)
+[16:15:26] <graup> I think it's connected to the problem I raised in that SO post... handlebar block helpers work with a fn() that writes directly to the buffer and thus cannot be altered by code surrounding it
+[16:15:33] *** Joins: pr0cy0n (~pr0cy0n@213.55.176.245)
+[16:16:08] *** Joins: Deli (8a0b0099@gateway/web/freenode/ip.138.11.0.153)
+[16:16:56] *** Quits: whitedawg (~whitedawg@122.179.99.206) (Quit: Leaving.)
+[16:17:55] *** Quits: bartocc (~julien@46.182.215.106) (Quit: bartocc)
+[16:18:46] *** Joins: mysterlune (~mysterlun@rrcs-24-43-227-7.west.biz.rr.com)
+[16:18:58] *** Quits: juggy (~juggy@modemcable005.57-83-70.mc.videotron.ca) (Quit: juggy)
+[16:19:09] <graup> well I'm off to bed. I'd like to contribute to this if I can, I can also do a bin or test or something. see you!
+[16:19:32] <Dafe> I'll take another look at your SO post.
+[16:19:46] <Dafe> I'm not fully awake yet.
+[16:19:56] <Dafe> So thinking about this in the abstract isn't working for me right now.
+[16:20:14] <graup> it's not about bound helpers but I guess illustrates the same problem why these are not possible
+[16:20:18] <hoopy> is there any good way to detect if the user agent has a connection to the internet?
+[16:20:27] *** Quits: tonywok (~tonywok@rrcs-96-11-137-30.central.biz.rr.com) (Ping timeout: 245 seconds)
+[16:20:28] *** Quits: awc737 (~awc737@2604:180:1::e9e7:263f) (Quit: ZNC - http://znc.sourceforge.net)
+[16:20:32] <graup> ha great and I'm going to bed. (CET+8 here)
+[16:20:40] <Dafe> It helps me a lot to have a concrete use case.
+[16:20:44] <hoopy> or detect the case that an XHR has failed due to there not being a connection?
+[16:20:47] <Dafe> I always get mad at foo bar baz examples.
+[16:20:51] <Dafe> Anyway, night.
+[16:21:03] <graup> alright
+[16:21:13] *** Quits: luke` (~luke`@117.202.106.69) (Ping timeout: 276 seconds)
+[16:21:15] *** Joins: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net)
+[16:21:41] *** Joins: luke` (~luke`@117.202.107.36)
+[16:21:55] *** Joins: awc737_ (~awc737@192.249.62.8)
+[16:22:43] *** Joins: cloke (~cloke@66.159.97.90)
+[16:23:18] *** Joins: sly7_7 (~sylvain.m@cha25-3-88-174-48-109.fbx.proxad.net)
+[16:23:42] *** Joins: theodorton (~theodorto@51.79-160-19.customer.lyse.net)
+[16:24:09] <locks> is there a pattern for setting the current_user?
+[16:24:27] *** Joins: jsoverson (~textual@209.133.52.233)
+[16:26:10] <Dafe> I use a CurrentUserController that I inject into the container.
+[16:26:16] <Dafe> I'm not in love with the method.
+[16:27:10] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[16:27:11] <locks> hhmm
+[16:27:12] *** grep_away is now known as grep_awesome
+[16:27:45] *** Quits: hipertracker (~hipertrac@95.83.249.73) (Ping timeout: 256 seconds)
+[16:27:49] <hoopy> i set currentUser on the application
+[16:28:10] <hoopy> and currentUser is set on the application in an application initializer
+[16:28:26] <Dafe> http://say26.com/using-rails-devise-with-ember-js
+[16:28:30] <Dafe> This is pretty much my setup.
+[16:28:39] <locks> hoopy: how do you access it later? App.get('currentUser')?
+[16:28:47] <hoopy> locks: pretty much
+[16:28:51] <locks> ic
+[16:28:53] <hoopy> kinda jank but it works
+[16:28:59] *** Quits: pr0cy0n (~pr0cy0n@213.55.176.245) (Read error: Connection reset by peer)
+[16:29:11] <locks> Dafe: I kinda like this idea, gonna try it out later
+[16:29:36] *** Joins: audaxion (~siksia@unaffiliated/siksia)
+[16:30:25] *** Quits: tchak (~textual@LNantes-156-75-101-84.w80-12.abo.wanadoo.fr) (Ping timeout: 245 seconds)
+[16:30:48] *** Joins: cabraham (~cabraham@c-50-131-58-190.hsd1.ca.comcast.net)
+[16:31:03] <Dafe> I'm sure there are better approaches, but I just wanted something working with Devise that wouldn't take forever to set up.
+[16:31:42] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Ping timeout: 256 seconds)
+[16:31:43] <Dafe> And the app I'm working on doesn't do anything really sensitive.
+[16:32:47] <Dafe> Has anyone made like a REST adapter with local storage fallback?
+[16:33:06] <Dafe> So if you aren't connected, you just stash in local storage, and push it later?
+[16:33:06] *** Joins: pr0cy0n (~pr0cy0n@213.55.176.245)
+[16:33:09] *** Joins: wbyoko (~wbyoko@h216-170-142-17.mdsnwi.dedicated.static.tds.net)
+[16:33:42] *** Joins: microfed (~microfed@79.104.6.215)
+[16:33:43] *** Quits: goshakkk (~goshakkk@nat3-minsk-pool-46-53-195-12.telecom.by) (Ping timeout: 264 seconds)
+[16:34:15] *** Joins: kanja (~bbeecher@static-108-30-58-9.nycmny.fios.verizon.net)
+[16:34:16] *** Quits: devinus (~devinus@65.107.181.222.ptr.us.xo.net) (Quit: devintorr.es)
+[16:34:21] *** Quits: jdsmith2816 (~jdsmith@67.208.83.28) (Read error: Connection reset by peer)
+[16:34:25] *** Joins: goshakkk (~goshakkk@nat3-minsk-pool-46-53-195-12.telecom.by)
+[16:34:35] *** Joins: jdsmith2816 (~jdsmith@67.208.83.28)
+[16:34:56] *** Quits: goshakkk (~goshakkk@nat3-minsk-pool-46-53-195-12.telecom.by) (Client Quit)
+[16:35:13] <locks> there's the local storage adapter
+[16:35:18] <locks> maybe you can make the glue?
+[16:35:33] <locks> oh poo, now I'm having trouble with associations
+[16:35:39] <ShawnMcCool> I'm using the local storage adapter and the json it's storing looks ilke this http://paste.laravel.com/Q9V note the todo and then the related todo in the project model.. They don't seem right
+[16:35:41] *** Quits: luke` (~luke`@117.202.107.36) (Ping timeout: 256 seconds)
+[16:35:44] *** Joins: rakl (~rakl@sonic.mochaleaf.com)
+[16:36:06] *** Quits: dgeb (~dgeb@c-24-91-111-240.hsd1.nh.comcast.net) (Remote host closed the connection)
+[16:36:12] <locks> ShawnMcCool: looks fine
+[16:36:24] <ShawnMcCool> the model definitions are like so http://paste.laravel.com/Q9X
+[16:36:37] <ShawnMcCool> shouldn't the 'todos' section be an array of ids?  like [11] ?
+[16:36:41] *** Joins: dgeb (~dgeb@208.87.215.5)
+[16:36:41] *** Quits: yaymukund (~yaymukund@rrcs-198-179-88-67.nyc.biz.rr.com) (Ping timeout: 245 seconds)
+[16:36:44] *** Quits: elemoine (~elemoine@c2cpc3.camptocamp.com) (Remote host closed the connection)
+[16:36:45] <ShawnMcCool> instead of an array of objects without ids?
+[16:37:06] *** Quits: mavilein (~mavilein@adsl.artnology.com) (Quit: Leaving.)
+[16:37:06] <locks> oh ic
+[16:37:31] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[16:38:47] *** Joins: luke` (~luke`@27.57.132.5)
+[16:39:40] *** Quits: theodorton (~theodorto@51.79-160-19.customer.lyse.net) (Ping timeout: 256 seconds)
+[16:40:22] *** Quits: eskimoblood (~eskimoblo@dslb-088-075-176-239.pools.arcor-ip.net) (Remote host closed the connection)
+[16:40:28] <mmun> in ember data 1.0 beta 2, I've deleteRecord'd and save'd a record. at what point does the record get removed from the record array?
+[16:41:08] *** Quits: tamird (~tamird@199.227.49.90) (Quit: tamird)
+[16:41:27] *** Quits: film42424 (~textual@c-50-160-46-28.hsd1.ut.comcast.net) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[16:41:41] *** Quits: Bakura (~textual@85-168-84-230.rev.numericable.fr) (Quit: Computer has gone to sleep.)
+[16:41:42] *** Joins: yaymukund (~yaymukund@rrcs-198-179-88-67.nyc.biz.rr.com)
+[16:44:02] *** Quits: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net) (Quit: Leaving.)
+[16:44:08] *** Quits: pr0cy0n (~pr0cy0n@213.55.176.245) (Read error: Connection reset by peer)
+[16:44:11] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Ping timeout: 256 seconds)
+[16:44:15] *** Quits: G________ (~textual@38.104.0.154) (Quit: Computer has gone to sleep.)
+[16:45:30] *** Joins: G________ (~textual@38.104.0.154)
+[16:45:36] *** Joins: BenjaminN (~benjaminn@188.150.19.93.rev.sfr.net)
+[16:45:42] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Remote host closed the connection)
+[16:46:02] *** Joins: jergason (~jergason@c-71-199-42-48.hsd1.ut.comcast.net)
+[16:46:16] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[16:46:23] <BenjaminN> Hey guys! I'm having a bit of a problem with ArrayController: {{#each}} and {{#each step in content}} doesn't produce the same result
+[16:46:29] <BenjaminN> can anyone help me with this?
+[16:46:46] <sjkane> specific code snippets
+[16:46:49] <sjkane> will be needed
+[16:46:51] <sjkane> gist
+[16:47:02] *** Joins: vlad_starkov (~vlad_star@89.175.55.54)
+[16:47:11] *** Joins: pr0cy0n (~pr0cy0n@213.55.176.245)
+[16:47:35] <BenjaminN> sjkane: well I'm trying to achieve a sortable list using this answer (http://stackoverflow.com/questions/18657636/html5-sortable-and-ember-js/18663161)
+[16:48:00] <BenjaminN> sjkane: and it works well with {{#each}} but doesn't work with {{#each step in content}}
+[16:48:38] <BenjaminN> sjkane: and using {{#each}}, part of the object 'this' is lost
+[16:48:44] <BenjaminN> sjkane: i have no idea why, what so ever
+[16:48:47] <peterwagenet> BenjaminN: try {{#each step in controller}}
+[16:48:47] *** Joins: tonywok (~tonywok@rrcs-96-11-137-30.central.biz.rr.com)
+[16:48:58] <peterwagenet> also maybe {{#each step in this}}
+[16:49:27] *** Quits: mysterlune (~mysterlun@rrcs-24-43-227-7.west.biz.rr.com) (Remote host closed the connection)
+[16:49:30] *** Joins: jokirkman (~jokirkman@66.219.204.98.provo.dynamic.broadweavenetworks.net)
+[16:49:58] <jokirkman> does anyone know if emberdata 1.0 Beta 2 changed the format they want JSON in?
+[16:49:58] <mmun> hmm, maybe my understand is wrong. do deleted records stick around forever and you need to filter them out explicitly in your template?
+[16:50:04] *** Joins: goshakkk (~goshakkk@nat3-minsk-pool-46-53-195-12.telecom.by)
+[16:50:13] *** Joins: NivenHuH (~NivenWuss@sonic.mochaleaf.com)
+[16:50:44] *** Quits: Guest____ (~textual@rrcs-50-75-200-22.nyc.biz.rr.com) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[16:50:53] *** Joins: jefflab (~textual@107-213-156-21.lightspeed.sntcca.sbcglobal.net)
+[16:51:10] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Ping timeout: 268 seconds)
+[16:52:19] <peterwagenet> the issue is that the default context is the controller's arrangedContent which is what gets sorted, not the actual content
+[16:52:25] <peterwagenet> we don't sort the actual content
+[16:52:28] *** Quits: G________ (~textual@38.104.0.154) (Quit: Computer has gone to sleep.)
+[16:52:29] <peterwagenet> BenjaminN: ^
+[16:52:41] <peterwagenet> mmun: are you using ED? what version?
+[16:52:42] *** Joins: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net)
+[16:52:48] <mmun> .0 beta 2 fixture adapters
+[16:53:02] <BenjaminN> peterwagenet: never? meaning I have to arrange the content myself if I want to save it?
+[16:53:42] *** Joins: egblu3 (~egblu3@unaffiliated/egblu3)
+[16:53:42] <peterwagenet> BenjaminN: I'm saying if you use `sortProperties` on an array controller it only sorts it for display
+[16:53:51] <peterwagenet> it doesn't actually change the original content
+[16:53:54] *** egblu3 is now known as egb3
+[16:54:00] <peterwagenet> mmun: I would think deleted items shouldn't show up, maybe a bug
+[16:54:06] <BenjaminN> peterwagenet: {{#each step in this}} seems to work btw, but it stills rerendering the whole list and it's ugly that way
+[16:54:10] *** Quits: tonywok (~tonywok@rrcs-96-11-137-30.central.biz.rr.com) (Ping timeout: 245 seconds)
+[16:54:36] <mmun> hmm i'll check the issues
+[16:54:44] <mmun> seems like everyone would hit that
+[16:54:47] <BenjaminN> peterwagenet: so basically when I'm moving an element, dropping it makes the whole list blinking
+[16:56:07] <peterwagenet> BenjaminN: what are you doing when you drag and drop?
+[16:56:13] <peterwagenet> are you actually creating a new "content"?
+[16:56:13] *** Joins: brrrr (~brrrr@S0106002500fe2cec.vn.shawcable.net)
+[16:56:26] <peterwagenet> if you are swapping out the content/model then it will re-render the whole thing
+[16:56:35] <BenjaminN> peterwagenet: I'm not
+[16:56:37] <peterwagenet> you have to just modify it by removing and re-adding the item at the right place
+[16:56:46] <peterwagenet> then it shouldn't do a full re-render
+[16:57:01] <peterwagenet> BenjaminN: is there anyway you could put together a fiddle? or at least a gist showing some of the code?
+[16:57:16] <BenjaminN> peterwagenet: it's not blinking actually, it's just slow
+[16:57:28] <BenjaminN> peterwagenet: like dropping the element, then it's in the right place a second after
+[16:57:29] <peterwagenet> how big is your list?
+[16:57:39] *** Quits: pr0cy0n (~pr0cy0n@213.55.176.245) (Quit: Computer has gone to sleep.)
+[16:57:41] <BenjaminN> peterwagenet: nine elements, but elements have images, comments etc
+[16:58:17] *** Quits: adambeynon (~adambeyno@77.107.172.10) (Quit: Textual IRC Client: www.textualapp.com)
+[16:58:35] *** Quits: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com) (Quit: jonasi)
+[16:58:44] *** Joins: shaunbaker (~shaunbake@195.69.155.61)
+[16:58:46] *** Quits: mahmoudimus (~mahmoudim@173-228-85-152.dsl.dynamic.sonic.net) (Quit: Computer has gone to sleep.)
+[16:59:23] <peterwagenet> BenjaminN: if you could put together a fiddle that is as simple as possible while still causing this problem it would help us to see if we have an actual performance issue
+[16:59:28] *** Quits: jefflab (~textual@107-213-156-21.lightspeed.sntcca.sbcglobal.net) (Quit: Computer has gone to sleep.)
+[16:59:32] *** Joins: cjeria (~cjeria@sonic.mochaleaf.com)
+[17:00:39] *** Joins: pzuraq (~pzuraq@c-24-6-92-69.hsd1.ca.comcast.net)
+[17:01:02] <peterwagenet> it definitely should not be that slow
+[17:01:10] <peterwagenet> so either you're doing something odd, or hitting a case that we need to optimize
+[17:01:18] <peterwagenet> I can't really determine without seeing it in action
+[17:02:10] <BenjaminN> peterwagenet: hummm... unfortunatly i can't do a fiddle or i would spend a whole half day on it
+[17:02:19] <BenjaminN> peterwagenet: i'll come back when my website is online
+[17:02:34] <BenjaminN> peterwagenet: but the thing i don't get is this
+[17:02:52] <BenjaminN> peterwagenet: so basically i'm moving an element around, dropping it, it has a new position
+[17:03:02] *** Quits: luke` (~luke`@27.57.132.5) (Ping timeout: 248 seconds)
+[17:03:17] <BenjaminN> peterwagenet: then i'm editing my list, removing the element, moving it to its new position
+[17:03:23] <BenjaminN> peterwagenet: would that rerender the whole list?
+[17:03:50] *** Quits: jokirkman (~jokirkman@66.219.204.98.provo.dynamic.broadweavenetworks.net) (Remote host closed the connection)
+[17:04:03] *** Joins: jsteiner (~Adium@66.228.83.116)
+[17:04:26] *** Joins: coffeeofficer (~coffeeoff@rrcs-50-75-172-223.nys.biz.rr.com)
+[17:04:27] *** Joins: halogenandtoast (~halogenan@66.228.83.116)
+[17:05:05] *** Quits: coffeeofficer (~coffeeoff@rrcs-50-75-172-223.nys.biz.rr.com) (Read error: Connection reset by peer)
+[17:05:11] *** Joins: luke` (~luke`@117.202.107.36)
+[17:05:17] *** DanKnox_away is now known as DanKnox
+[17:05:23] <peterwagenet> BenjaminN: what happens in the code when you move the item?
+[17:05:28] *** Joins: juggy (~juggy@modemcable005.57-83-70.mc.videotron.ca)
+[17:05:36] *** Joins: coffeeofficer (~coffeeoff@rrcs-50-75-172-223.nys.biz.rr.com)
+[17:05:48] <BenjaminN> peterwagenet: right now it's changing the position of the items
+[17:05:57] *** Quits: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net) (Quit: Leaving.)
+[17:06:04] <BenjaminN> peterwagenet: but since it's not updating the list i'm wondering if it's the right way to do it
+[17:06:07] *** Joins: jerel (~jerel@64.134.176.27)
+[17:06:11] <BenjaminN> peterwagenet: because i would have to update it manually
+[17:06:19] <BenjaminN> peterwagenet: and this might cause the sorting to happen anyway
+[17:06:23] <BenjaminN> peterwagenet: see what i mean?
+[17:06:35] <BenjaminN> peterwagenet: i know it's hard to imagine this without a fiddle
+[17:07:41] *** Joins: x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net)
+[17:07:43] <BenjaminN> peterwagenet: question is: should I better play with the position & arraycontroller or just remove/insert
+[17:08:19] *** Joins: dhilipsiva (~dhilipsiv@106.51.112.75)
+[17:08:24] *** Quits: mixonic (~anonymous@bas1-montreal42-1177927958.dsl.bell.ca) (Quit: mixonic)
+[17:08:36] <peterwagenet> I'm not sure what you mean
+[17:09:09] *** Parts: jerel (~jerel@64.134.176.27) ()
+[17:09:38] <BenjaminN> peterwagenet: but you see the current solution i have, right?
+[17:10:02] *** Quits: ncfcmark (~ncfcmark@212.58.54.198) (Quit: Leaving.)
+[17:10:04] <BenjaminN> peterwagenet: i'm using this: http://jsbin.com/EZulAN/1/edit
+[17:10:31] <BenjaminN> peterwagenet: basically maintaining an arraycontroller, and changing position everytime i drop an item
+[17:10:34] *** Quits: microfed (~microfed@79.104.6.215) (Read error: Connection reset by peer)
+[17:11:14] *** Joins: dodosan (~icole@c.24.143.124.70.static.broadstripe.net)
+[17:11:16] <peterwagenet> BenjaminN: it seems to work fine in that fiddle
+[17:11:17] *** Joins: microfed (~microfed@79.104.6.215)
+[17:11:20] <peterwagenet> I wonder if there's something else causing churn
+[17:11:27] <BenjaminN> peterwagenet: sure, I agree
+[17:11:55] *** Quits: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net) (Quit: Leaving.)
+[17:12:10] <BenjaminN> peterwagenet: the thing is since I'm synchronizing this later, my model has to be updated, and you told me this doesn't change the model right?
+[17:12:23] *** Joins: mikepack (~mikepack@factory-smtp.factorylabs.com)
+[17:12:45] *** Quits: luke` (~luke`@117.202.107.36) (Ping timeout: 268 seconds)
+[17:12:49] *** Quits: brrrr (~brrrr@S0106002500fe2cec.vn.shawcable.net) (Quit: brrrr)
+[17:13:09] <peterwagenet> I misunderstood
+[17:13:15] <peterwagenet> you're setting position, that should change your models
+[17:13:28] <peterwagenet> it won't modify the ordering of the content array though, but that's ok
+[17:13:32] *** Quits: cabraham (~cabraham@c-50-131-58-190.hsd1.ca.comcast.net) (Remote host closed the connection)
+[17:13:33] <peterwagenet> since you're not relying on that it seems like
+[17:13:41] *** Quits: peregrine81 (~textual@108-231-125-143.lightspeed.milwwi.sbcglobal.net) ()
+[17:13:46] <BenjaminN> peterwagenet: actually i am...
+[17:13:49] *** Joins: javascriptjedi (~javascrip@97.75.169.254)
+[17:14:18] <BenjaminN> peterwagenet: basically the model has to be ordered, because i'm saving it later
+[17:14:38] <BenjaminN> peterwagenet: ah, wait
+[17:15:04] *** Joins: rodyhaddad (~rodyhadda@206.167.24.248)
+[17:15:16] *** Quits: vlad_starkov (~vlad_star@89.175.55.54) (Remote host closed the connection)
+[17:15:37] <BenjaminN> peterwagenet: yeah, it's not changing my model
+[17:15:44] <peterwagenet> you're setting a position property, right?
+[17:15:44] *** Quits: microfed (~microfed@79.104.6.215) (Read error: Connection reset by peer)
+[17:15:52] *** Quits: dodosan (~icole@c.24.143.124.70.static.broadstripe.net) (Ping timeout: 268 seconds)
+[17:15:53] <peterwagenet> are you relying on that, or the actual order of your array?
+[17:15:54] <BenjaminN> peterwagenet: yup, exactly like in the fiddle
+[17:16:16] <BenjaminN> peterwagenet: the display rely on that, but when saving my model i'm not
+[17:16:28] <peterwagenet> ah, yeah, so this won't work
+[17:16:33] *** Joins: chanced (~chanced@cpe-075-183-181-238.sc.res.rr.com)
+[17:16:34] <BenjaminN> peterwagenet: damn!
+[17:16:35] *** Joins: microfed (~microfed@79.104.6.215)
+[17:16:39] <peterwagenet> maybe you shouldn't use position at all
+[17:16:43] <BenjaminN> peterwagenet: yeah!
+[17:16:44] <peterwagenet> and forget sortProperties
+[17:16:47] *** Joins: tchak (~textual@89.202.203.52)
+[17:16:53] <BenjaminN> peterwagenet: but in this case, i would have to rerender the whole list?
+[17:16:54] <peterwagenet> and instead of setting position, remove the item from the content and re-add it in the right location
+[17:16:57] <peterwagenet> see how that works
+[17:17:03] *** Joins: rafshar (~rafshar@72.34.113.210)
+[17:17:06] <peterwagenet> if you just modify items, it shouldn't re-render the whole list
+[17:17:06] *** Joins: Bakura (~textual@85-168-84-230.rev.numericable.fr)
+[17:17:33] <peterwagenet> if you do set('content', someNewArray) it will re-render the whole list, but if you are just modifying the content array itself, it shoudl be smart about it
+[17:17:43] *** Joins: theodorton (~theodorto@51.79-160-19.customer.lyse.net)
+[17:18:28] <chanced> hey guys, i have a newb question: I'm trying to use bootstrap-for-ember with the ember-app-kit but I'm not sure how to go about incorporating it. I don't see how components are pulled in or if instead I should just throw it in vendor
+[17:18:54] *** Joins: cabraham (~cabraham@50.131.58.190)
+[17:18:56] *** Quits: tchak (~textual@89.202.203.52) (Client Quit)
+[17:19:24] <BenjaminN> peterwagenet: i'll try and let you know, thanks a lot anyway !
+[17:19:45] *** Joins: cha0ticz (~jcugno@173.196.193.218)
+[17:19:59] <peterwagenet> does this all make sense?
+[17:20:15] *** Quits: thealanwattsriot (~brianchen@75-146-23-33-Richmond.hfc.comcastbusiness.net) (Quit: Computer has gone to sleep.)
+[17:20:32] *** Quits: Jason_ (~jcoene@67-198-71-111.dyn.grandenetworks.net) (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+[17:20:36] <mmun> peterwagenet: works fine in a JSBin. must be my fault
+[17:20:44] *** Quits: shaunbaker (~shaunbake@195.69.155.61) (Remote host closed the connection)
+[17:20:44] *** Quits: cabraham (~cabraham@50.131.58.190) (Remote host closed the connection)
+[17:20:47] <peterwagenet> mmun: :/
+[17:20:51] *** Joins: krupnik (~krupnik@host213-123-1-180.range213-123.btcentralplus.com)
+[17:21:01] *** Quits: raila (~dad@p5DC0EBD2.dip0.t-ipconnect.de) (Quit: Leaving.)
+[17:21:13] *** Quits: aaronshaf (~aaronshaf@216.51.95.36) (Remote host closed the connection)
+[17:21:34] *** Joins: jefflab (~textual@107-213-156-21.lightspeed.sntcca.sbcglobal.net)
+[17:22:31] *** Quits: rlivsey (~rlivsey@93-96-145-160.zone4.bethere.co.uk) (Quit: Computer has gone to sleep.)
+[17:22:40] *** Joins: juanda (~juanda@181.135.129.224)
+[17:22:52] <mmun> although there is an unexpected behaviour, deleteRecord immediately removes the record from the array so it would be tricky to shower a spinner while waiting to see if the delete was successful
+[17:23:14] *** Quits: j_wright (~jwright@unaffiliated/j-wright/x-9145068) (Quit: [A] it brings us closer than dying ... and cancer ... and crying ...)
+[17:23:21] <mmun> might be different in the REST Adapter than in the fixture adapter though
+[17:24:03] *** Joins: rlivsey (~rlivsey@93-96-145-160.zone4.bethere.co.uk)
+[17:24:07] *** Joins: KendrickVT (~Adium@rrcs-70-60-124-200.midsouth.biz.rr.com)
+[17:24:39] *** Joins: tamird (~tamird@199.227.49.90)
+[17:24:48] *** Joins: luke` (~luke`@223.227.243.203)
+[17:25:23] *** Joins: devinus (~devinus@65.107.181.222.ptr.us.xo.net)
+[17:25:42] *** Quits: krupnik (~krupnik@host213-123-1-180.range213-123.btcentralplus.com) (Ping timeout: 268 seconds)
+[17:25:43] *** Quits: tylergoza (~tylergoza@user-24-96-98-239.knology.net) (Quit: Leaving)
+[17:25:56] *** Joins: mahmoudimus (~mahmoudim@199-241-202-99.PUBLIC.monkeybrains.net)
+[17:27:31] *** Quits: rodyhaddad (~rodyhadda@206.167.24.248) (Remote host closed the connection)
+[17:28:09] *** Joins: thealanwattsriot (~brianchen@216.30.179.54)
+[17:28:44] *** Joins: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net)
+[17:29:11] *** Joins: Hyder (1bfb1e45@gateway/web/freenode/ip.27.251.30.69)
+[17:29:16] *** Quits: pairup (~otherpers@c-69-181-30-172.hsd1.ca.comcast.net) (Quit: I'm asleep.)
+[17:30:04] *** Joins: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr)
+[17:30:17] *** Quits: Hyder (1bfb1e45@gateway/web/freenode/ip.27.251.30.69) (Client Quit)
+[17:30:51] *** Quits: slarti42uk (~slarti42u@212.58.54.198) (Ping timeout: 264 seconds)
+[17:31:47] *** Quits: rlivsey (~rlivsey@93-96-145-160.zone4.bethere.co.uk) (Quit: Computer has gone to sleep.)
+[17:33:31] *** Joins: cabraham (~cabraham@8.25.197.24)
+[17:34:12] *** Quits: minineuron (~minineuro@LPuteaux-156-15-100-61.w80-12.abo.wanadoo.fr) (Ping timeout: 245 seconds)
+[17:36:10] *** Quits: cabraham (~cabraham@8.25.197.24) (Remote host closed the connection)
+[17:36:27] *** Quits: jefflab (~textual@107-213-156-21.lightspeed.sntcca.sbcglobal.net) (Quit: Computer has gone to sleep.)
+[17:36:30] *** Joins: tboyt (~textual@205-179-152-226.client.dsl.net)
+[17:37:13] *** Quits: davydotcom (~davydotco@c-98-220-132-56.hsd1.in.comcast.net) (Remote host closed the connection)
+[17:37:14] *** Joins: rodyhaddad (~rodyhadda@206.167.24.248)
+[17:37:36] *** Quits: BenjaminN (~benjaminn@188.150.19.93.rev.sfr.net) (Remote host closed the connection)
+[17:38:19] *** Quits: bengillies (~bengillie@195.138.194.116) (Ping timeout: 264 seconds)
+[17:39:23] <decasia> anyone have a good solution for aggregating errors from multiple records that you're saving at once?
+[17:40:05] *** Joins: davydotcom (~davydotco@c-98-220-132-56.hsd1.in.comcast.net)
+[17:40:18] <decasia> the latest recommendation suggests doing something like Ember.RSVP.all(records.invoke('save')).then( successFunction, failureFunction)
+[17:40:50] <decasia> but the problem is, the failure function gets called as soon as any of the saves fails, so if you want to do something like aggregate validation errors for multiple models, you can't easily do that
+[17:42:27] *** Quits: shinnya (~shinnya@224.179.210.220.dy.bbexcite.jp) (Ping timeout: 276 seconds)
+[17:42:35] <decasia> does the promise library should have a way of aggregating promises that doesn't fail fast?
+[17:42:42] *** Quits: microfed (~microfed@79.104.6.215) (Ping timeout: 264 seconds)
+[17:43:31] *** Quits: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net) (Quit: Leaving.)
+[17:44:10] *** Quits: devinus (~devinus@65.107.181.222.ptr.us.xo.net) (Ping timeout: 245 seconds)
+[17:44:54] <sjkane> yo
+[17:45:05] <sjkane> is there a way to parse all the attributes passed into create?
+[17:45:16] *** Quits: chanced (~chanced@cpe-075-183-181-238.sc.res.rr.com) (Remote host closed the connection)
+[17:47:00] *** Joins: pairup (~otherpers@216-75-227-234.static.wiline.com)
+[17:47:07] *** Quits: pairup (~otherpers@216-75-227-234.static.wiline.com) (Max SendQ exceeded)
+[17:47:38] *** Joins: MrHus (~MrHus@5356DADD.cm-6-7d.dynamic.ziggo.nl)
+[17:48:02] *** Joins: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za)
+[17:49:04] *** Quits: Bakura (~textual@85-168-84-230.rev.numericable.fr) (Quit: Computer has gone to sleep.)
+[17:49:26] <pzuraq> sjkane: Override createRecord?
+[17:50:26] <sjkane> mm
+[17:50:30] <sjkane> for ember.objects?
+[17:50:33] <sjkane> seems unlikely?
+[17:50:47] <sjkane> it seems like there should be an easy way to inspect the params that are passed to create
+[17:50:53] <sjkane> but I also see why that's tricky
+[17:50:57] *** Joins: eskimoblood (~eskimoblo@dslb-088-075-176-239.pools.arcor-ip.net)
+[17:51:02] <sjkane> maybe i just need to do some testing
+[17:51:04] <mmun> decasia: yeah that seems useful, https://github.com/kriskowal/q/wiki/API-Reference#promiseallsettled
+[17:51:21] *** Joins: somebody32 (~som32@188.134.34.12)
+[17:51:27] <gavacho_> not really clear what your usecase is
+[17:51:43] <gavacho_> but you can monkeypatch the create method
+[17:51:48] <sjkane> ya
+[17:51:54] <sjkane> i am wrapping a complex jquery plugin
+[17:52:03] <decasia> mmun: thanks! that link looks well worth checking out.
+[17:52:07] <sjkane> and I'd like to see what params you have chosen to pass via the template
+[17:52:11] *** Quits: MrHus (~MrHus@5356DADD.cm-6-7d.dynamic.ziggo.nl) (Ping timeout: 260 seconds)
+[17:52:44] *** Quits: halogenandtoast (~halogenan@66.228.83.116) (Quit: halogenandtoast)
+[17:54:41] <mmun> decasia: https://github.com/tildeio/rsvp.js/issues/80 and a similar problem with RSVP.hash https://github.com/tildeio/rsvp.js/issues/112
+[17:54:44] *** Joins: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net)
+[17:54:50] *** Quits: bowlingx (~Adium@port-217-113-42-177.static.iacd-dsl.de) (Quit: Leaving.)
+[17:54:51] *** Joins: landongn (~landongn@ip65-44-217-34.z217-44-65.customer.algx.net)
+[17:55:00] *** Quits: eskimoblood (~eskimoblo@dslb-088-075-176-239.pools.arcor-ip.net) (Ping timeout: 245 seconds)
+[17:55:08] <mmun> seems like a PR is in order
+[17:55:08] *** Joins: bowlingx (~Adium@port-217-113-42-177.static.iacd-dsl.de)
+[17:56:24] <decasia> mmun: I haven't written promise library code before, but I guess what's needed is basically porting Q.allSettled to RSVP?
+[17:56:42] <mmun> yeah, the painful part would be to write all the tests
+[17:56:49] *** Joins: luigy (~luigy@192.241.244.155)
+[17:56:50] *** Joins: peregrine81 (~textual@108-231-125-143.lightspeed.milwwi.sbcglobal.net)
+[17:56:53] <mmun> you should hit up iamstef
+[17:57:28] <decasia> cool. thanks for these pointers!
+[17:58:25] *** Joins: shaunbaker (~shaunbake@195.69.155.61)
+[17:58:59] *** Joins: benv (~benv@38.104.194.126)
+[17:59:18] *** Quits: rakl (~rakl@sonic.mochaleaf.com) (Quit: sleeping)
+[17:59:28] *** Joins: januschh (~januschh@1703ds6-by.0.fullrate.dk)
+[17:59:42] *** Joins: MrHus (~MrHus@5356DADD.cm-6-7d.dynamic.ziggo.nl)
+[17:59:52] *** Quits: bowlingx (~Adium@port-217-113-42-177.static.iacd-dsl.de) (Ping timeout: 264 seconds)
+[18:00:06] *** Quits: travisstaton (~tstaton@70.127.254.161) (Ping timeout: 264 seconds)
+[18:00:09] <mmun> my pleasure, promises are cool!
+[18:00:14] *** Joins: cabraham (~cabraham@8.25.197.24)
+[18:01:49] *** Joins: rakl (~rakl@sonic.mochaleaf.com)
+[18:03:20] *** Joins: norviller (~norviller@17.202.38.248)
+[18:03:29] *** Joins: jonasi (~jonasi@cpe-70-113-81-68.austin.res.rr.com)
+[18:03:37] *** Joins: tchak (~textual@89.202.203.52)
+[18:05:15] *** Joins: panayi (~panayi@213.207.172.208)
+[18:05:40] *** Joins: j_wright (~jwright@unaffiliated/j-wright/x-9145068)
+[18:06:04] *** Joins: mixonic (~anonymous@bas1-montreal42-1177927958.dsl.bell.ca)
+[18:06:24] *** Joins: jasongonzales (~Adium@216.2.41.50)
+[18:06:32] *** Joins: Bakura (~textual@85-168-84-230.rev.numericable.fr)
+[18:07:54] <jasongonzales> hi, I am struggling with a model that won't load once it has been loaded once, what is a good strategy to get data to reload without having it load twice on its initial load
+[18:08:03] *** Joins: dgeb_ (~dgeb@c-24-91-111-240.hsd1.nh.comcast.net)
+[18:08:13] <jasongonzales> using ember-data BTW
+[18:08:47] *** Joins: devinus (~devinus@65.107.181.222.ptr.us.xo.net)
+[18:08:54] <jasongonzales> I see that there is a reload() method now, but you can only call that once the model is loaded, so how would you avoid calling that after the model has loaded the first time?
+[18:09:18] <panayi> anyone had this =>>> after DS.hasMany('App.Foo', { async: true }) records are loaded, the host record becomes isDirty
+[18:09:30] *** Joins: aaronshaf (~aaronshaf@216.51.95.36)
+[18:09:38] *** Joins: eskimoblood (~eskimoblo@dslb-088-075-176-239.pools.arcor-ip.net)
+[18:11:00] *** Joins: Gues_____ (~textual@38.104.0.154)
+[18:12:05] *** Quits: dgeb (~dgeb@208.87.215.5) (Ping timeout: 245 seconds)
+[18:14:22] *** Quits: somebody32 (~som32@188.134.34.12) (Quit: somebody32)
+[18:14:32] *** Quits: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net) (Quit: Leaving.)
+[18:15:27] *** Joins: somebody32 (~som32@188.134.34.12)
+[18:17:21] *** Quits: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za) (Quit: ianpetzer)
+[18:18:38] *** Joins: tonywok (~tonywok@rrcs-96-11-137-30.central.biz.rr.com)
+[18:18:49] *** Quits: shaunbaker (~shaunbake@195.69.155.61) (Remote host closed the connection)
+[18:20:57] *** Quits: benv (~benv@38.104.194.126) (Quit: Textual IRC Client: www.textualapp.com)
+[18:21:19] *** Joins: bowlingx (~Adium@f048003201.adsl.alicedsl.de)
+[18:21:23] *** Joins: benv (~benv@38.104.194.126)
+[18:21:37] *** Quits: Gues_____ (~textual@38.104.0.154) (Read error: Connection reset by peer)
+[18:21:52] *** Joins: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com)
+[18:22:59] *** Joins: ryanrt (~ryan@pool-72-89-21-59.nycmny.fios.verizon.net)
+[18:23:10] *** Quits: vanstee (~vanstee@c-98-192-35-156.hsd1.ga.comcast.net) (Quit: Computer has gone to sleep.)
+[18:23:21] <machty> decasia:  allSettled means that all promises either fulfilled/rejected?
+[18:24:30] *** Joins: dodosan (~icole@c.24.143.124.70.static.broadstripe.net)
+[18:25:05] <jasongonzales> any thoughts on this? how to force a reload?
+[18:25:10] <iamstef> machty: yes
+[18:25:15] <iamstef> "final state"
+[18:25:48] <trombom_> fulfilled with a non thenable(aka, a value) from what i understand
+[18:26:05] <iamstef> trombom_: or rejected
+[18:26:12] *** Quits: norviller (~norviller@17.202.38.248) (Quit: Computer has gone to sleep.)
+[18:26:13] <trombom_> yep
+[18:26:33] <iamstef> when value or reason is realized. the state is "settled"
+[18:26:37] *** Joins: travisstaton (~tstaton@70.127.254.161)
+[18:26:40] *** Quits: theodorton (~theodorto@51.79-160-19.customer.lyse.net) (Ping timeout: 245 seconds)
+[18:26:42] *** Quits: juanda (~juanda@181.135.129.224) (Quit: juanda)
+[18:26:54] <decasia> machty: yes, it seems that in allSettled one would want to inspect the results of a set of promises, qua set, instead of having the fail fast behavior of RSVP.all()
+[18:27:21] *** Joins: norviller (~norviller@17.202.38.248)
+[18:27:24] *** Joins: juanda (~juanda@181.135.129.224)
+[18:27:24] <iamstef> decasia: allSettled hash version would also be quite useful.
+[18:27:59] *** Quits: rlivsey (~rlivsey@cpc3-dals18-2-0-cust77.hari.cable.virginmedia.com) (Quit: Computer has gone to sleep.)
+[18:28:48] *** Quits: DoniRS (~DaRamirez@53556879.cm-6-6b.dynamic.ziggo.nl) (Quit: Ex-Chat)
+[18:29:13] *** Quits: luke` (~luke`@223.227.243.203) (Ping timeout: 268 seconds)
+[18:29:14] <decasia> iamstef: I'm poking around the codebase now, will keep that in mind!
+[18:29:33] <iamstef> decasia: github.com/tildeio/rsvp.js
+[18:29:55] <decasia> yup.
+[18:30:33] *** Joins: marceldegraaf (~marceldeg@178-84-12-14.dynamic.upc.nl)
+[18:30:38] *** Quits: wbyoko (~wbyoko@h216-170-142-17.mdsnwi.dedicated.static.tds.net) (Quit: wbyoko)
+[18:31:21] *** Joins: kbfif (~hvbeuveig@197.195.181.15)
+[18:31:31] *** Quits: kbfif (~hvbeuveig@197.195.181.15) (Killed (idoru (Spam is off topic on freenode.)))
+[18:31:33] *** Quits: cabraham (~cabraham@8.25.197.24) (Remote host closed the connection)
+[18:32:39] *** Quits: travisstaton (~tstaton@70.127.254.161) (Ping timeout: 264 seconds)
+[18:32:58] *** Joins: cabraham (~cabraham@8.25.197.24)
+[18:34:17] *** Joins: ianpetzer (~ian@8ta-229-63-12.telkomadsl.co.za)
+[18:34:58] <jasongonzales> is there a reliable way to tell if a model is loaded from the adapter?
+[18:35:06] <jasongonzales> using ember data beta2
+[18:36:21] *** Quits: juanda (~juanda@181.135.129.224) (Quit: juanda)
+[18:37:42] *** Quits: cabraham (~cabraham@8.25.197.24) (Ping timeout: 276 seconds)
+[18:39:58] *** Joins: Mitchellvanw (~Mitchellv@ip5450b9d0.speed.planet.nl)
+[18:40:25] *** Joins: cabraham (~cabraham@8.25.197.24)
+[18:40:40] *** Joins: pr0cy0n (~pr0cy0n@176-123.196-178.cust.bluewin.ch)
+[18:41:27] <jasongonzales> so, this seems to have done the trick:     if m.currentState.parentState.isLoaded
+[18:41:27] <jasongonzales> , where m is App.Model.find('id')
+[18:41:36] <jasongonzales> are there any caveats for using this approach?
+[18:41:48] *** Quits: javascriptjedi (~javascrip@97.75.169.254) (Remote host closed the connection)
+[18:42:06] *** Quits: thealanwattsriot (~brianchen@216.30.179.54) (Quit: Computer has gone to sleep.)
+[18:43:34] *** Joins: Gues_____ (~textual@38.104.0.154)
+[18:44:12] *** Quits: rodyhaddad (~rodyhadda@206.167.24.248) (Remote host closed the connection)
+[18:44:24] *** Joins: vanstee (~vanstee@50-192-61-45-static.hfc.comcastbusiness.net)
+[18:46:43] *** Joins: luke` (~luke`@117.202.107.36)
+[18:46:56] *** Quits: veader (~veader@173.221.210.138.nw.nuvox.net) (Ping timeout: 260 seconds)
+[18:47:17] *** Quits: jasongonzales (~Adium@216.2.41.50) (Quit: Leaving.)
+[18:47:34] *** Quits: tchak (~textual@89.202.203.52) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[18:48:03] *** Joins: juanda (~juanda@181.135.129.224)
+[18:48:35] *** Quits: narkeeso (~narkeeso@108.60.34.124) (Quit: Computer has gone to sleep.)
+[18:48:36] *** Quits: panayi (~panayi@213.207.172.208) (Read error: Connection reset by peer)
+[18:48:47] *** Joins: panayi (~panayi@213.207.172.208)
+[18:49:50] *** Quits: somebody32 (~som32@188.134.34.12) (Quit: somebody32)
+[18:50:19] *** Joins: jasongonzales (~Adium@216.2.41.50)
+[18:50:35] *** Parts: jasongonzales (~Adium@216.2.41.50) ()
+[18:50:36] *** Quits: tboyt (~textual@205-179-152-226.client.dsl.net) (Quit: My MacBook has gone to sleep. ZZZzzz…)
+[18:56:08] *** Quits: coffeeofficer (~coffeeoff@rrcs-50-75-172-223.nys.biz.rr.com) (Remote host closed the connection)
+[18:56:26] *** Joins: erydo (~erydo@c-50-139-84-161.hsd1.or.comcast.net)
+[18:57:30] *** Quits: norviller (~norviller@17.202.38.248) (Quit: Computer has gone to sleep.)
