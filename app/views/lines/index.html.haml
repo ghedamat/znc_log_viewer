@@ -1,0 +1,21 @@
+%h1 Ember chat logs
+
+= form_tag nil, method: 'get' do
+  = text_field_tag 'search[keyword]'
+  = select_tag 'search[channel]', options_for_select(Channel.all.map { |c| [c.name, c.id]}, selected: @channel.id )
+  %br
+  = submit_tag 'Search'
+
+
+- if @lines.any?
+  = will_paginate
+  %ul
+  - @lines.each do |line|
+    %li
+      = line.timestamp
+      = line.username
+      = line.message
+
+  = will_paginate
+- else
+  0 results

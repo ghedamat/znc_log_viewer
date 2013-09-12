@@ -5,6 +5,7 @@ gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
 gem 'pg'
+gem 'pg_search', '~>0.7.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -49,3 +50,5 @@ end
 group :development, :test do
   gem 'rspec-rails'
 end
+
+gem 'will_paginate', '~> 3.0'
