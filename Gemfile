@@ -52,3 +52,9 @@ group :development, :test do
 end
 
 gem 'will_paginate', '~> 3.0'
+
+gem 'capistrano'
+#gem 'capistrano-ext'
+gem 'rvm-capistrano'
+gem 'unicorn', require: false
+
