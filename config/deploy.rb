@@ -48,11 +48,32 @@ set :rvm_ruby_string, 'default'
 #   end
 # end
 #
-namespace :deploy do
 
-  task :symlink_config, roles: :app do
-    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+# env
+set :bundle_flags, "--deployment --no-prune --quiet"
+
+# assets
+set :normalize_asset_timestamps, false
+
+after "deploy:setup", :create_required_shared_dirs
+task :create_required_shared_dirs, :roles => :app do
+  run "mkdir -p #{shared_path}/config"
+end
+
+after "deploy:update_code", :link_shared_resources
+task :link_shared_resources, :roles => :app do
+  run "ln -nfs #{shared_path}/config/*.yml #{release_path}/config/"
+end
+
+# process management
+namespace :deploy do
+  desc "custom *graceful* restart task for unicorn via init.d script"
+  task :restart, :except => { :no_release => true } do
+    sudo "/etc/init.d/unicorn upgrade"
   end
 
-  after "deploy:finalize_update", "deploy:symlink_config"
+  task :log do
+    stream "tail -n 2000 -f #{current_path}/log/#{environment}.log"
+  end
 end
+
