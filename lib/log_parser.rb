@@ -83,6 +83,7 @@ class LogParser
     def match_line(line)
       line.gsub!(/\^O/,'')#remove escape characters left by znc
       line.match(/(?<timestamp>\[\d\d\:\d\d:\d\d\]) (\*\*\* (?<action>Joins|Parts|Quits)?:?)?\s?(?<name><?\S+\>?)? (?<message>.+)?/)
+      # TODO use /(?<name>name)/ =~ "lolname"
     end
 
     def extract_date(path)
